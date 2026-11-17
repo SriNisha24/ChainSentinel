@@ -1,0 +1,153 @@
+{
+  "engine_name": "ChainSentinel Recovery Planning & Resilience-Aware Optimization Engine",
+  "version": "1.0.0",
+  "score_calibration_status": "SIMULATION_DECISION_SUPPORT_INDEX",
+  "capacity_budget": {
+    "total_recovery_capacity_budget_rcu": 1000.0,
+    "budget_description": "Normalized Recovery Capacity Units (RCUs) representing carrier expediting quotas and logistics bandwidth."
+  },
+  "cost_parameters": {
+    "base_rcu_by_shipping_mode": {
+      "Same Day": 2.0,
+      "First Class": 1.5,
+      "Second Class": 1.25,
+      "Standard Class": 1.0
+    },
+    "spend_log_scaling_factor": 1000.0,
+    "min_rcu_cost": 0.5
+  },
+  "effectiveness_parameters": {
+    "base_nominal_effectiveness": 0.85,
+    "mode_effectiveness_modifiers": {
+      "Same Day": 0.90,
+      "First Class": 0.88,
+      "Second Class": 0.85,
+      "Standard Class": 0.82
+    }
+  },
+  "candidate_plans": [
+    {
+      "plan_id": "PLAN_0_BASELINE",
+      "name": "Baseline (No Intervention)",
+      "strategy_type": "DO_NOTHING",
+      "description": "Zero recovery resource expenditure; all orders absorb baseline disruption delay. Reference benchmark."
+    },
+    {
+      "plan_id": "PLAN_1_PRIORITY_FIRST",
+      "name": "Priority-First Recovery",
+      "strategy_type": "GREEDY_QUEUE",
+      "sort_keys": ["risk_priority_rank", "entity_id"],
+      "sort_ascending": [true, true],
+      "description": "Greedy capacity allocation in ascending Phase 9 priority rank order (Ranks 1 to K)."
+    },
+    {
+      "plan_id": "PLAN_2_FINANCIAL_FIRST",
+      "name": "Financial Exposure First",
+      "strategy_type": "GREEDY_VALUE",
+      "sort_keys": ["revenue_exposure", "risk_score", "entity_id"],
+      "sort_ascending": [false, false, true],
+      "description": "Greedy capacity allocation maximizing protected commercial revenue exposure."
+    },
+    {
+      "plan_id": "PLAN_3_VULNERABILITY_FIRST",
+      "name": "Composite Vulnerability First",
+      "strategy_type": "GREEDY_RISK",
+      "sort_keys": ["risk_score", "revenue_exposure", "entity_id"],
+      "sort_ascending": [false, false, true],
+      "description": "Greedy capacity allocation prioritizing highest composite Phase 9 risk scores."
+    },
+    {
+      "plan_id": "PLAN_4_MODE_URGENCY_FIRST",
+      "name": "Mode Urgency & Buffer First",
+      "strategy_type": "LOGISTICS_BUFFER",
+      "sort_keys": ["mode_urgency_score", "scheduled_transit_buffer_urgency", "risk_score", "entity_id"],
+      "sort_ascending": [false, false, false, true],
+      "description": "Greedy allocation prioritizing expedited shipping modes and shortest scheduled transit buffers."
+    },
+    {
+      "plan_id": "PLAN_5_KNAPSACK_HYBRID",
+      "name": "Bounded Knapsack Hybrid",
+      "strategy_type": "KNAPSACK_RATIO",
+      "sort_keys": ["knapsack_priority_value", "risk_score", "revenue_exposure", "entity_id"],
+      "sort_ascending": [false, false, false, true],
+      "description": "Greedy bounded knapsack maximizing (Risk Score * Revenue Exposure) / RCU cost ratio."
+    }
+  ],
+  "counterfactual_stress_scenarios": [
+    {
+      "scenario_id": "SCEN_0_NOMINAL",
+      "name": "Nominal Baseline",
+      "description": "Original Phase 8 disruption footprint (96 hrs port delay estimate, 100% terminal capacity drop).",
+      "duration_multiplier": 1.0,
+      "carrier_capacity_multiplier": 1.0,
+      "budget_multiplier": 1.0,
+      "demand_surge_multiplier": 1.0,
+      "effectiveness_multiplier": 1.0
+    },
+    {
+      "scenario_id": "SCEN_1_EXTENDED_DURATION",
+      "name": "Extended Disruption (+48 hrs)",
+      "description": "Port closure extended from 96 to 144 hours. Increased transit buffer exhaustion.",
+      "duration_multiplier": 1.50,
+      "carrier_capacity_multiplier": 1.0,
+      "budget_multiplier": 1.0,
+      "demand_surge_multiplier": 1.0,
+      "effectiveness_multiplier": 0.88
+    },
+    {
+      "scenario_id": "SCEN_2_CARRIER_CRUNCH",
+      "name": "Secondary Carrier Crunch (-40% Expedite)",
+      "description": "Regional air/express cargo capacity constrained by 40%, degrading expediting success rate.",
+      "duration_multiplier": 1.0,
+      "carrier_capacity_multiplier": 0.60,
+      "budget_multiplier": 1.0,
+      "demand_surge_multiplier": 1.0,
+      "effectiveness_multiplier": 0.70
+    },
+    {
+      "scenario_id": "SCEN_3_BUDGET_CONTRACTION",
+      "name": "Recovery Budget Contraction (-25% RCU)",
+      "description": "Emergency fiscal austerity reduces available recovery capacity budget by 25%.",
+      "duration_multiplier": 1.0,
+      "carrier_capacity_multiplier": 1.0,
+      "budget_multiplier": 0.75,
+      "demand_surge_multiplier": 1.0,
+      "effectiveness_multiplier": 0.85
+    },
+    {
+      "scenario_id": "SCEN_4_COMPOUND_SHOCK",
+      "name": "Compound Cascading Shock",
+      "description": "Simultaneous port delay extension (+48h), carrier bottleneck (-30%), and regional demand surge (+15%).",
+      "duration_multiplier": 1.50,
+      "carrier_capacity_multiplier": 0.70,
+      "budget_multiplier": 0.85,
+      "demand_surge_multiplier": 1.15,
+      "effectiveness_multiplier": 0.60
+    }
+  ],
+  "resilience_scoring_weights": {
+    "effectiveness_weight": 0.50,
+    "robustness_weight": 0.30,
+    "worst_case_weight": 0.20
+  },
+  "plan_recommendation_weights": {
+    "resilience_index_weight": 0.40,
+    "residual_revenue_mitigation_weight": 0.25,
+    "critical_orders_saved_weight": 0.20,
+    "rcu_cost_efficiency_weight": 0.15
+  },
+  "academic_assumptions": [
+    "Recovery actions represent simulated decision-support interventions, not physical logistics execution.",
+    "Recovery Capacity Units (RCUs) parameterize finite logistics expedite capacity, not monetary currency.",
+    "Counterfactual stress scenarios are parameterized stress tests, not probabilistic forecasts.",
+    "Canceled and fraudulent orders are permanently disqualified from recovery capacity allocation."
+  ],
+  "default_paths": {
+    "risk_assessments": "data/phase9/output/risk_assessments.csv",
+    "risk_priority_orders": "data/phase9/output/risk_priority_orders.csv",
+    "risk_summary": "data/phase9/output/risk_summary.json",
+    "output_dir": "data/phase10/output",
+    "reports_dir": "reports/phase10"
+  }
+}
+

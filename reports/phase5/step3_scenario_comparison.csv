@@ -1,0 +1,5 @@
+scenario_id,scenario_name,category,impacted_orders,impacted_order_items,revenue_exposure,profit_exposure,baseline_in_scope_delay_rate,scenario_delay_rate,delay_rate_increase_pct,newly_delayed_orders,stranded_orders,stranded_revenue,global_delay_rate,severity
+"SCENARIO_1_LATAM_PORT_CONGESTION","LATAM Port & Customs Logistics Bottleneck","Regional Maritime & Port Disruption",16414,49309,8829847.17,1069050.79,56.9,87.84,30.94,5079,5745,3090446.51,65.39,"CRITICAL"
+"SCENARIO_2_EUROPE_AIRFREIGHT_FREEZE","European Express Airfreight Disruption","Air Cargo & Express Courier Freeze",3702,10186,1965496.41,244931.11,86.71,100.0,13.29,492,1851,982748.2,58.09,"MEDIUM"
+"SCENARIO_3_PACIFIC_CONTAINER_SLOWDOWN","Pacific Asia Maritime Container Slowdown","Intermodal Container Shortage",11869,26938,4890301.05,555458.81,50.27,84.89,34.62,4109,2967,1222575.26,63.85,"CRITICAL"
+"SCENARIO_4_GLOBAL_CARRIER_CRUNCH","Global Peak Season Carrier Capacity Crunch","Systemic Carrier Overload",62897,172765,31644665.08,3806420.63,57.31,75.95,18.64,11722,12579,6328933.02,75.95,"CRITICAL"

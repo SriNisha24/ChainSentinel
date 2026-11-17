@@ -1,0 +1,52 @@
+category_id,category_name,department_name,total_orders,delayed_orders,delay_rate_pct,total_sales,total_profit
+17,"Cleats","Apparel",24551,13496,54.97,3982856.5,494636.92
+18,"Men's Footwear","Apparel",22246,12121,54.49,2598494.42,311902.82
+24,"Women's Apparel","Golf",21035,11476,54.56,2828708.5,350421.03
+46,"Indoor/Outdoor Games","Fan Shop",19298,10565,54.75,2596454.02,318451.43
+45,"Fishing","Fan Shop",17325,9516,54.93,6226935.29,756220.77
+48,"Water Sports","Fan Shop",15540,8517,54.81,2798044.18,325146.96
+43,"Camping & Hiking","Fan Shop",13729,7487,54.53,3700783.63,427455.57
+9,"Cardio Equipment","Footwear",12487,6805,54.5,3320250.7,383011.1
+29,"Shop By Sport","Golf",10984,6058,55.15,1177185.63,129813.96
+37,"Electronics","Outdoors",2029,1143,56.33,229480.66,28626.48
+40,"Accessories","Outdoors",1780,1014,56.97,119712.55,16643.52
+36,"Golf Balls","Outdoors",1475,805,54.58,69341.25,8342.67
+26,"Girls' Apparel","Golf",1201,664,55.29,136206.83,17288.57
+13,"Electronics","Footwear",1127,627,55.63,103846.6,12264.9
+35,"Golf Gloves","Outdoors",1070,602,56.26,104787.4,12975.49
+41,"Trade-In","Outdoors",974,542,55.65,61667.54,7915.37
+75,"Video Games","Discs Shop",838,455,54.3,29919.2,2717.52
+63,"Children's Clothing","Apparel",652,348,53.37,209268.38,27178.1
+76,"Women's Clothing","Apparel",650,367,56.46,126006.93,19102.85
+3,"Baseball & Softball","Fitness",632,349,55.22,84367.27,12762.13
+7,"Hockey","Fitness",614,329,53.58,43618.36,5397.43
+62,"Cameras ","Technology",592,344,58.11,240496.68,30289.8
+74,"Toys","Fan Shop",529,291,55.01,5485.68,900.71
+33,"Golf Shoes","Outdoors",524,291,55.53,96506.47,12406.07
+72,"Pet Supplies","Pet Shop",492,290,58.94,37318.3,3589.26
+66,"Crafts","Apparel",484,271,55.99,200704.87,25531.17
+68,"Garden","Outdoors",484,270,55.79,231765.46,33443.01
+67,"DVDs","Discs Shop",483,259,53.62,71319.38,6655.43
+64,"Computers","Technology",442,224,50.68,595395.0,69656.81
+32,"Golf Apparel","Outdoors",441,229,51.93,31447.44,3496.31
+44,"Hunting & Shooting","Fan Shop",440,247,56.14,50878.91,5980.0
+71,"Music","Discs Shop",434,248,57.14,101687.29,14436.32
+65,"Consumer Electronics","Technology",431,238,55.22,97937.56,13223.4
+12,"Boxing & MMA","Footwear",423,238,56.26,76286.72,8641.37
+59,"Books ","Book Shop",405,229,56.54,11303.42,883.01
+38,"Kids' Golf Clubs","Outdoors",384,205,53.39,89473.7,9045.84
+69,"Health and Beauty","Health and Beauty ",362,202,55.8,95358.11,9493.63
+73,"Sporting Goods","Fitness",357,198,55.46,105063.61,12518.61
+5,"Lacrosse","Fitness",343,206,60.06,35415.93,4364.29
+6,"Tennis & Racquet","Fitness",328,183,55.79,40077.81,5747.98
+11,"Fitness Accessories","Footwear",309,176,56.96,31751.36,5258.39
+30,"Men's Golf Clubs","Outdoors",283,135,47.7,42382.79,5517.99
+61,"CDs ","Discs Shop",271,141,52.03,2750.03,383.85
+70,"Men's Clothing","Apparel",208,113,54.33,39365.71,2006.04
+60,"Baby ","Apparel",207,109,52.66,10957.4,1525.03
+31,"Women's Golf Clubs","Outdoors",181,97,53.59,39984.39,5028.64
+2,"Soccer","Fitness",138,75,54.35,23909.95,3901.95
+10,"Strength Training","Footwear",111,64,57.66,48813.84,332.31
+16,"As Seen on  TV!","Footwear",68,39,57.35,18519.61,714.43
+4,"Basketball","Fitness",67,37,55.22,24705.33,1845.67
+34,"Golf Bags & Carts","Outdoors",61,42,68.85,9403.79,1810.07

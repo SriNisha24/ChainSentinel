@@ -1,0 +1,158 @@
+{
+  "step": 2,
+  "task": "Model 2: Supply-Chain Anomaly Detection",
+  "dataset": {
+    "total_records_analyzed": 180519,
+    "features_used": [
+      "product_price",
+      "order_item_quantity",
+      "order_item_discount",
+      "order_item_discount_rate",
+      "order_item_total",
+      "order_profit_per_order",
+      "days_for_shipment_scheduled"
+    ],
+    "excluded_leakage_features": [
+      "is_delayed",
+      "late_delivery_risk",
+      "delivery_status",
+      "days_for_shipping_real",
+      "transit_delay_days",
+      "order_to_shipping_hours",
+      "shipping_date"
+    ]
+  },
+  "method_a_statistical": {
+    "flagged_count": 8909,
+    "flagged_pct": 4.94,
+    "execution_time_sec": 0.56,
+    "thresholds": {
+      "profit_severe_loss": -166.73,
+      "profit_critical_loss": -500.0,
+      "total_high_outlier": 676.46,
+      "discount_high_outlier": 103.46
+    }
+  },
+  "method_b_multivariate": {
+    "algorithm": "K-Means Distance-to-Centroid",
+    "k_clusters": 6,
+    "features_dimension": 7,
+    "flagged_count": 3711,
+    "flagged_pct": 2.06,
+    "execution_time_sec": 45.21,
+    "quantiles": {
+      "p90": 2.486,
+      "p95": 2.9599,
+      "p98": 3.7546,
+      "p99": 4.8295,
+      "p995": 6.1624,
+      "p999": 8.2017
+    }
+  },
+  "cross_method_overlap": {
+    "both_flagged_consensus": 3312,
+    "both_flagged_pct": 1.83,
+    "method_a_only": 5597,
+    "method_b_only": 399,
+    "neither_flagged": 171211,
+    "jaccard_similarity": 0.3558
+  },
+  "ensemble_results": {
+    "total_flagged_anomalies": 9308,
+    "total_flagged_pct": 5.16,
+    "severity_distribution": {
+      "CRITICAL": {
+        "count": 1251,
+        "pct": 0.69
+      },
+      "HIGH": {
+        "count": 1726,
+        "pct": 0.96
+      },
+      "LOW": {
+        "count": 2870,
+        "pct": 1.59
+      },
+      "MEDIUM": {
+        "count": 6331,
+        "pct": 3.51
+      },
+      "NORMAL": {
+        "count": 168341,
+        "pct": 93.25
+      }
+    },
+    "category_distribution": [
+      {
+        "anomaly_category": "Normal Transaction",
+        "count": 171412,
+        "pct": 94.96
+      },
+      {
+        "anomaly_category": "Operational Margin Loss",
+        "count": 4748,
+        "pct": 2.63
+      },
+      {
+        "anomaly_category": "Compound Multi-Vector Anomaly",
+        "count": 2152,
+        "pct": 1.19
+      },
+      {
+        "anomaly_category": "Severe Profit Bleed",
+        "count": 1160,
+        "pct": 0.64
+      },
+      {
+        "anomaly_category": "Excessive Discount Inversion",
+        "count": 644,
+        "pct": 0.36
+      },
+      {
+        "anomaly_category": "Multivariate Distribution Outlier",
+        "count": 251,
+        "pct": 0.14
+      },
+      {
+        "anomaly_category": "High-Value Transaction Outlier",
+        "count": 152,
+        "pct": 0.08
+      }
+    ]
+  },
+  "temporal_stability": [
+    {
+      "year": 2015,
+      "total_records": 62650,
+      "flagged_anomalies": 3011,
+      "anomaly_rate_pct": 4.81,
+      "mean_anomaly_score": 0.1065
+    },
+    {
+      "year": 2016,
+      "total_records": 62550,
+      "flagged_anomalies": 2984,
+      "anomaly_rate_pct": 4.77,
+      "mean_anomaly_score": 0.1065
+    },
+    {
+      "year": 2017,
+      "total_records": 53196,
+      "flagged_anomalies": 3220,
+      "anomaly_rate_pct": 6.05,
+      "mean_anomaly_score": 0.114
+    },
+    {
+      "year": 2018,
+      "total_records": 2123,
+      "flagged_anomalies": 93,
+      "anomaly_rate_pct": 4.38,
+      "mean_anomaly_score": 0.112
+    }
+  ],
+  "artifacts": {
+    "local_model_path": "/opt/spark-data/phase5_models/anomaly_detection_v1",
+    "hdfs_model_path": "hdfs://namenode:8020/chainsentinel/models/phase5/anomaly_detection_v1",
+    "thresholds_file": "/opt/spark-data/phase5_models/anomaly_detection_v1/anomaly_thresholds.json"
+  }
+}

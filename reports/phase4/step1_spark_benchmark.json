@@ -1,0 +1,121 @@
+{
+  "project": "ChainSentinel",
+  "phase": 4,
+  "step": 1,
+  "title": "Spark Batch Processing Benchmark",
+  "benchmark_date": "2026-11-03 19:55:47",
+  "environment": {
+    "spark_version": "4.0.1",
+    "master": "local[4]",
+    "allocated_cores": 4,
+    "driver_memory": "2G",
+    "shuffle_partitions": 8,
+    "source_dataset_uri": "hdfs://namenode:8020/chainsentinel/processed/dataco_clean_v1",
+    "total_records": 180519,
+    "total_columns": 52,
+    "spark_init_latency_sec": 8.665,
+    "metadata_resolution_sec": 5.4544
+  },
+  "operations": [
+    {
+      "operation_id": "OP_01_SCAN_COUNT",
+      "operation_name": "Dataset Scan & Row Count",
+      "description": "Full columnar scan reading all parquet partitions from HDFS and counting rows",
+      "records_processed": 180519,
+      "cold_run_sec": 3.5372,
+      "warm_runs_sec": [
+        0.4406,
+        0.3947,
+        0.3584,
+        0.3193
+      ],
+      "warm_avg_sec": 0.3782,
+      "warm_stddev_sec": 0.0517,
+      "warm_min_sec": 0.3193,
+      "warm_max_sec": 0.4406,
+      "cold_throughput_rows_sec": 51034.89,
+      "warm_throughput_rows_sec": 477280.34,
+      "cold_to_warm_speedup": 9.35
+    },
+    {
+      "operation_id": "OP_02_SHIPPING_AGG",
+      "operation_name": "Single-Key Aggregation (Shipping Mode)",
+      "description": "GroupBy shipping_mode with count, delayed count, and avg delay percentage",
+      "records_processed": 180519,
+      "cold_run_sec": 2.4127,
+      "warm_runs_sec": [
+        0.6877,
+        0.5129,
+        0.5852,
+        0.4977
+      ],
+      "warm_avg_sec": 0.5709,
+      "warm_stddev_sec": 0.0868,
+      "warm_min_sec": 0.4977,
+      "warm_max_sec": 0.6877,
+      "cold_throughput_rows_sec": 74819.49,
+      "warm_throughput_rows_sec": 316225.95,
+      "cold_to_warm_speedup": 4.23
+    },
+    {
+      "operation_id": "OP_03_REGIONAL_FINANCIALS",
+      "operation_name": "Multi-Key Hierarchical Aggregation & Sort",
+      "description": "GroupBy market, order_region, delivery_status with sales, profit, and delay aggregates, ordered by sales descending",
+      "records_processed": 180519,
+      "cold_run_sec": 1.7179,
+      "warm_runs_sec": [
+        0.889,
+        0.6947,
+        0.6855,
+        0.7168
+      ],
+      "warm_avg_sec": 0.7465,
+      "warm_stddev_sec": 0.0959,
+      "warm_min_sec": 0.6855,
+      "warm_max_sec": 0.889,
+      "cold_throughput_rows_sec": 105080.58,
+      "warm_throughput_rows_sec": 241819.39,
+      "cold_to_warm_speedup": 2.3
+    },
+    {
+      "operation_id": "OP_04_HIGH_CARDINALITY_AGG",
+      "operation_name": "High-Cardinality GroupBy (Country & Category)",
+      "description": "GroupBy order_country (164 keys) and category_id (51 keys) with multiple numerical aggregations",
+      "records_processed": 180519,
+      "cold_run_sec": 1.3662,
+      "warm_runs_sec": [
+        0.8423,
+        0.7734,
+        0.4937,
+        0.4841
+      ],
+      "warm_avg_sec": 0.6484,
+      "warm_stddev_sec": 0.1863,
+      "warm_min_sec": 0.4841,
+      "warm_max_sec": 0.8423,
+      "cold_throughput_rows_sec": 132133.29,
+      "warm_throughput_rows_sec": 278416.01,
+      "cold_to_warm_speedup": 2.11
+    },
+    {
+      "operation_id": "OP_05_FILTER_SEGMENT_AGG",
+      "operation_name": "Filtered Projection & Segment Aggregation",
+      "description": "Filter high-discount orders (>10%), project customer_segment and department_name, calculate aggregated financial metrics",
+      "records_processed": 180519,
+      "cold_run_sec": 1.0409,
+      "warm_runs_sec": [
+        0.5986,
+        0.4245,
+        0.4168,
+        0.4127
+      ],
+      "warm_avg_sec": 0.4632,
+      "warm_stddev_sec": 0.0904,
+      "warm_min_sec": 0.4127,
+      "warm_max_sec": 0.5986,
+      "cold_throughput_rows_sec": 173425.45,
+      "warm_throughput_rows_sec": 389758.53,
+      "cold_to_warm_speedup": 2.25
+    }
+  ]
+}

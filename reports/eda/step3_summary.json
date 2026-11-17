@@ -1,0 +1,400 @@
+{
+  "step": 3,
+  "title": "Delivery Delay and Shipping Mode Analysis",
+  "total_records": 180519,
+  "overall_delayed_count": 98977,
+  "overall_delay_rate_pct": 54.83,
+  "delivery_status_distribution": [
+    {
+      "delivery_status": "Late delivery",
+      "count": 98977,
+      "percentage": 54.83,
+      "delayed_count": 98977,
+      "delayed_percentage": 100.0,
+      "canceled_count": 0
+    },
+    {
+      "delivery_status": "Advance shipping",
+      "count": 41592,
+      "percentage": 23.04,
+      "delayed_count": 0,
+      "delayed_percentage": 0.0,
+      "canceled_count": 0
+    },
+    {
+      "delivery_status": "Shipping on time",
+      "count": 32196,
+      "percentage": 17.84,
+      "delayed_count": 0,
+      "delayed_percentage": 0.0,
+      "canceled_count": 0
+    },
+    {
+      "delivery_status": "Shipping canceled",
+      "count": 7754,
+      "percentage": 4.3,
+      "delayed_count": 0,
+      "delayed_percentage": 0.0,
+      "canceled_count": 7754
+    }
+  ],
+  "shipping_mode_delays": [
+    {
+      "shipping_mode": "Standard Class",
+      "total_orders": 107752,
+      "delayed_orders": 41023,
+      "delay_rate_pct": 38.07,
+      "avg_scheduled_days": 4.0,
+      "avg_real_days": 4.0,
+      "avg_delay_days": 0.0,
+      "avg_order_to_ship_hours": 95.9,
+      "min_real_days": 2,
+      "max_real_days": 6
+    },
+    {
+      "shipping_mode": "Second Class",
+      "total_orders": 35216,
+      "delayed_orders": 26987,
+      "delay_rate_pct": 76.63,
+      "avg_scheduled_days": 2.0,
+      "avg_real_days": 3.99,
+      "avg_delay_days": 1.99,
+      "avg_order_to_ship_hours": 95.78,
+      "min_real_days": 2,
+      "max_real_days": 6
+    },
+    {
+      "shipping_mode": "First Class",
+      "total_orders": 27814,
+      "delayed_orders": 26513,
+      "delay_rate_pct": 95.32,
+      "avg_scheduled_days": 1.0,
+      "avg_real_days": 2.0,
+      "avg_delay_days": 1.0,
+      "avg_order_to_ship_hours": 48.0,
+      "min_real_days": 2,
+      "max_real_days": 2
+    },
+    {
+      "shipping_mode": "Same Day",
+      "total_orders": 9737,
+      "delayed_orders": 4454,
+      "delay_rate_pct": 45.74,
+      "avg_scheduled_days": 0.0,
+      "avg_real_days": 0.48,
+      "avg_delay_days": 0.48,
+      "avg_order_to_ship_hours": 12.0,
+      "min_real_days": 0,
+      "max_real_days": 1
+    }
+  ],
+  "scheduled_vs_actual_crosstab": [
+    {
+      "days_for_shipment_scheduled_days_for_shipping_real": "0",
+      "0": 5080,
+      "1": 4657,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0
+    },
+    {
+      "days_for_shipment_scheduled_days_for_shipping_real": "1",
+      "0": 0,
+      "1": 0,
+      "2": 27814,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0
+    },
+    {
+      "days_for_shipment_scheduled_days_for_shipping_real": "2",
+      "0": 0,
+      "1": 0,
+      "2": 7138,
+      "3": 7065,
+      "4": 6978,
+      "5": 7052,
+      "6": 6983
+    },
+    {
+      "days_for_shipment_scheduled_days_for_shipping_real": "4",
+      "0": 0,
+      "1": 0,
+      "2": 21666,
+      "3": 21700,
+      "4": 21535,
+      "5": 21111,
+      "6": 21740
+    }
+  ],
+  "canceled_shipments_analysis": {
+    "canceled_total": 7754,
+    "canceled_marked_delayed": 0,
+    "canceled_exceeded_sla_count": 4423,
+    "canceled_avg_real_days": 3.48
+  },
+  "monthly_delay_trends": [
+    {
+      "order_year": 2015,
+      "order_month": 1,
+      "total_orders": 5322,
+      "delayed_orders": 2880,
+      "delay_rate_pct": 54.11
+    },
+    {
+      "order_year": 2015,
+      "order_month": 2,
+      "total_orders": 4729,
+      "delayed_orders": 2594,
+      "delay_rate_pct": 54.85
+    },
+    {
+      "order_year": 2015,
+      "order_month": 3,
+      "total_orders": 5362,
+      "delayed_orders": 2936,
+      "delay_rate_pct": 54.76
+    },
+    {
+      "order_year": 2015,
+      "order_month": 4,
+      "total_orders": 5126,
+      "delayed_orders": 2760,
+      "delay_rate_pct": 53.84
+    },
+    {
+      "order_year": 2015,
+      "order_month": 5,
+      "total_orders": 5357,
+      "delayed_orders": 2951,
+      "delay_rate_pct": 55.09
+    },
+    {
+      "order_year": 2015,
+      "order_month": 6,
+      "total_orders": 5134,
+      "delayed_orders": 2778,
+      "delay_rate_pct": 54.11
+    },
+    {
+      "order_year": 2015,
+      "order_month": 7,
+      "total_orders": 5299,
+      "delayed_orders": 2939,
+      "delay_rate_pct": 55.46
+    },
+    {
+      "order_year": 2015,
+      "order_month": 8,
+      "total_orders": 5273,
+      "delayed_orders": 2936,
+      "delay_rate_pct": 55.68
+    },
+    {
+      "order_year": 2015,
+      "order_month": 9,
+      "total_orders": 5140,
+      "delayed_orders": 2914,
+      "delay_rate_pct": 56.69
+    },
+    {
+      "order_year": 2015,
+      "order_month": 10,
+      "total_orders": 5302,
+      "delayed_orders": 2906,
+      "delay_rate_pct": 54.81
+    },
+    {
+      "order_year": 2015,
+      "order_month": 11,
+      "total_orders": 5235,
+      "delayed_orders": 2841,
+      "delay_rate_pct": 54.27
+    },
+    {
+      "order_year": 2015,
+      "order_month": 12,
+      "total_orders": 5371,
+      "delayed_orders": 2937,
+      "delay_rate_pct": 54.68
+    },
+    {
+      "order_year": 2016,
+      "order_month": 1,
+      "total_orders": 5317,
+      "delayed_orders": 2955,
+      "delay_rate_pct": 55.58
+    },
+    {
+      "order_year": 2016,
+      "order_month": 2,
+      "total_orders": 4894,
+      "delayed_orders": 2650,
+      "delay_rate_pct": 54.15
+    },
+    {
+      "order_year": 2016,
+      "order_month": 3,
+      "total_orders": 5210,
+      "delayed_orders": 2905,
+      "delay_rate_pct": 55.76
+    },
+    {
+      "order_year": 2016,
+      "order_month": 4,
+      "total_orders": 5097,
+      "delayed_orders": 2815,
+      "delay_rate_pct": 55.23
+    },
+    {
+      "order_year": 2016,
+      "order_month": 5,
+      "total_orders": 5302,
+      "delayed_orders": 2951,
+      "delay_rate_pct": 55.66
+    },
+    {
+      "order_year": 2016,
+      "order_month": 6,
+      "total_orders": 5054,
+      "delayed_orders": 2873,
+      "delay_rate_pct": 56.85
+    },
+    {
+      "order_year": 2016,
+      "order_month": 7,
+      "total_orders": 5305,
+      "delayed_orders": 2755,
+      "delay_rate_pct": 51.93
+    },
+    {
+      "order_year": 2016,
+      "order_month": 8,
+      "total_orders": 5334,
+      "delayed_orders": 2948,
+      "delay_rate_pct": 55.27
+    },
+    {
+      "order_year": 2016,
+      "order_month": 9,
+      "total_orders": 5160,
+      "delayed_orders": 2837,
+      "delay_rate_pct": 54.98
+    },
+    {
+      "order_year": 2016,
+      "order_month": 10,
+      "total_orders": 5398,
+      "delayed_orders": 2957,
+      "delay_rate_pct": 54.78
+    },
+    {
+      "order_year": 2016,
+      "order_month": 11,
+      "total_orders": 5210,
+      "delayed_orders": 2846,
+      "delay_rate_pct": 54.63
+    },
+    {
+      "order_year": 2016,
+      "order_month": 12,
+      "total_orders": 5269,
+      "delayed_orders": 2954,
+      "delay_rate_pct": 56.06
+    },
+    {
+      "order_year": 2017,
+      "order_month": 1,
+      "total_orders": 5217,
+      "delayed_orders": 2797,
+      "delay_rate_pct": 53.61
+    },
+    {
+      "order_year": 2017,
+      "order_month": 2,
+      "total_orders": 4906,
+      "delayed_orders": 2682,
+      "delay_rate_pct": 54.67
+    },
+    {
+      "order_year": 2017,
+      "order_month": 3,
+      "total_orders": 5347,
+      "delayed_orders": 2955,
+      "delay_rate_pct": 55.26
+    },
+    {
+      "order_year": 2017,
+      "order_month": 4,
+      "total_orders": 5212,
+      "delayed_orders": 2803,
+      "delay_rate_pct": 53.78
+    },
+    {
+      "order_year": 2017,
+      "order_month": 5,
+      "total_orders": 5317,
+      "delayed_orders": 2843,
+      "delay_rate_pct": 53.47
+    },
+    {
+      "order_year": 2017,
+      "order_month": 6,
+      "total_orders": 4951,
+      "delayed_orders": 2649,
+      "delay_rate_pct": 53.5
+    },
+    {
+      "order_year": 2017,
+      "order_month": 7,
+      "total_orders": 5318,
+      "delayed_orders": 2913,
+      "delay_rate_pct": 54.78
+    },
+    {
+      "order_year": 2017,
+      "order_month": 8,
+      "total_orders": 5305,
+      "delayed_orders": 2994,
+      "delay_rate_pct": 56.44
+    },
+    {
+      "order_year": 2017,
+      "order_month": 9,
+      "total_orders": 5189,
+      "delayed_orders": 2814,
+      "delay_rate_pct": 54.23
+    },
+    {
+      "order_year": 2017,
+      "order_month": 10,
+      "total_orders": 2255,
+      "delayed_orders": 1210,
+      "delay_rate_pct": 53.66
+    },
+    {
+      "order_year": 2017,
+      "order_month": 11,
+      "total_orders": 2055,
+      "delayed_orders": 1132,
+      "delay_rate_pct": 55.09
+    },
+    {
+      "order_year": 2017,
+      "order_month": 12,
+      "total_orders": 2124,
+      "delayed_orders": 1172,
+      "delay_rate_pct": 55.18
+    },
+    {
+      "order_year": 2018,
+      "order_month": 1,
+      "total_orders": 2123,
+      "delayed_orders": 1195,
+      "delay_rate_pct": 56.29
+    }
+  ]
+}

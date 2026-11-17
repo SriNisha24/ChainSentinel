@@ -1,0 +1,5 @@
+delivery_status,total_orders,percentage,delayed_orders,delay_rate_pct,canceled_orders
+"Late delivery",98977,54.83,98977,100.00,0
+"Advance shipping",41592,23.04,0,0.00,0
+"Shipping on time",32196,17.84,0,0.00,0
+"Shipping canceled",7754,4.30,0,0.00,7754

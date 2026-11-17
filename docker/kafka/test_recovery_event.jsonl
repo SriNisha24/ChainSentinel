@@ -1,0 +1,2 @@
+{"event_id": "DISR-2026-004", "event_type": "PORT_CONTAINER_SWELL", "location": "USMCA", "timestamp": "2026-11-04T11:00:00Z", "impact_radius_km": 85.0, "affected_mode": "Standard Class", "source_confidence": 0.94, "severity": "HIGH", "duration_hours": 30, "description": "Border port container processing delays"}
+

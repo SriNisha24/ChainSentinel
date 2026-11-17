@@ -1,0 +1,4 @@
+task,rows_returned,results_equivalent,sql_cold_sec,sql_warm_avg_sec,df_cold_sec,df_warm_avg_sec,sql_to_df_latency_ratio
+"Single-Key Aggregation (Shipping Mode)",4,True,0.5915,0.3945,0.4501,0.4841,0.815
+"Multi-Key Regional Financials & Ordering",23,True,0.7976,0.4715,0.4423,0.4567,1.032
+"Filtered Aggregation (High Discount Items)",33,True,0.8322,0.347,0.361,0.3588,0.967

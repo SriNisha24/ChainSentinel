@@ -1,0 +1,569 @@
+{
+  "dataset_rows": 180519,
+  "distinct_orders": 65752,
+  "distinct_customers": 20652,
+  "ratio_items_per_order": 2.745,
+  "min_order_date": "2015-01-01",
+  "max_order_date": "2018-01-31",
+  "total_calendar_days": 1127,
+  "active_days_with_orders": 1127,
+  "missing_calendar_days": 0,
+  "daily_orders": {
+    "mean": 58.34,
+    "min": 47,
+    "max": 69
+  },
+  "weekly_orders": {
+    "total_weeks": 163,
+    "mean": 403.39,
+    "min": 171,
+    "max": 527
+  },
+  "day_of_week_distribution": [
+    {
+      "day_name": "Sunday",
+      "day_of_week": 1,
+      "distinct_orders": 9367,
+      "total_items": 25946,
+      "avg_item_value": 183.48
+    },
+    {
+      "day_name": "Monday",
+      "day_of_week": 2,
+      "distinct_orders": 9368,
+      "total_items": 25786,
+      "avg_item_value": 183.87
+    },
+    {
+      "day_name": "Tuesday",
+      "day_of_week": 3,
+      "distinct_orders": 9395,
+      "total_items": 25622,
+      "avg_item_value": 182.33
+    },
+    {
+      "day_name": "Wednesday",
+      "day_of_week": 4,
+      "distinct_orders": 9397,
+      "total_items": 25587,
+      "avg_item_value": 178.58
+    },
+    {
+      "day_name": "Thursday",
+      "day_of_week": 5,
+      "distinct_orders": 9395,
+      "total_items": 25752,
+      "avg_item_value": 182.79
+    },
+    {
+      "day_name": "Friday",
+      "day_of_week": 6,
+      "distinct_orders": 9400,
+      "total_items": 25925,
+      "avg_item_value": 183.98
+    },
+    {
+      "day_name": "Saturday",
+      "day_of_week": 7,
+      "distinct_orders": 9430,
+      "total_items": 25901,
+      "avg_item_value": 186.67
+    }
+  ],
+  "monthly_timeline": [
+    {
+      "order_month": "2015-01",
+      "distinct_orders": 1787,
+      "total_items": 5322,
+      "total_revenue": 945382.16,
+      "total_profit": 111660.74,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2015-02",
+      "distinct_orders": 1585,
+      "total_items": 4729,
+      "total_revenue": 833012.43,
+      "total_profit": 99140.66,
+      "days_in_month": 28
+    },
+    {
+      "order_month": "2015-03",
+      "distinct_orders": 1781,
+      "total_items": 5362,
+      "total_revenue": 944050.11,
+      "total_profit": 113778.21,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2015-04",
+      "distinct_orders": 1710,
+      "total_items": 5126,
+      "total_revenue": 912004.4,
+      "total_profit": 108083.68,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2015-05",
+      "distinct_orders": 1776,
+      "total_items": 5357,
+      "total_revenue": 943939.77,
+      "total_profit": 112147.9,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2015-06",
+      "distinct_orders": 1725,
+      "total_items": 5134,
+      "total_revenue": 920242.06,
+      "total_profit": 110147.16,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2015-07",
+      "distinct_orders": 1763,
+      "total_items": 5299,
+      "total_revenue": 932936.79,
+      "total_profit": 115624.06,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2015-08",
+      "distinct_orders": 1762,
+      "total_items": 5273,
+      "total_revenue": 925192.87,
+      "total_profit": 117979.77,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2015-09",
+      "distinct_orders": 1706,
+      "total_items": 5140,
+      "total_revenue": 914522.37,
+      "total_profit": 113467.94,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2015-10",
+      "distinct_orders": 1775,
+      "total_items": 5302,
+      "total_revenue": 943131.1,
+      "total_profit": 101757.87,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2015-11",
+      "distinct_orders": 1729,
+      "total_items": 5235,
+      "total_revenue": 924602.57,
+      "total_profit": 104427.36,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2015-12",
+      "distinct_orders": 1805,
+      "total_items": 5371,
+      "total_revenue": 950526.92,
+      "total_profit": 110641.55,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2016-01",
+      "distinct_orders": 1772,
+      "total_items": 5317,
+      "total_revenue": 940283.63,
+      "total_profit": 106780.95,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2016-02",
+      "distinct_orders": 1650,
+      "total_items": 4894,
+      "total_revenue": 870116.75,
+      "total_profit": 86809.49,
+      "days_in_month": 29
+    },
+    {
+      "order_month": "2016-03",
+      "distinct_orders": 1764,
+      "total_items": 5210,
+      "total_revenue": 921487.73,
+      "total_profit": 101259.99,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2016-04",
+      "distinct_orders": 1706,
+      "total_items": 5097,
+      "total_revenue": 900492.92,
+      "total_profit": 114976.62,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2016-05",
+      "distinct_orders": 1763,
+      "total_items": 5302,
+      "total_revenue": 924978.22,
+      "total_profit": 110716.12,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2016-06",
+      "distinct_orders": 1690,
+      "total_items": 5054,
+      "total_revenue": 901448.01,
+      "total_profit": 104196.07,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2016-07",
+      "distinct_orders": 1758,
+      "total_items": 5305,
+      "total_revenue": 939216.4,
+      "total_profit": 119941.72,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2016-08",
+      "distinct_orders": 1766,
+      "total_items": 5334,
+      "total_revenue": 942408.94,
+      "total_profit": 110729.54,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2016-09",
+      "distinct_orders": 1730,
+      "total_items": 5160,
+      "total_revenue": 900371.63,
+      "total_profit": 123384.71,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2016-10",
+      "distinct_orders": 1776,
+      "total_items": 5398,
+      "total_revenue": 941882.28,
+      "total_profit": 116781.97,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2016-11",
+      "distinct_orders": 1721,
+      "total_items": 5210,
+      "total_revenue": 941197.36,
+      "total_profit": 109539.2,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2016-12",
+      "distinct_orders": 1763,
+      "total_items": 5269,
+      "total_revenue": 932112.89,
+      "total_profit": 105002.69,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2017-01",
+      "distinct_orders": 1745,
+      "total_items": 5217,
+      "total_revenue": 925472.62,
+      "total_profit": 114843.85,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2017-02",
+      "distinct_orders": 1614,
+      "total_items": 4906,
+      "total_revenue": 891924.29,
+      "total_profit": 115111.07,
+      "days_in_month": 28
+    },
+    {
+      "order_month": "2017-03",
+      "distinct_orders": 1782,
+      "total_items": 5347,
+      "total_revenue": 942290.43,
+      "total_profit": 118688.9,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2017-04",
+      "distinct_orders": 1739,
+      "total_items": 5212,
+      "total_revenue": 932318.2,
+      "total_profit": 115961.06,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2017-05",
+      "distinct_orders": 1763,
+      "total_items": 5317,
+      "total_revenue": 993199.05,
+      "total_profit": 115014.64,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2017-06",
+      "distinct_orders": 1676,
+      "total_items": 4951,
+      "total_revenue": 927445.97,
+      "total_profit": 110399.29,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2017-07",
+      "distinct_orders": 1776,
+      "total_items": 5318,
+      "total_revenue": 992423.43,
+      "total_profit": 113026.7,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2017-08",
+      "distinct_orders": 1768,
+      "total_items": 5305,
+      "total_revenue": 996507.88,
+      "total_profit": 131501.16,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2017-09",
+      "distinct_orders": 1723,
+      "total_items": 5189,
+      "total_revenue": 1027111.73,
+      "total_profit": 122462.39,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2017-10",
+      "distinct_orders": 2101,
+      "total_items": 2255,
+      "total_revenue": 966081.41,
+      "total_profit": 113447.17,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2017-11",
+      "distinct_orders": 2055,
+      "total_items": 2055,
+      "total_revenue": 563393.47,
+      "total_profit": 67791.25,
+      "days_in_month": 30
+    },
+    {
+      "order_month": "2017-12",
+      "distinct_orders": 2124,
+      "total_items": 2124,
+      "total_revenue": 452741.53,
+      "total_profit": 65837.63,
+      "days_in_month": 31
+    },
+    {
+      "order_month": "2018-01",
+      "distinct_orders": 2123,
+      "total_items": 2123,
+      "total_revenue": 297952.05,
+      "total_profit": 33841.89,
+      "days_in_month": 31
+    }
+  ],
+  "market_distribution": [
+    {
+      "market": "Europe",
+      "distinct_orders": 18561,
+      "total_items": 50252,
+      "total_revenue": 9769198.32
+    },
+    {
+      "market": "Pacific Asia",
+      "distinct_orders": 17577,
+      "total_items": 41260,
+      "total_revenue": 7434262.65
+    },
+    {
+      "market": "LATAM",
+      "distinct_orders": 17181,
+      "total_items": 51594,
+      "total_revenue": 9235762.09
+    },
+    {
+      "market": "USCA",
+      "distinct_orders": 8579,
+      "total_items": 25799,
+      "total_revenue": 4553499.92
+    },
+    {
+      "market": "Africa",
+      "distinct_orders": 3854,
+      "total_items": 11614,
+      "total_revenue": 2061679.39
+    }
+  ],
+  "region_distribution": [
+    {
+      "order_region": "Western Europe",
+      "distinct_orders": 10010,
+      "total_items": 27109,
+      "total_revenue": 5296002.89
+    },
+    {
+      "order_region": "Central America",
+      "distinct_orders": 9396,
+      "total_items": 28341,
+      "total_revenue": 5093849.72
+    },
+    {
+      "order_region": "South America",
+      "distinct_orders": 4979,
+      "total_items": 14935,
+      "total_revenue": 2660243.69
+    },
+    {
+      "order_region": "Oceania",
+      "distinct_orders": 4362,
+      "total_items": 10148,
+      "total_revenue": 1809996.55
+    },
+    {
+      "order_region": "Southeast Asia",
+      "distinct_orders": 4356,
+      "total_items": 9539,
+      "total_revenue": 1738553.44
+    },
+    {
+      "order_region": "Northern Europe",
+      "distinct_orders": 3716,
+      "total_items": 9792,
+      "total_revenue": 1939362.43
+    },
+    {
+      "order_region": "Southern Europe",
+      "distinct_orders": 3543,
+      "total_items": 9431,
+      "total_revenue": 1837525.82
+    },
+    {
+      "order_region": "South Asia",
+      "distinct_orders": 3335,
+      "total_items": 7731,
+      "total_revenue": 1397364.57
+    },
+    {
+      "order_region": "Eastern Asia",
+      "distinct_orders": 3318,
+      "total_items": 7280,
+      "total_revenue": 1334313.41
+    },
+    {
+      "order_region": "Caribbean",
+      "distinct_orders": 2806,
+      "total_items": 8318,
+      "total_revenue": 1481668.69
+    },
+    {
+      "order_region": "West of USA ",
+      "distinct_orders": 2667,
+      "total_items": 7993,
+      "total_revenue": 1412253.6
+    },
+    {
+      "order_region": "East of USA",
+      "distinct_orders": 2323,
+      "total_items": 6915,
+      "total_revenue": 1231955.13
+    },
+    {
+      "order_region": "West Asia",
+      "distinct_orders": 2022,
+      "total_items": 6009,
+      "total_revenue": 1056080.99
+    },
+    {
+      "order_region": "US Center ",
+      "distinct_orders": 1935,
+      "total_items": 5887,
+      "total_revenue": 1034129.43
+    },
+    {
+      "order_region": "South of  USA ",
+      "distinct_orders": 1345,
+      "total_items": 4045,
+      "total_revenue": 706904.34
+    },
+    {
+      "order_region": "Eastern Europe",
+      "distinct_orders": 1292,
+      "total_items": 3920,
+      "total_revenue": 696307.19
+    },
+    {
+      "order_region": "West Africa",
+      "distinct_orders": 1223,
+      "total_items": 3696,
+      "total_revenue": 654168.03
+    },
+    {
+      "order_region": "North Africa",
+      "distinct_orders": 1064,
+      "total_items": 3232,
+      "total_revenue": 572241.97
+    },
+    {
+      "order_region": "East Africa",
+      "distinct_orders": 613,
+      "total_items": 1852,
+      "total_revenue": 338054.31
+    },
+    {
+      "order_region": "Central Africa",
+      "distinct_orders": 556,
+      "total_items": 1677,
+      "total_revenue": 292912.56
+    },
+    {
+      "order_region": "Southern Africa",
+      "distinct_orders": 398,
+      "total_items": 1157,
+      "total_revenue": 204302.52
+    },
+    {
+      "order_region": "Canada",
+      "distinct_orders": 309,
+      "total_items": 959,
+      "total_revenue": 168257.42
+    },
+    {
+      "order_region": "Central Asia",
+      "distinct_orders": 184,
+      "total_items": 553,
+      "total_revenue": 97953.69
+    }
+  ],
+  "shipping_mode_distribution": [
+    {
+      "shipping_mode": "Standard Class",
+      "distinct_orders": 39324,
+      "total_items": 107752,
+      "total_revenue": 19792221.24
+    },
+    {
+      "shipping_mode": "Second Class",
+      "distinct_orders": 12778,
+      "total_items": 35216,
+      "total_revenue": 6416528.54
+    },
+    {
+      "shipping_mode": "First Class",
+      "distinct_orders": 10079,
+      "total_items": 27814,
+      "total_revenue": 5100451.07
+    },
+    {
+      "shipping_mode": "Same Day",
+      "distinct_orders": 3571,
+      "total_items": 9737,
+      "total_revenue": 1745201.53
+    }
+  ]
+}

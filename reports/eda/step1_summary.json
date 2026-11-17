@@ -1,0 +1,582 @@
+{
+  "step": 1,
+  "title": "Dataset Overview and Statistical Summary",
+  "total_records": 180519,
+  "total_columns": 52,
+  "columns": [
+    "order_item_id",
+    "order_id",
+    "customer_id",
+    "department_id",
+    "category_id",
+    "product_card_id",
+    "order_date",
+    "shipping_date",
+    "payment_type",
+    "shipping_mode",
+    "days_for_shipment_scheduled",
+    "days_for_shipping_real",
+    "delivery_status",
+    "late_delivery_risk",
+    "order_status",
+    "customer_city",
+    "customer_state",
+    "customer_country",
+    "customer_zipcode",
+    "customer_street",
+    "customer_fname",
+    "customer_lname",
+    "customer_segment",
+    "latitude",
+    "longitude",
+    "market",
+    "order_region",
+    "order_country",
+    "order_state",
+    "order_city",
+    "order_zipcode",
+    "department_name",
+    "category_name",
+    "product_name",
+    "product_price",
+    "product_status",
+    "product_image",
+    "order_item_quantity",
+    "sales",
+    "order_item_discount",
+    "order_item_discount_rate",
+    "order_item_total",
+    "order_profit_per_order",
+    "order_item_profit_ratio",
+    "transit_delay_days",
+    "is_delayed",
+    "is_canceled",
+    "order_year",
+    "order_month",
+    "order_day_of_week",
+    "order_hour",
+    "order_to_shipping_hours"
+  ],
+  "schema": [
+    {
+      "name": "order_item_id",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "order_id",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "customer_id",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "department_id",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "category_id",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "product_card_id",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "order_date",
+      "type": "TimestampType()",
+      "nullable": true
+    },
+    {
+      "name": "shipping_date",
+      "type": "TimestampType()",
+      "nullable": true
+    },
+    {
+      "name": "payment_type",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "shipping_mode",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "days_for_shipment_scheduled",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "days_for_shipping_real",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "delivery_status",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "late_delivery_risk",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "order_status",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "customer_city",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "customer_state",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "customer_country",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "customer_zipcode",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "customer_street",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "customer_fname",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "customer_lname",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "customer_segment",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "latitude",
+      "type": "DoubleType()",
+      "nullable": true
+    },
+    {
+      "name": "longitude",
+      "type": "DoubleType()",
+      "nullable": true
+    },
+    {
+      "name": "market",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "order_region",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "order_country",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "order_state",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "order_city",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "order_zipcode",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "department_name",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "category_name",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "product_name",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "product_price",
+      "type": "DoubleType()",
+      "nullable": true
+    },
+    {
+      "name": "product_status",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "product_image",
+      "type": "StringType()",
+      "nullable": true
+    },
+    {
+      "name": "order_item_quantity",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "sales",
+      "type": "DoubleType()",
+      "nullable": true
+    },
+    {
+      "name": "order_item_discount",
+      "type": "DoubleType()",
+      "nullable": true
+    },
+    {
+      "name": "order_item_discount_rate",
+      "type": "DoubleType()",
+      "nullable": true
+    },
+    {
+      "name": "order_item_total",
+      "type": "DoubleType()",
+      "nullable": true
+    },
+    {
+      "name": "order_profit_per_order",
+      "type": "DoubleType()",
+      "nullable": true
+    },
+    {
+      "name": "order_item_profit_ratio",
+      "type": "DoubleType()",
+      "nullable": true
+    },
+    {
+      "name": "transit_delay_days",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "is_delayed",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "is_canceled",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "order_year",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "order_month",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "order_day_of_week",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "order_hour",
+      "type": "IntegerType()",
+      "nullable": true
+    },
+    {
+      "name": "order_to_shipping_hours",
+      "type": "DoubleType()",
+      "nullable": true
+    }
+  ],
+  "unique_identifier_counts": {
+    "order_item_id": 180519,
+    "order_id": 65752,
+    "customer_id": 20652,
+    "department_id": 11,
+    "category_id": 51,
+    "product_card_id": 118
+  },
+  "temporal_summary": {
+    "min_order_date": "2015-01-01 00:00:00",
+    "max_order_date": "2018-01-31 23:38:00",
+    "min_shipping_date": "2015-01-03 00:00:00",
+    "max_shipping_date": "2018-02-06 22:14:00"
+  },
+  "numerical_statistics": [
+    {
+      "column": "days_for_shipment_scheduled",
+      "count": 180519,
+      "mean": 2.9318,
+      "stddev": 1.3744,
+      "min": 0.0,
+      "p25": 2.0,
+      "median": 4.0,
+      "p75": 4.0,
+      "max": 4.0
+    },
+    {
+      "column": "days_for_shipping_real",
+      "count": 180519,
+      "mean": 3.4977,
+      "stddev": 1.6237,
+      "min": 0.0,
+      "p25": 2.0,
+      "median": 3.0,
+      "p75": 5.0,
+      "max": 6.0
+    },
+    {
+      "column": "transit_delay_days",
+      "count": 180519,
+      "mean": 0.5658,
+      "stddev": 1.491,
+      "min": -2.0,
+      "p25": 0.0,
+      "median": 1.0,
+      "p75": 1.0,
+      "max": 4.0
+    },
+    {
+      "column": "order_item_quantity",
+      "count": 180519,
+      "mean": 2.1276,
+      "stddev": 1.4535,
+      "min": 1.0,
+      "p25": 1.0,
+      "median": 1.0,
+      "p75": 3.0,
+      "max": 5.0
+    },
+    {
+      "column": "product_price",
+      "count": 180519,
+      "mean": 141.2325,
+      "stddev": 139.7325,
+      "min": 9.99,
+      "p25": 50.0,
+      "median": 59.99,
+      "p75": 199.99,
+      "max": 1999.99
+    },
+    {
+      "column": "sales",
+      "count": 180519,
+      "mean": 203.7721,
+      "stddev": 132.2731,
+      "min": 9.99,
+      "p25": 119.98,
+      "median": 199.92,
+      "p75": 299.95,
+      "max": 1999.99
+    },
+    {
+      "column": "order_item_discount",
+      "count": 180519,
+      "mean": 20.6647,
+      "stddev": 21.8009,
+      "min": 0.0,
+      "p25": 5.4,
+      "median": 14.0,
+      "p75": 29.99,
+      "max": 500.0
+    },
+    {
+      "column": "order_item_discount_rate",
+      "count": 180519,
+      "mean": 0.1017,
+      "stddev": 0.0704,
+      "min": 0.0,
+      "p25": 0.04,
+      "median": 0.09,
+      "p75": 0.16,
+      "max": 0.25
+    },
+    {
+      "column": "order_item_total",
+      "count": 180519,
+      "mean": 183.1076,
+      "stddev": 120.0437,
+      "min": 7.49,
+      "p25": 104.38,
+      "median": 163.99,
+      "p75": 247.4,
+      "max": 1939.99
+    },
+    {
+      "column": "order_profit_per_order",
+      "count": 180519,
+      "mean": 21.975,
+      "stddev": 104.4335,
+      "min": -4274.98,
+      "p25": 7.0,
+      "median": 31.52,
+      "p75": 64.8,
+      "max": 911.8
+    },
+    {
+      "column": "order_item_profit_ratio",
+      "count": 180519,
+      "mean": 0.1206,
+      "stddev": 0.4668,
+      "min": -2.75,
+      "p25": 0.08,
+      "median": 0.27,
+      "p75": 0.36,
+      "max": 0.5
+    },
+    {
+      "column": "order_to_shipping_hours",
+      "count": 180519,
+      "mean": 83.9718,
+      "stddev": 38.8174,
+      "min": 12.0,
+      "p25": 48.0,
+      "median": 72.0,
+      "p75": 120.0,
+      "max": 144.0
+    }
+  ],
+  "categorical_distributions": {
+    "payment_type": [
+      {
+        "category": "DEBIT",
+        "count": 69295,
+        "percentage": 38.39
+      },
+      {
+        "category": "TRANSFER",
+        "count": 49883,
+        "percentage": 27.63
+      },
+      {
+        "category": "PAYMENT",
+        "count": 41725,
+        "percentage": 23.11
+      },
+      {
+        "category": "CASH",
+        "count": 19616,
+        "percentage": 10.87
+      }
+    ],
+    "shipping_mode": [
+      {
+        "category": "Standard Class",
+        "count": 107752,
+        "percentage": 59.69
+      },
+      {
+        "category": "Second Class",
+        "count": 35216,
+        "percentage": 19.51
+      },
+      {
+        "category": "First Class",
+        "count": 27814,
+        "percentage": 15.41
+      },
+      {
+        "category": "Same Day",
+        "count": 9737,
+        "percentage": 5.39
+      }
+    ],
+    "delivery_status": [
+      {
+        "category": "Late delivery",
+        "count": 98977,
+        "percentage": 54.83
+      },
+      {
+        "category": "Advance shipping",
+        "count": 41592,
+        "percentage": 23.04
+      },
+      {
+        "category": "Shipping on time",
+        "count": 32196,
+        "percentage": 17.84
+      },
+      {
+        "category": "Shipping canceled",
+        "count": 7754,
+        "percentage": 4.3
+      }
+    ],
+    "customer_segment": [
+      {
+        "category": "Consumer",
+        "count": 93504,
+        "percentage": 51.8
+      },
+      {
+        "category": "Corporate",
+        "count": 54789,
+        "percentage": 30.35
+      },
+      {
+        "category": "Home Office",
+        "count": 32226,
+        "percentage": 17.85
+      }
+    ],
+    "market": [
+      {
+        "category": "LATAM",
+        "count": 51594,
+        "percentage": 28.58
+      },
+      {
+        "category": "Europe",
+        "count": 50252,
+        "percentage": 27.84
+      },
+      {
+        "category": "Pacific Asia",
+        "count": 41260,
+        "percentage": 22.86
+      },
+      {
+        "category": "USCA",
+        "count": 25799,
+        "percentage": 14.29
+      },
+      {
+        "category": "Africa",
+        "count": 11614,
+        "percentage": 6.43
+      }
+    ]
+  }
+}

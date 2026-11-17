@@ -1,0 +1,52 @@
+python-env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+
+# Python environments and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Node dependencies and builds
+node_modules/
+dist/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Generated runtime data
+data/alerts/
+data/analysis_runs/
+data/approval_records/
+data/audit/
+data/clean_parquet/
+data/eda_output/
+data/integration_runs/
+data/phase*/
+data/phase*_output/
+data/phase*_models/
+
+# Generated model artifacts
+models/
+
+# Temporary files
+**/scratch/
+
+# Generated data and runtime files
+data/
+models/
+brain/**/scratch/
+
+# Keep project documentation and synthetic dataset documentation
+!data/synthetic_datasets/
+!data/synthetic_datasets/**/README.md

@@ -1,0 +1,7 @@
+strategy_id,strategy_name,partition_count,is_cached,cache_materialization_sec,cold_run_sec,warm_avg_sec,warm_stddev_sec,throughput_rows_sec,cold_to_warm_speedup,shuffle_characteristics
+"ORIGINAL_UNCACHED","Original Parquet (4 Partitions, Uncached)",4,False,0.0,2.539,0.707,0.0817,255333.51,3.59,"Direct scan of 4 HDFS snappy parquet files, no pre-shuffle"
+"REPARTITION_8","Repartitioned to 8 Partitions (Uncached)",8,False,0.0,2.2314,0.9672,0.1701,186650.4,2.31,"Full distributed shuffle into 8 balanced partitions"
+"REPARTITION_16","Repartitioned to 16 Partitions (Uncached)",16,False,0.0,0.9607,0.9177,0.0478,196712.61,1.05,"Full distributed shuffle into 16 smaller partitions"
+"COALESCE_2","Coalesced to 2 Partitions (Uncached)",2,False,0.0,0.6437,0.5119,0.0125,352642.15,1.26,"Narrow dependency reduction merging 4 partitions into 2 without full shuffle"
+"COALESCE_1","Coalesced to 1 Partition (Uncached)",1,False,0.0,1.0362,0.5583,0.0195,323358.82,1.86,"Merged to a single partition, eliminating parallelism"
+"ORIGINAL_CACHED","Original Parquet (4 Partitions, Cached in Memory)",4,True,4.8916,0.7961,0.3647,0.0337,494940.86,2.18,"Persisted in Spark JVM block manager in deserialized memory"

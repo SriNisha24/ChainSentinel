@@ -1,0 +1,33 @@
+services:
+  namenode:
+    image: apache/hadoop:3.5.0
+    container_name: chainsentinel-namenode
+    hostname: namenode
+    user: root
+    ports:
+      - "9870:9870"
+      - "8020:8020"
+    volumes:
+      - ./config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml:ro
+      - ./config/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml:ro
+      - namenode_data:/hadoop/dfs/name
+    command: ["hdfs", "namnode"]
+    restart: unless-stopped
+
+  datanode:
+    image: apache/hadoop:3.5.0
+    container_name: chainsentinel-datanode
+    hostname: datanode
+    user: root
+    depends_on:
+      - namenode
+    volumes:
+      - ./config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml:ro
+      - ./config/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml:ro
+      - datanode_data:/hadoop/dfs/data
+    command: ["hdfs", "datanode"]
+    restart: unless-stopped
+
+volumes:
+  namenode_data:
+  datanode_data:

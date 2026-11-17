@@ -1,0 +1,68 @@
+{
+  "engine_name": "ChainSentinel Impact Assessment & Risk Analysis Engine",
+  "version": "1.0.0",
+  "score_calibration_status": "UNCALIBRATED_MCDA_INDEX",
+  "dimension_weights": {
+    "delivery_risk": 0.35,
+    "financial_risk": 0.30,
+    "operational_risk": 0.20,
+    "anomaly_risk": 0.15
+  },
+  "delivery_risk_weights": {
+    "historical_delay_indicator": 0.40,
+    "shipping_mode_urgency": 0.35,
+    "scheduled_duration_buffer": 0.25
+  },
+  "shipping_mode_urgency_scores": {
+    "Same Day": 100.0,
+    "First Class": 75.0,
+    "Second Class": 50.0,
+    "Standard Class": 25.0
+  },
+  "financial_risk_weights": {
+    "percentile_spend": 0.65,
+    "margin_vulnerability": 0.35
+  },
+  "margin_vulnerability_benchmark_ratio": 0.50,
+  "operational_risk_weights": {
+    "customer_segment_proxy": 0.60,
+    "customer_network_volume": 0.40
+  },
+  "customer_segment_proxy_scores": {
+    "Corporate": 100.0,
+    "Home Office": 70.0,
+    "Consumer": 40.0,
+    "UNKNOWN": 50.0
+  },
+  "anomaly_risk_weights": {
+    "composite_score_weight": 0.70,
+    "critical_severity_bonus": 30.0,
+    "high_severity_bonus": 15.0
+  },
+  "severity_thresholds": {
+    "CRITICAL": 75.0,
+    "HIGH": 55.0,
+    "MEDIUM": 35.0,
+    "LOW": 0.0
+  },
+  "ineligible_classification": "INELIGIBLE_NON_SHIPPED",
+  "default_paths": {
+    "shockwave_summary": "data/phase8/output/task8d_corrected/shockwave_summary.json",
+    "shockwave_entities": "data/phase8/output/task8d_corrected/shockwave_entities.csv",
+    "anomaly_results": "reports/phase5/step2_anomaly_results.csv",
+    "clean_parquet": "data/clean_parquet",
+    "graph_nodes": "data/phase6/graph_nodes.csv",
+    "graph_edges": "data/phase6/graph_edges.csv",
+    "market_demand_forecast": "data/phase5_output/step4_market_demand_forecast.csv",
+    "capacity_scenarios": "data/phase5_output/step4_capacity_scenarios.csv",
+    "output_dir": "data/phase9/output"
+  },
+  "academic_assumptions": [
+    "ASSUMPTION_MCDA_PROVISIONAL_WEIGHTS",
+    "ASSUMPTION_UNCALIBRATED_DECISION_SUPPORT_INDEX",
+    "ASSUMPTION_CUSTOMER_SEGMENT_OPERATIONAL_PROXY",
+    "ASSUMPTION_REGIONAL_DEMAND_UNSUPPORTED",
+    "ASSUMPTION_HISTORICAL_EVIDENCE_NOT_PREDICTIVE_GUARANTEE"
+  ]
+}
+

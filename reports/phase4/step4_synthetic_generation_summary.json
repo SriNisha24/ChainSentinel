@@ -1,0 +1,64 @@
+{
+  "step": 4,
+  "title": "Synthetic Data Generation Summary",
+  "random_seed": 42,
+  "synthetic_datasets": [
+    {
+      "scale": "2x",
+      "target_rows": 361038,
+      "actual_rows": 361038,
+      "columns": 53,
+      "hdfs_path": "hdfs://namenode:8020/chainsentinel/synthetic/dataco_2x",
+      "partitions": 8,
+      "generation_time_sec": 14.7074,
+      "provenance_distribution": [
+        {
+          "data_provenance": "SYNTHETIC",
+          "count": 180519
+        },
+        {
+          "data_provenance": "ORIGINAL",
+          "count": 180519
+        }
+      ]
+    },
+    {
+      "scale": "5x",
+      "target_rows": 902595,
+      "actual_rows": 902595,
+      "columns": 53,
+      "hdfs_path": "hdfs://namenode:8020/chainsentinel/synthetic/dataco_5x",
+      "partitions": 20,
+      "generation_time_sec": 21.5762,
+      "provenance_distribution": [
+        {
+          "data_provenance": "SYNTHETIC",
+          "count": 722076
+        },
+        {
+          "data_provenance": "ORIGINAL",
+          "count": 180519
+        }
+      ]
+    },
+    {
+      "scale": "10x",
+      "target_rows": 1805190,
+      "actual_rows": 1805190,
+      "columns": 53,
+      "hdfs_path": "hdfs://namenode:8020/chainsentinel/synthetic/dataco_10x",
+      "partitions": 32,
+      "generation_time_sec": 37.428,
+      "provenance_distribution": [
+        {
+          "data_provenance": "ORIGINAL",
+          "count": 180519
+        },
+        {
+          "data_provenance": "SYNTHETIC",
+          "count": 1624671
+        }
+      ]
+    }
+  ]
+}

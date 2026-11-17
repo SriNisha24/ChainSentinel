@@ -1,0 +1,4 @@
+customer_segment,total_orders,delayed_orders,delay_rate_pct,total_sales,total_profit,avg_order_value
+"Consumer",93504,51248,54.81,17164278.37,2073487.67,183.57
+"Corporate",54789,29982,54.72,10030649.9,1202574.96,183.08
+"Home Office",32226,17747,55.07,5859474.11,690840.34,181.82

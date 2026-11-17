@@ -1,0 +1,648 @@
+{
+  "step": 4,
+  "title": "Geographic and Regional Analysis",
+  "market_performance": [
+    {
+      "market": "LATAM",
+      "total_orders": 51594,
+      "delayed_orders": 28044,
+      "delay_rate_pct": 54.36,
+      "total_sales": 9235762.09,
+      "total_profit": 1123321.61,
+      "avg_delay_days": 0.56
+    },
+    {
+      "market": "Europe",
+      "total_orders": 50252,
+      "delayed_orders": 27743,
+      "delay_rate_pct": 55.21,
+      "total_sales": 9769198.32,
+      "total_profit": 1169442.96,
+      "avg_delay_days": 0.57
+    },
+    {
+      "market": "Pacific Asia",
+      "total_orders": 41260,
+      "delayed_orders": 22712,
+      "delay_rate_pct": 55.05,
+      "total_sales": 7434262.65,
+      "total_profit": 857753.44,
+      "avg_delay_days": 0.57
+    },
+    {
+      "market": "USCA",
+      "total_orders": 25799,
+      "delayed_orders": 14138,
+      "delay_rate_pct": 54.8,
+      "total_sales": 4553499.92,
+      "total_profit": 564313.78,
+      "avg_delay_days": 0.57
+    },
+    {
+      "market": "Africa",
+      "total_orders": 11614,
+      "delayed_orders": 6340,
+      "delay_rate_pct": 54.59,
+      "total_sales": 2061679.39,
+      "total_profit": 252071.18,
+      "avg_delay_days": 0.56
+    }
+  ],
+  "region_performance": [
+    {
+      "order_region": "Central America",
+      "total_orders": 28341,
+      "delayed_orders": 15518,
+      "delay_rate_pct": 54.75,
+      "total_sales": 5093849.72,
+      "total_profit": 616341.57
+    },
+    {
+      "order_region": "Western Europe",
+      "total_orders": 27109,
+      "delayed_orders": 15140,
+      "delay_rate_pct": 55.85,
+      "total_sales": 5296002.89,
+      "total_profit": 625446.08
+    },
+    {
+      "order_region": "South America",
+      "total_orders": 14935,
+      "delayed_orders": 8111,
+      "delay_rate_pct": 54.31,
+      "total_sales": 2660243.69,
+      "total_profit": 335154.4
+    },
+    {
+      "order_region": "Oceania",
+      "total_orders": 10148,
+      "delayed_orders": 5482,
+      "delay_rate_pct": 54.02,
+      "total_sales": 1809996.55,
+      "total_profit": 201478.02
+    },
+    {
+      "order_region": "Northern Europe",
+      "total_orders": 9792,
+      "delayed_orders": 5292,
+      "delay_rate_pct": 54.04,
+      "total_sales": 1939362.43,
+      "total_profit": 233450.6
+    },
+    {
+      "order_region": "Southeast Asia",
+      "total_orders": 9539,
+      "delayed_orders": 5297,
+      "delay_rate_pct": 55.53,
+      "total_sales": 1738553.44,
+      "total_profit": 211342.82
+    },
+    {
+      "order_region": "Southern Europe",
+      "total_orders": 9431,
+      "delayed_orders": 5129,
+      "delay_rate_pct": 54.38,
+      "total_sales": 1837525.82,
+      "total_profit": 230829.23
+    },
+    {
+      "order_region": "Caribbean",
+      "total_orders": 8318,
+      "delayed_orders": 4415,
+      "delay_rate_pct": 53.08,
+      "total_sales": 1481668.69,
+      "total_profit": 171825.64
+    },
+    {
+      "order_region": "West of USA ",
+      "total_orders": 7993,
+      "delayed_orders": 4313,
+      "delay_rate_pct": 53.96,
+      "total_sales": 1412253.6,
+      "total_profit": 164940.66
+    },
+    {
+      "order_region": "South Asia",
+      "total_orders": 7731,
+      "delayed_orders": 4350,
+      "delay_rate_pct": 56.27,
+      "total_sales": 1397364.57,
+      "total_profit": 165703.9
+    },
+    {
+      "order_region": "Eastern Asia",
+      "total_orders": 7280,
+      "delayed_orders": 3955,
+      "delay_rate_pct": 54.33,
+      "total_sales": 1334313.41,
+      "total_profit": 147368.01
+    },
+    {
+      "order_region": "East of USA",
+      "total_orders": 6915,
+      "delayed_orders": 3849,
+      "delay_rate_pct": 55.66,
+      "total_sales": 1231955.13,
+      "total_profit": 156263.3
+    },
+    {
+      "order_region": "West Asia",
+      "total_orders": 6009,
+      "delayed_orders": 3322,
+      "delay_rate_pct": 55.28,
+      "total_sales": 1056080.99,
+      "total_profit": 118815.41
+    },
+    {
+      "order_region": "US Center ",
+      "total_orders": 5887,
+      "delayed_orders": 3252,
+      "delay_rate_pct": 55.24,
+      "total_sales": 1034129.43,
+      "total_profit": 131094.23
+    },
+    {
+      "order_region": "South of  USA ",
+      "total_orders": 4045,
+      "delayed_orders": 2256,
+      "delay_rate_pct": 55.77,
+      "total_sales": 706904.34,
+      "total_profit": 88114.88
+    },
+    {
+      "order_region": "Eastern Europe",
+      "total_orders": 3920,
+      "delayed_orders": 2182,
+      "delay_rate_pct": 55.66,
+      "total_sales": 696307.19,
+      "total_profit": 79717.05
+    },
+    {
+      "order_region": "West Africa",
+      "total_orders": 3696,
+      "delayed_orders": 1953,
+      "delay_rate_pct": 52.84,
+      "total_sales": 654168.03,
+      "total_profit": 80030.27
+    },
+    {
+      "order_region": "North Africa",
+      "total_orders": 3232,
+      "delayed_orders": 1762,
+      "delay_rate_pct": 54.52,
+      "total_sales": 572241.97,
+      "total_profit": 64599.86
+    },
+    {
+      "order_region": "East Africa",
+      "total_orders": 1852,
+      "delayed_orders": 1036,
+      "delay_rate_pct": 55.94,
+      "total_sales": 338054.31,
+      "total_profit": 43167.73
+    },
+    {
+      "order_region": "Central Africa",
+      "total_orders": 1677,
+      "delayed_orders": 972,
+      "delay_rate_pct": 57.96,
+      "total_sales": 292912.56,
+      "total_profit": 33447.27
+    },
+    {
+      "order_region": "Southern Africa",
+      "total_orders": 1157,
+      "delayed_orders": 617,
+      "delay_rate_pct": 53.33,
+      "total_sales": 204302.52,
+      "total_profit": 30826.05
+    },
+    {
+      "order_region": "Canada",
+      "total_orders": 959,
+      "delayed_orders": 468,
+      "delay_rate_pct": 48.8,
+      "total_sales": 168257.42,
+      "total_profit": 23900.71
+    },
+    {
+      "order_region": "Central Asia",
+      "total_orders": 553,
+      "delayed_orders": 306,
+      "delay_rate_pct": 55.33,
+      "total_sales": 97953.69,
+      "total_profit": 13045.28
+    }
+  ],
+  "top_countries": [
+    {
+      "order_country": "Estados Unidos",
+      "total_orders": 24840,
+      "delayed_orders": 13670,
+      "delay_rate_pct": 55.03,
+      "total_sales": 4385242.5
+    },
+    {
+      "order_country": "Francia",
+      "total_orders": 13222,
+      "delayed_orders": 7341,
+      "delay_rate_pct": 55.52,
+      "total_sales": 2590323.49
+    },
+    {
+      "order_country": "M\u00e9xico",
+      "total_orders": 13172,
+      "delayed_orders": 7246,
+      "delay_rate_pct": 55.01,
+      "total_sales": 2368426.09
+    },
+    {
+      "order_country": "Alemania",
+      "total_orders": 9564,
+      "delayed_orders": 5383,
+      "delay_rate_pct": 56.28,
+      "total_sales": 1862577.59
+    },
+    {
+      "order_country": "Australia",
+      "total_orders": 8497,
+      "delayed_orders": 4613,
+      "delay_rate_pct": 54.29,
+      "total_sales": 1521410.41
+    },
+    {
+      "order_country": "Brasil",
+      "total_orders": 7987,
+      "delayed_orders": 4331,
+      "delay_rate_pct": 54.23,
+      "total_sales": 1433101.0
+    },
+    {
+      "order_country": "Reino Unido",
+      "total_orders": 7302,
+      "delayed_orders": 3903,
+      "delay_rate_pct": 53.45,
+      "total_sales": 1450047.23
+    },
+    {
+      "order_country": "China",
+      "total_orders": 5758,
+      "delayed_orders": 3123,
+      "delay_rate_pct": 54.24,
+      "total_sales": 1052752.58
+    },
+    {
+      "order_country": "Italia",
+      "total_orders": 4989,
+      "delayed_orders": 2672,
+      "delay_rate_pct": 53.56,
+      "total_sales": 963830.34
+    },
+    {
+      "order_country": "India",
+      "total_orders": 4783,
+      "delayed_orders": 2684,
+      "delay_rate_pct": 56.12,
+      "total_sales": 865968.89
+    },
+    {
+      "order_country": "Indonesia",
+      "total_orders": 4204,
+      "delayed_orders": 2328,
+      "delay_rate_pct": 55.38,
+      "total_sales": 761163.26
+    },
+    {
+      "order_country": "Espa\u00f1a",
+      "total_orders": 3868,
+      "delayed_orders": 2154,
+      "delay_rate_pct": 55.69,
+      "total_sales": 762906.53
+    },
+    {
+      "order_country": "El Salvador",
+      "total_orders": 3726,
+      "delayed_orders": 2091,
+      "delay_rate_pct": 56.12,
+      "total_sales": 672392.35
+    },
+    {
+      "order_country": "Rep\u00fablica Dominicana",
+      "total_orders": 3669,
+      "delayed_orders": 2020,
+      "delay_rate_pct": 55.06,
+      "total_sales": 652749.77
+    },
+    {
+      "order_country": "Honduras",
+      "total_orders": 3629,
+      "delayed_orders": 1919,
+      "delay_rate_pct": 52.88,
+      "total_sales": 661168.59
+    },
+    {
+      "order_country": "Cuba",
+      "total_orders": 3534,
+      "delayed_orders": 1798,
+      "delay_rate_pct": 50.88,
+      "total_sales": 636517.3
+    },
+    {
+      "order_country": "Turqu\u00eda",
+      "total_orders": 3395,
+      "delayed_orders": 1894,
+      "delay_rate_pct": 55.79,
+      "total_sales": 599872.75
+    },
+    {
+      "order_country": "Nicaragua",
+      "total_orders": 3046,
+      "delayed_orders": 1716,
+      "delay_rate_pct": 56.34,
+      "total_sales": 544122.14
+    },
+    {
+      "order_country": "Guatemala",
+      "total_orders": 2778,
+      "delayed_orders": 1529,
+      "delay_rate_pct": 55.04,
+      "total_sales": 495237.1
+    },
+    {
+      "order_country": "Nigeria",
+      "total_orders": 2309,
+      "delayed_orders": 1225,
+      "delay_rate_pct": 53.05,
+      "total_sales": 409032.27
+    },
+    {
+      "order_country": "Filipinas",
+      "total_orders": 2103,
+      "delayed_orders": 1162,
+      "delay_rate_pct": 55.25,
+      "total_sales": 378626.89
+    },
+    {
+      "order_country": "Panam\u00e1",
+      "total_orders": 1941,
+      "delayed_orders": 984,
+      "delay_rate_pct": 50.7,
+      "total_sales": 344832.6
+    },
+    {
+      "order_country": "Pa\u00edses Bajos",
+      "total_orders": 1932,
+      "delayed_orders": 1053,
+      "delay_rate_pct": 54.5,
+      "total_sales": 379786.82
+    },
+    {
+      "order_country": "Argentina",
+      "total_orders": 1931,
+      "delayed_orders": 999,
+      "delay_rate_pct": 51.73,
+      "total_sales": 340569.52
+    },
+    {
+      "order_country": "Colombia",
+      "total_orders": 1771,
+      "delayed_orders": 908,
+      "delay_rate_pct": 51.27,
+      "total_sales": 309969.62
+    }
+  ],
+  "customer_origin_analysis": [
+    {
+      "customer_country": "Puerto Rico",
+      "customer_state": "PR",
+      "customer_city": "Caguas",
+      "order_count": 66770,
+      "delay_rate_pct": 54.74,
+      "avg_latitude": 18.2535,
+      "avg_longitude": -66.344
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "IL",
+      "customer_city": "Chicago",
+      "order_count": 3885,
+      "delay_rate_pct": 56.58,
+      "avg_latitude": 41.7681,
+      "avg_longitude": -88.0591
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "CA",
+      "customer_city": "Los Angeles",
+      "order_count": 3417,
+      "delay_rate_pct": 54.38,
+      "avg_latitude": 34.0331,
+      "avg_longitude": -118.1971
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "NY",
+      "customer_city": "Brooklyn",
+      "order_count": 3412,
+      "delay_rate_pct": 53.11,
+      "avg_latitude": 40.5165,
+      "avg_longitude": -74.8935
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "NY",
+      "customer_city": "New York",
+      "order_count": 1816,
+      "delay_rate_pct": 55.23,
+      "avg_latitude": 40.6876,
+      "avg_longitude": -74.3766
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "PA",
+      "customer_city": "Philadelphia",
+      "order_count": 1577,
+      "delay_rate_pct": 55.23,
+      "avg_latitude": 39.906,
+      "avg_longitude": -75.7143
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "NY",
+      "customer_city": "Bronx",
+      "order_count": 1500,
+      "delay_rate_pct": 54.93,
+      "avg_latitude": 40.8627,
+      "avg_longitude": -73.8746
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "CA",
+      "customer_city": "San Diego",
+      "order_count": 1437,
+      "delay_rate_pct": 53.44,
+      "avg_latitude": 32.893,
+      "avg_longitude": -117.2522
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "FL",
+      "customer_city": "Miami",
+      "order_count": 1314,
+      "delay_rate_pct": 53.81,
+      "avg_latitude": 26.0178,
+      "avg_longitude": -81.2089
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "TX",
+      "customer_city": "Houston",
+      "order_count": 1297,
+      "delay_rate_pct": 53.05,
+      "avg_latitude": 29.6993,
+      "avg_longitude": -95.5366
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "NV",
+      "customer_city": "Las Vegas",
+      "order_count": 1164,
+      "delay_rate_pct": 56.19,
+      "avg_latitude": 36.053,
+      "avg_longitude": -108.5002
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "TX",
+      "customer_city": "Dallas",
+      "order_count": 1029,
+      "delay_rate_pct": 53.94,
+      "avg_latitude": 32.8198,
+      "avg_longitude": -96.7855
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "MI",
+      "customer_city": "Detroit",
+      "order_count": 958,
+      "delay_rate_pct": 52.61,
+      "avg_latitude": 42.3295,
+      "avg_longitude": -83.1294
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "AZ",
+      "customer_city": "Phoenix",
+      "order_count": 945,
+      "delay_rate_pct": 51.96,
+      "avg_latitude": 33.5612,
+      "avg_longitude": -112.1467
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "CA",
+      "customer_city": "San Jose",
+      "order_count": 943,
+      "delay_rate_pct": 51.64,
+      "avg_latitude": 37.2967,
+      "avg_longitude": -121.8368
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "OH",
+      "customer_city": "Cleveland",
+      "order_count": 784,
+      "delay_rate_pct": 54.34,
+      "avg_latitude": 41.3565,
+      "avg_longitude": -81.7029
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "TX",
+      "customer_city": "San Antonio",
+      "order_count": 730,
+      "delay_rate_pct": 57.4,
+      "avg_latitude": 29.746,
+      "avg_longitude": -98.4482
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "CO",
+      "customer_city": "Aurora",
+      "order_count": 719,
+      "delay_rate_pct": 49.79,
+      "avg_latitude": 38.6652,
+      "avg_longitude": -102.6146
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "TN",
+      "customer_city": "Memphis",
+      "order_count": 707,
+      "delay_rate_pct": 55.3,
+      "avg_latitude": 35.1504,
+      "avg_longitude": -89.9406
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "VA",
+      "customer_city": "Virginia Beach",
+      "order_count": 691,
+      "delay_rate_pct": 59.48,
+      "avg_latitude": 36.8611,
+      "avg_longitude": -76.1264
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "TX",
+      "customer_city": "El Paso",
+      "order_count": 649,
+      "delay_rate_pct": 48.69,
+      "avg_latitude": 31.7074,
+      "avg_longitude": -106.0224
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "FL",
+      "customer_city": "Fort Lauderdale",
+      "order_count": 646,
+      "delay_rate_pct": 52.94,
+      "avg_latitude": 26.1182,
+      "avg_longitude": -80.2257
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "HI",
+      "customer_city": "Honolulu",
+      "order_count": 609,
+      "delay_rate_pct": 54.68,
+      "avg_latitude": 21.3089,
+      "avg_longitude": -157.8239
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "AZ",
+      "customer_city": "Tucson",
+      "order_count": 582,
+      "delay_rate_pct": 49.31,
+      "avg_latitude": 32.4161,
+      "avg_longitude": -111.4976
+    },
+    {
+      "customer_country": "EE. UU.",
+      "customer_state": "CA",
+      "customer_city": "Bakersfield",
+      "order_count": 581,
+      "delay_rate_pct": 54.04,
+      "avg_latitude": 35.404,
+      "avg_longitude": -119.0814
+    }
+  ],
+  "coordinates_semantics": {
+    "min_latitude": -33.93755341,
+    "max_latitude": 48.78193283,
+    "min_longitude": -158.0259857,
+    "max_longitude": 115.2630768,
+    "semantic_finding": "Latitude and longitude represent store/customer origin locations (concentrated in Puerto Rico ~18.2\u00b0N and US mainland ~30-48\u00b0N), NOT destination delivery addresses. Destination geographic attributes are provided as text: order_country, order_region, order_city, order_state."
+  }
+}

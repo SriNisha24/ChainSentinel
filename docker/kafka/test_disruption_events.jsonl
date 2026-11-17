@@ -1,0 +1,6 @@
+{"event_id": "DISR-2026-001", "event_type": "PORT_CONGESTION", "location": "Caguas", "timestamp": "2026-11-04T10:00:00Z", "impact_radius_km": 45.5, "affected_mode": "Standard Class", "source_confidence": 0.95, "severity": "HIGH", "duration_hours": 36, "description": "Severe container backlog and vessel congestion at key logistics terminal"}
+{"event_id": "DISR-2026-002", "event_type": "SEVERE_WEATHER", "location": "San Juan", "timestamp": "2026-11-04T10:15:00Z", "impact_radius_km": 120.0, "affected_mode": "First Class", "source_confidence": 0.88, "severity": "CRITICAL", "duration_hours": 48, "description": "Tropical storm gale warnings affecting multi-modal transit corridors"}
+{"event_id": "DISR-2026-003", "event_type": "LABOR_ACTION", "location": "Pacific Asia", "timestamp": "2026-11-04T10:30:00Z", "impact_radius_km": 75.0, "affected_mode": "Second Class", "source_confidence": 0.92, "severity": "MEDIUM", "duration_hours": 24, "description": "Regional freight handling work stoppage"}
+{"invalid_json": true, "corrupted_field": "NO_REQUIRED_KEYS"}
+{"event_id": "", "event_type": null, "location": "Nowhere"}
+

@@ -1,0 +1,173 @@
+{
+  "step": 5,
+  "title": "Large-Scale Spark Scalability Benchmark",
+  "scales_tested": [
+    "1x",
+    "2x",
+    "5x",
+    "10x"
+  ],
+  "results": [
+    {
+      "scale": "1x",
+      "dataset_rows": 180519,
+      "partitions": 4,
+      "operation": "Full Table Scan & Count",
+      "cold_run_sec": 0.4037,
+      "warm_avg_sec": 0.3793,
+      "warm_stddev_sec": 0.0298,
+      "throughput_rows_sec": 475893.93
+    },
+    {
+      "scale": "1x",
+      "dataset_rows": 180519,
+      "partitions": 4,
+      "operation": "Single-Key Aggregation (Shipping Mode)",
+      "cold_run_sec": 2.1672,
+      "warm_avg_sec": 0.5675,
+      "warm_stddev_sec": 0.0417,
+      "throughput_rows_sec": 318069.56
+    },
+    {
+      "scale": "1x",
+      "dataset_rows": 180519,
+      "partitions": 4,
+      "operation": "Multi-Key Regional Sort",
+      "cold_run_sec": 1.6138,
+      "warm_avg_sec": 0.7703,
+      "warm_stddev_sec": 0.0163,
+      "throughput_rows_sec": 234361.22
+    },
+    {
+      "scale": "1x",
+      "dataset_rows": 180519,
+      "partitions": 4,
+      "operation": "High-Cardinality GroupBy (Country x Category)",
+      "cold_run_sec": 0.8923,
+      "warm_avg_sec": 0.4556,
+      "warm_stddev_sec": 0.0308,
+      "throughput_rows_sec": 396223.92
+    },
+    {
+      "scale": "2x",
+      "dataset_rows": 361038,
+      "partitions": 4,
+      "operation": "Full Table Scan & Count",
+      "cold_run_sec": 0.2298,
+      "warm_avg_sec": 0.2253,
+      "warm_stddev_sec": 0.0129,
+      "throughput_rows_sec": 1602449.46
+    },
+    {
+      "scale": "2x",
+      "dataset_rows": 361038,
+      "partitions": 4,
+      "operation": "Single-Key Aggregation (Shipping Mode)",
+      "cold_run_sec": 0.537,
+      "warm_avg_sec": 0.4127,
+      "warm_stddev_sec": 0.0429,
+      "throughput_rows_sec": 874867.25
+    },
+    {
+      "scale": "2x",
+      "dataset_rows": 361038,
+      "partitions": 4,
+      "operation": "Multi-Key Regional Sort",
+      "cold_run_sec": 0.5589,
+      "warm_avg_sec": 0.9387,
+      "warm_stddev_sec": 0.1527,
+      "throughput_rows_sec": 384599.82
+    },
+    {
+      "scale": "2x",
+      "dataset_rows": 361038,
+      "partitions": 4,
+      "operation": "High-Cardinality GroupBy (Country x Category)",
+      "cold_run_sec": 0.68,
+      "warm_avg_sec": 0.4429,
+      "warm_stddev_sec": 0.0398,
+      "throughput_rows_sec": 815107.62
+    },
+    {
+      "scale": "5x",
+      "dataset_rows": 902595,
+      "partitions": 4,
+      "operation": "Full Table Scan & Count",
+      "cold_run_sec": 0.2802,
+      "warm_avg_sec": 0.2597,
+      "warm_stddev_sec": 0.0104,
+      "throughput_rows_sec": 3475891.27
+    },
+    {
+      "scale": "5x",
+      "dataset_rows": 902595,
+      "partitions": 4,
+      "operation": "Single-Key Aggregation (Shipping Mode)",
+      "cold_run_sec": 0.5329,
+      "warm_avg_sec": 0.4951,
+      "warm_stddev_sec": 0.0348,
+      "throughput_rows_sec": 1822937.6
+    },
+    {
+      "scale": "5x",
+      "dataset_rows": 902595,
+      "partitions": 4,
+      "operation": "Multi-Key Regional Sort",
+      "cold_run_sec": 0.6735,
+      "warm_avg_sec": 0.6321,
+      "warm_stddev_sec": 0.0313,
+      "throughput_rows_sec": 1427897.65
+    },
+    {
+      "scale": "5x",
+      "dataset_rows": 902595,
+      "partitions": 4,
+      "operation": "High-Cardinality GroupBy (Country x Category)",
+      "cold_run_sec": 0.555,
+      "warm_avg_sec": 0.4981,
+      "warm_stddev_sec": 0.0096,
+      "throughput_rows_sec": 1812250.2
+    },
+    {
+      "scale": "10x",
+      "dataset_rows": 1805190,
+      "partitions": 4,
+      "operation": "Full Table Scan & Count",
+      "cold_run_sec": 0.4599,
+      "warm_avg_sec": 0.3312,
+      "warm_stddev_sec": 0.0976,
+      "throughput_rows_sec": 5450582.66
+    },
+    {
+      "scale": "10x",
+      "dataset_rows": 1805190,
+      "partitions": 4,
+      "operation": "Single-Key Aggregation (Shipping Mode)",
+      "cold_run_sec": 0.5576,
+      "warm_avg_sec": 0.5774,
+      "warm_stddev_sec": 0.0152,
+      "throughput_rows_sec": 3126540.69
+    },
+    {
+      "scale": "10x",
+      "dataset_rows": 1805190,
+      "partitions": 4,
+      "operation": "Multi-Key Regional Sort",
+      "cold_run_sec": 0.8794,
+      "warm_avg_sec": 0.8377,
+      "warm_stddev_sec": 0.0476,
+      "throughput_rows_sec": 2155008.64
+    },
+    {
+      "scale": "10x",
+      "dataset_rows": 1805190,
+      "partitions": 4,
+      "operation": "High-Cardinality GroupBy (Country x Category)",
+      "cold_run_sec": 0.7866,
+      "warm_avg_sec": 0.6534,
+      "warm_stddev_sec": 0.0292,
+      "throughput_rows_sec": 2762815.74
+    }
+  ],
+  "scalability_insight": "Spark demonstrates sublinear latency growth and superlinear throughput scaling as dataset size increases from 180K to 1.8M rows. Higher row density per partition amortizes task scheduling overhead and maximizes columnar vectorization batch processing."
+}

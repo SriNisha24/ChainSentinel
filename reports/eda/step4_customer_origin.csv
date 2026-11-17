@@ -1,0 +1,26 @@
+customer_country,customer_state,customer_city,order_count,delay_rate_pct,avg_latitude,avg_longitude
+"Puerto Rico","PR","Caguas",66770,54.74,18.2535,-66.344
+"EE. UU.","IL","Chicago",3885,56.58,41.7681,-88.0591
+"EE. UU.","CA","Los Angeles",3417,54.38,34.0331,-118.1971
+"EE. UU.","NY","Brooklyn",3412,53.11,40.5165,-74.8935
+"EE. UU.","NY","New York",1816,55.23,40.6876,-74.3766
+"EE. UU.","PA","Philadelphia",1577,55.23,39.906,-75.7143
+"EE. UU.","NY","Bronx",1500,54.93,40.8627,-73.8746
+"EE. UU.","CA","San Diego",1437,53.44,32.893,-117.2522
+"EE. UU.","FL","Miami",1314,53.81,26.0178,-81.2089
+"EE. UU.","TX","Houston",1297,53.05,29.6993,-95.5366
+"EE. UU.","NV","Las Vegas",1164,56.19,36.053,-108.5002
+"EE. UU.","TX","Dallas",1029,53.94,32.8198,-96.7855
+"EE. UU.","MI","Detroit",958,52.61,42.3295,-83.1294
+"EE. UU.","AZ","Phoenix",945,51.96,33.5612,-112.1467
+"EE. UU.","CA","San Jose",943,51.64,37.2967,-121.8368
+"EE. UU.","OH","Cleveland",784,54.34,41.3565,-81.7029
+"EE. UU.","TX","San Antonio",730,57.4,29.746,-98.4482
+"EE. UU.","CO","Aurora",719,49.79,38.6652,-102.6146
+"EE. UU.","TN","Memphis",707,55.3,35.1504,-89.9406
+"EE. UU.","VA","Virginia Beach",691,59.48,36.8611,-76.1264
+"EE. UU.","TX","El Paso",649,48.69,31.7074,-106.0224
+"EE. UU.","FL","Fort Lauderdale",646,52.94,26.1182,-80.2257
+"EE. UU.","HI","Honolulu",609,54.68,21.3089,-157.8239
+"EE. UU.","AZ","Tucson",582,49.31,32.4161,-111.4976
+"EE. UU.","CA","Bakersfield",581,54.04,35.404,-119.0814

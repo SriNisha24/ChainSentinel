@@ -1,0 +1,19 @@
+feature,type,status,correlation_with_delay
+"order_year","Pre-Shipment Predictive","ML Input Safe",-0.0022
+"order_month","Pre-Shipment Predictive","ML Input Safe",0.0026
+"order_day_of_week","Pre-Shipment Predictive","ML Input Safe",-0.0018
+"order_hour","Pre-Shipment Predictive","ML Input Safe",0.047
+"days_for_shipment_scheduled","Pre-Shipment Predictive","ML Input Safe",-0.3694
+"order_item_quantity","Pre-Shipment Predictive","ML Input Safe",-0.0001
+"product_price","Pre-Shipment Predictive","ML Input Safe",-0.0022
+"sales","Pre-Shipment Predictive","ML Input Safe",-0.0036
+"order_item_discount","Pre-Shipment Predictive","ML Input Safe",-0.0007
+"order_item_discount_rate","Pre-Shipment Predictive","ML Input Safe",0.0004
+"order_item_total","Pre-Shipment Predictive","ML Input Safe",-0.0038
+"order_profit_per_order","Pre-Shipment Predictive","ML Input Safe",-0.0037
+"order_item_profit_ratio","Pre-Shipment Predictive","ML Input Safe",-0.0023
+"days_for_shipping_real","Post-Shipment Realization","FORBIDDEN (Leakage Target)",0.4014
+"transit_delay_days","Post-Shipment Realization","FORBIDDEN (Leakage Target)",0.7776
+"order_to_shipping_hours","Post-Shipment Realization","FORBIDDEN (Leakage Target)",0.3869
+"is_delayed","Ground Truth Outcome","PRIMARY TARGET VARIABLE",1.0
+"is_canceled","Ground Truth Outcome","SECONDARY TARGET VARIABLE",-0.2334

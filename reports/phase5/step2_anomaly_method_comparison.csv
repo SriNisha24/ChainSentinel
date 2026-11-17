@@ -1,0 +1,5 @@
+detection_method,flagged_count,flagged_pct,description
+"Method A: Robust Statistical (IQR & Domain)",8909,4.94,"Deterministic threshold rules over extreme profit loss, excessive discount, and transaction value outliers"
+"Method B: Multivariate Distance-to-Centroid (K-Means)",3711,2.06,"Euclidean distance to cluster centroids in 7D standardized feature space at P98 cutoff"
+"Consensus Flags (Both Methods Agree)",3312,1.83,"High-confidence anomalous events verified by both statistical and multivariate methods"
+"Total Unique Anomalies (Ensemble Union)",9308,5.16,"Comprehensive anomaly detection coverage capturing single-vector and multi-vector anomalies"

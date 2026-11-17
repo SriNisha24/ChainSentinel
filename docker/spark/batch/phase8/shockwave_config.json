@@ -1,0 +1,136 @@
+{
+  "engine_name": "ChainSentinel Shockwave Engine",
+  "version": "1.1.0",
+  "severity_weights": {
+    "CRITICAL": 1.00,
+    "HIGH": 0.75,
+    "MEDIUM": 0.50,
+    "LOW": 0.25
+  },
+  "propagation_attenuation": {
+    "0": 1.00,
+    "1": 1.00,
+    "2": 0.85,
+    "3": 0.70
+  },
+  "propagation_levels": {
+    "0": "EPICENTER",
+    "1": "PRIMARY",
+    "2": "SECONDARY",
+    "3": "TERTIARY"
+  },
+  "shipping_mode_alias_map": {
+    "Standard Class": "Standard Class",
+    "standard class": "Standard Class",
+    "STANDARD CLASS": "Standard Class",
+    "Standard_Class": "Standard Class",
+    "standard_class": "Standard Class",
+    "STANDARD_CLASS": "Standard Class",
+    "Second Class": "Second Class",
+    "second class": "Second Class",
+    "SECOND CLASS": "Second Class",
+    "Second_Class": "Second Class",
+    "second_class": "Second Class",
+    "SECOND_CLASS": "Second Class",
+    "First Class": "First Class",
+    "first class": "First Class",
+    "FIRST CLASS": "First Class",
+    "First_Class": "First Class",
+    "first_class": "First Class",
+    "FIRST_CLASS": "First Class",
+    "Same Day": "Same Day",
+    "same day": "Same Day",
+    "SAME DAY": "Same Day",
+    "Same_Day": "Same Day",
+    "same_day": "Same Day",
+    "SAME_DAY": "Same Day"
+  },
+  "eligibility_rules": {
+    "ineligible_order_statuses": ["CANCELED", "SUSPECTED_FRAUD"],
+    "ineligible_delivery_statuses": ["Shipping canceled"]
+  },
+  "geographic_alias_map": {
+    "East Asia": "Eastern Asia",
+    "Eastern Asia": "Eastern Asia",
+    "South Asia": "South Asia",
+    "Southeast Asia": "Southeast Asia",
+    "West Asia": "West Asia",
+    "Central Asia": "Central Asia",
+    "Pacific Asia": "Pacific Asia",
+    "Western Europe": "Western Europe",
+    "Northern Europe": "Northern Europe",
+    "Southern Europe": "Southern Europe",
+    "Eastern Europe": "Eastern Europe",
+    "Central America": "Central America",
+    "South America": "South America",
+    "Caribbean": "Caribbean",
+    "North Africa": "North Africa",
+    "East Africa": "East Africa",
+    "West Africa": "West Africa",
+    "Central Africa": "Central Africa",
+    "Southern Africa": "Southern Africa",
+    "Oceania": "Oceania",
+    "Canada": "Canada",
+    "US Center": "US Center",
+    "West of USA": "West of USA",
+    "East of USA": "East of USA",
+    "South of USA": "South of  USA",
+    "South of  USA": "South of  USA"
+  },
+  "disruption_type_rules": {
+    "PORT_CLOSURE": {
+      "mapping_type": "INDIRECT",
+      "target_tiers": ["Region", "Market"],
+      "default_assumptions": [
+        "ASSUMPTION_REGIONAL_CONTAINMENT",
+        "ASSUMPTION_NO_PHYSICAL_ROUTE",
+        "ASSUMPTION_HISTORICAL_REVENUE_EXPOSURE",
+        "ASSUMPTION_UNCALIBRATED_IMPACT_SCORE"
+      ]
+    },
+    "SEVERE_WEATHER": {
+      "mapping_type": "INDIRECT",
+      "target_tiers": ["Region", "Market"],
+      "default_assumptions": [
+        "ASSUMPTION_REGIONAL_CONTAINMENT",
+        "ASSUMPTION_HISTORICAL_REVENUE_EXPOSURE",
+        "ASSUMPTION_UNCALIBRATED_IMPACT_SCORE"
+      ]
+    },
+    "CARRIER_CAPACITY_SHORTAGE": {
+      "mapping_type": "DIRECT",
+      "target_tiers": ["Shipping_Mode"],
+      "default_assumptions": [
+        "ASSUMPTION_CARRIER_SERVICE_GLOBAL_SHORTAGE",
+        "ASSUMPTION_HISTORICAL_REVENUE_EXPOSURE",
+        "ASSUMPTION_UNCALIBRATED_IMPACT_SCORE"
+      ]
+    },
+    "LABOR_STRIKE": {
+      "mapping_type": "INDIRECT",
+      "target_tiers": ["Region", "Shipping_Mode"],
+      "default_assumptions": [
+        "ASSUMPTION_REGIONAL_CONTAINMENT",
+        "ASSUMPTION_LABOR_ACTION_BOTTLENECK",
+        "ASSUMPTION_HISTORICAL_REVENUE_EXPOSURE",
+        "ASSUMPTION_UNCALIBRATED_IMPACT_SCORE"
+      ]
+    },
+    "CUSTOMS_DELAY": {
+      "mapping_type": "INDIRECT",
+      "target_tiers": ["Region"],
+      "default_assumptions": [
+        "ASSUMPTION_REGIONAL_CONTAINMENT",
+        "ASSUMPTION_BORDER_CLEARANCE_BOTTLENECK",
+        "ASSUMPTION_HISTORICAL_REVENUE_EXPOSURE",
+        "ASSUMPTION_UNCALIBRATED_IMPACT_SCORE"
+      ]
+    }
+  },
+  "default_graph_paths": {
+    "nodes_csv": "data/phase6/graph_nodes.csv",
+    "edges_csv": "data/phase6/graph_edges.csv",
+    "order_status_parquet": "data/clean_parquet"
+  }
+}
+

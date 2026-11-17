@@ -1,0 +1,42 @@
+{
+  "step": 2,
+  "title": "Missing Values and Data Quality Audit",
+  "total_records": 180519,
+  "overall_duplicate_records": 0,
+  "primary_key_duplicates": 0,
+  "columns_with_missing_values": [
+    {
+      "column": "customer_zipcode",
+      "null_count": 3,
+      "null_percentage": 0.0017
+    },
+    {
+      "column": "customer_lname",
+      "null_count": 8,
+      "null_percentage": 0.0044
+    },
+    {
+      "column": "order_zipcode",
+      "null_count": 155679,
+      "null_percentage": 86.2397
+    }
+  ],
+  "integrity_checks": {
+    "chronological_inversions (shipping < order)": 0,
+    "gross_sales_mismatches (sales != qty * price)": 0,
+    "net_sales_mismatches (total != sales - discount)": 0,
+    "invalid_discount_rates (not in [0, 1])": 0,
+    "non_positive_prices (price <= 0)": 0,
+    "non_positive_quantities (qty <= 0)": 0
+  },
+  "outlier_investigation": {
+    "min_profit": -4274.97998,
+    "max_profit": 911.7999878,
+    "min_profit_ratio": -2.75,
+    "max_profit_ratio": 0.5,
+    "loss_orders_count": 33784,
+    "loss_orders_percentage": 18.71,
+    "max_discount_count": 10029,
+    "max_discount_percentage": 5.56
+  }
+}

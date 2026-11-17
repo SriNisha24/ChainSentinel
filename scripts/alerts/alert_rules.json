@@ -1,0 +1,103 @@
+{
+  "rules": [
+    {
+      "rule_id": "RULE_CRITICAL_DISRUPTION",
+      "alert_type": "CRITICAL_DISRUPTION",
+      "severity": "CRITICAL",
+      "source_component": "PHASE_7_STREAMING_INGESTION",
+      "condition": {
+        "field": "severity",
+        "operator": "==",
+        "value": "CRITICAL"
+      },
+      "title_template": "Critical Disruption at {market} ({region})",
+      "description_template": "Disruption {event_id} ({disruption_type}) reported with {capacity_reduction_pct}% capacity reduction and {delay_estimate_hours}h estimated delay.",
+      "recommended_action": "Initiate shockwave cascade simulation and review affected transit corridors immediately."
+    },
+    {
+      "rule_id": "RULE_HIGH_RISK_IMPACT",
+      "alert_type": "HIGH_RISK_IMPACT",
+      "severity": "HIGH",
+      "source_component": "PHASE_9_RISK_ASSESSMENT",
+      "condition": {
+        "field": "critical_orders",
+        "operator": ">=",
+        "value": 10
+      },
+      "title_template": "High-Risk Order Vulnerability Spike ({critical_orders} Critical Orders)",
+      "description_template": "Multi-Criteria Risk Assessment identified {critical_orders} critical shipments and {high_risk_orders} high-risk orders requiring priority review.",
+      "recommended_action": "Prioritize critical healthcare and corporate shipments during knapsack capacity allocation."
+    },
+    {
+      "rule_id": "RULE_FINANCIAL_EXPOSURE",
+      "alert_type": "FINANCIAL_EXPOSURE",
+      "severity": "HIGH",
+      "source_component": "PHASE_8_SHOCKWAVE_PROPAGATION",
+      "condition": {
+        "field": "total_gross_revenue_exposure_usd",
+        "operator": ">=",
+        "value": 1000000.0
+      },
+      "title_template": "Significant Financial Exposure (${total_gross_revenue_formatted})",
+      "description_template": "Supply-chain network shockwave reveals ${total_gross_revenue_formatted} gross revenue exposure across {unique_affected_orders} transit orders.",
+      "recommended_action": "Evaluate financial-first and hybrid recovery options to minimize customer revenue degradation."
+    },
+    {
+      "rule_id": "RULE_RECOVERY_PLAN_RECOMMENDED",
+      "alert_type": "RECOVERY_PLAN_RECOMMENDED",
+      "severity": "INFO",
+      "source_component": "PHASE_10_RECOVERY_OPTIMIZATION",
+      "condition": {
+        "field": "recommended_plan_id",
+        "operator": "!=",
+        "value": null
+      },
+      "title_template": "Optimal Recovery Recommendation Ready: {recommended_plan_name}",
+      "description_template": "Heuristic optimization recommends {recommended_plan_name} ({recommended_plan_id}) achieving Resilience Index {resilience_index}/100 and mitigating ${mitigated_revenue_formatted}.",
+      "recommended_action": "Review plan trade-offs in the Operational Review Console before authorizer sign-off."
+    },
+    {
+      "rule_id": "RULE_RECOVERY_PLAN_STRESS_FAILURE",
+      "alert_type": "RECOVERY_PLAN_STRESS_FAILURE",
+      "severity": "HIGH",
+      "source_component": "PHASE_10_STRESS_TESTING",
+      "condition": {
+        "field": "max_degradation_pct",
+        "operator": ">=",
+        "value": 35.0
+      },
+      "title_template": "Severe Stress Degradation Under Compound Shock ({max_degradation_pct}%)",
+      "description_template": "Counterfactual stress evaluation reveals plan revenue degradation of {max_degradation_pct}% under Compound Cascading Shock ({unrecovered_critical} unrecovered critical orders).",
+      "recommended_action": "Assess contingency buffer capacity or request plan revision to safeguard residual vulnerable orders."
+    },
+    {
+      "rule_id": "RULE_HUMAN_APPROVAL_REQUIRED",
+      "alert_type": "HUMAN_APPROVAL_REQUIRED",
+      "severity": "HIGH",
+      "source_component": "PHASE_11_OPERATIONAL_REVIEW",
+      "condition": {
+        "field": "approval_status",
+        "operator": "==",
+        "value": "PENDING_REVIEW"
+      },
+      "title_template": "Human-in-the-Loop Approval Required for Run {run_id}",
+      "description_template": "Recommended recovery plan {recommended_plan_id} is awaiting formal human review and authorization.",
+      "recommended_action": "Access the Approval Gate tab to review the plan and submit an authorization decision."
+    },
+    {
+      "rule_id": "RULE_APPROVAL_DECISION_RECORDED",
+      "alert_type": "APPROVAL_DECISION_RECORDED",
+      "severity": "INFO",
+      "source_component": "PHASE_11_OPERATIONAL_REVIEW",
+      "condition": {
+        "field": "approval_status",
+        "operator": "in",
+        "value": ["APPROVED", "REJECTED", "REVISION_REQUESTED", "CLOSED"]
+      },
+      "title_template": "Human Decision Recorded: {approval_status}",
+      "description_template": "Operational reviewer {reviewer_username} recorded decision receipt {approval_id} with status {approval_status}.",
+      "recommended_action": "Archived in immutable compliance ledger data/approval_records/."
+    }
+  ]
+}
+

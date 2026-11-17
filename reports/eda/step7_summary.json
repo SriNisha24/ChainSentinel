@@ -1,0 +1,355 @@
+{
+  "step": 7,
+  "title": "Correlation and Feature Relationship Analysis with ML Governance",
+  "correlation_matrix": {
+    "days_for_shipment_scheduled": {
+      "days_for_shipment_scheduled": 1.0,
+      "days_for_shipping_real": 0.5159,
+      "transit_delay_days": -0.36,
+      "order_to_shipping_hours": 0.5164,
+      "order_item_quantity": -0.0029,
+      "product_price": 0.0069,
+      "sales": 0.0063,
+      "order_item_discount": 0.0029,
+      "order_item_discount_rate": 0.0001,
+      "order_item_total": 0.0064,
+      "order_profit_per_order": -0.0002,
+      "order_item_profit_ratio": -0.0018,
+      "is_delayed": -0.3694,
+      "is_canceled": -0.0043
+    },
+    "days_for_shipping_real": {
+      "days_for_shipment_scheduled": 0.5159,
+      "days_for_shipping_real": 1.0,
+      "transit_delay_days": 0.6135,
+      "order_to_shipping_hours": 0.9974,
+      "order_item_quantity": -0.0008,
+      "product_price": 0.0022,
+      "sales": 0.002,
+      "order_item_discount": 0.0022,
+      "order_item_discount_rate": 0.0015,
+      "order_item_total": 0.0018,
+      "order_profit_per_order": -0.0051,
+      "order_item_profit_ratio": -0.0046,
+      "is_delayed": 0.4014,
+      "is_canceled": -0.0027
+    },
+    "transit_delay_days": {
+      "days_for_shipment_scheduled": -0.36,
+      "days_for_shipping_real": 0.6135,
+      "transit_delay_days": 1.0,
+      "order_to_shipping_hours": 0.6103,
+      "order_item_quantity": 0.0018,
+      "product_price": -0.004,
+      "sales": -0.0037,
+      "order_item_discount": -0.0002,
+      "order_item_discount_rate": 0.0015,
+      "order_item_total": -0.004,
+      "order_profit_per_order": -0.0054,
+      "order_item_profit_ratio": -0.0034,
+      "is_delayed": 0.7776,
+      "is_canceled": 0.001
+    },
+    "order_to_shipping_hours": {
+      "days_for_shipment_scheduled": 0.5164,
+      "days_for_shipping_real": 0.9974,
+      "transit_delay_days": 0.6103,
+      "order_to_shipping_hours": 1.0,
+      "order_item_quantity": -0.0007,
+      "product_price": 0.0023,
+      "sales": 0.0023,
+      "order_item_discount": 0.0024,
+      "order_item_discount_rate": 0.0015,
+      "order_item_total": 0.0021,
+      "order_profit_per_order": -0.0048,
+      "order_item_profit_ratio": -0.0044,
+      "is_delayed": 0.3869,
+      "is_canceled": -0.0026
+    },
+    "order_item_quantity": {
+      "days_for_shipment_scheduled": -0.0029,
+      "days_for_shipping_real": -0.0008,
+      "transit_delay_days": 0.0018,
+      "order_to_shipping_hours": -0.0007,
+      "order_item_quantity": 1.0,
+      "product_price": -0.4762,
+      "sales": 0.1064,
+      "order_item_discount": 0.0654,
+      "order_item_discount_rate": -0.0,
+      "order_item_total": 0.1054,
+      "order_profit_per_order": 0.0157,
+      "order_item_profit_ratio": 0.0011,
+      "is_delayed": -0.0001,
+      "is_canceled": -0.0002
+    },
+    "product_price": {
+      "days_for_shipment_scheduled": 0.0069,
+      "days_for_shipping_real": 0.0022,
+      "transit_delay_days": -0.004,
+      "order_to_shipping_hours": 0.0023,
+      "order_item_quantity": -0.4762,
+      "product_price": 1.0,
+      "sales": 0.7899,
+      "order_item_discount": 0.4881,
+      "order_item_discount_rate": 0.0003,
+      "order_item_total": 0.7818,
+      "order_profit_per_order": 0.1035,
+      "order_item_profit_ratio": -0.002,
+      "is_delayed": -0.0022,
+      "is_canceled": -0.0016
+    },
+    "sales": {
+      "days_for_shipment_scheduled": 0.0063,
+      "days_for_shipping_real": 0.002,
+      "transit_delay_days": -0.0037,
+      "order_to_shipping_hours": 0.0023,
+      "order_item_quantity": 0.1064,
+      "product_price": 0.7899,
+      "sales": 1.0,
+      "order_item_discount": 0.6174,
+      "order_item_discount_rate": 0.0003,
+      "order_item_total": 0.9897,
+      "order_profit_per_order": 0.1318,
+      "order_item_profit_ratio": -0.0018,
+      "is_delayed": -0.0036,
+      "is_canceled": -0.002
+    },
+    "order_item_discount": {
+      "days_for_shipment_scheduled": 0.0029,
+      "days_for_shipping_real": 0.0022,
+      "transit_delay_days": -0.0002,
+      "order_to_shipping_hours": 0.0024,
+      "order_item_quantity": 0.0654,
+      "product_price": 0.4881,
+      "sales": 0.6174,
+      "order_item_discount": 1.0,
+      "order_item_discount_rate": 0.66,
+      "order_item_total": 0.4987,
+      "order_profit_per_order": 0.0648,
+      "order_item_profit_ratio": -0.0028,
+      "is_delayed": -0.0007,
+      "is_canceled": 0.0004
+    },
+    "order_item_discount_rate": {
+      "days_for_shipment_scheduled": 0.0001,
+      "days_for_shipping_real": 0.0015,
+      "transit_delay_days": 0.0015,
+      "order_to_shipping_hours": 0.0015,
+      "order_item_quantity": -0.0,
+      "product_price": 0.0003,
+      "sales": 0.0003,
+      "order_item_discount": 0.66,
+      "order_item_discount_rate": 1.0,
+      "order_item_total": -0.1195,
+      "order_profit_per_order": -0.0186,
+      "order_item_profit_ratio": -0.0027,
+      "is_delayed": 0.0004,
+      "is_canceled": 0.0029
+    },
+    "order_item_total": {
+      "days_for_shipment_scheduled": 0.0064,
+      "days_for_shipping_real": 0.0018,
+      "transit_delay_days": -0.004,
+      "order_to_shipping_hours": 0.0021,
+      "order_item_quantity": 0.1054,
+      "product_price": 0.7818,
+      "sales": 0.9897,
+      "order_item_discount": 0.4987,
+      "order_item_discount_rate": -0.1195,
+      "order_item_total": 1.0,
+      "order_profit_per_order": 0.1335,
+      "order_item_profit_ratio": -0.0014,
+      "is_delayed": -0.0038,
+      "is_canceled": -0.0023
+    },
+    "order_profit_per_order": {
+      "days_for_shipment_scheduled": -0.0002,
+      "days_for_shipping_real": -0.0051,
+      "transit_delay_days": -0.0054,
+      "order_to_shipping_hours": -0.0048,
+      "order_item_quantity": 0.0157,
+      "product_price": 0.1035,
+      "sales": 0.1318,
+      "order_item_discount": 0.0648,
+      "order_item_discount_rate": -0.0186,
+      "order_item_total": 0.1335,
+      "order_profit_per_order": 1.0,
+      "order_item_profit_ratio": 0.8237,
+      "is_delayed": -0.0037,
+      "is_canceled": -0.0026
+    },
+    "order_item_profit_ratio": {
+      "days_for_shipment_scheduled": -0.0018,
+      "days_for_shipping_real": -0.0046,
+      "transit_delay_days": -0.0034,
+      "order_to_shipping_hours": -0.0044,
+      "order_item_quantity": 0.0011,
+      "product_price": -0.002,
+      "sales": -0.0018,
+      "order_item_discount": -0.0028,
+      "order_item_discount_rate": -0.0027,
+      "order_item_total": -0.0014,
+      "order_profit_per_order": 0.8237,
+      "order_item_profit_ratio": 1.0,
+      "is_delayed": -0.0023,
+      "is_canceled": -0.0016
+    },
+    "is_delayed": {
+      "days_for_shipment_scheduled": -0.3694,
+      "days_for_shipping_real": 0.4014,
+      "transit_delay_days": 0.7776,
+      "order_to_shipping_hours": 0.3869,
+      "order_item_quantity": -0.0001,
+      "product_price": -0.0022,
+      "sales": -0.0036,
+      "order_item_discount": -0.0007,
+      "order_item_discount_rate": 0.0004,
+      "order_item_total": -0.0038,
+      "order_profit_per_order": -0.0037,
+      "order_item_profit_ratio": -0.0023,
+      "is_delayed": 1.0,
+      "is_canceled": -0.2334
+    },
+    "is_canceled": {
+      "days_for_shipment_scheduled": -0.0043,
+      "days_for_shipping_real": -0.0027,
+      "transit_delay_days": 0.001,
+      "order_to_shipping_hours": -0.0026,
+      "order_item_quantity": -0.0002,
+      "product_price": -0.0016,
+      "sales": -0.002,
+      "order_item_discount": 0.0004,
+      "order_item_discount_rate": 0.0029,
+      "order_item_total": -0.0023,
+      "order_profit_per_order": -0.0026,
+      "order_item_profit_ratio": -0.0016,
+      "is_delayed": -0.2334,
+      "is_canceled": 1.0
+    }
+  },
+  "feature_governance": [
+    {
+      "feature": "order_year",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": -0.0022
+    },
+    {
+      "feature": "order_month",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": 0.0026
+    },
+    {
+      "feature": "order_day_of_week",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": -0.0018
+    },
+    {
+      "feature": "order_hour",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": 0.047
+    },
+    {
+      "feature": "days_for_shipment_scheduled",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": -0.3694
+    },
+    {
+      "feature": "order_item_quantity",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": -0.0001
+    },
+    {
+      "feature": "product_price",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": -0.0022
+    },
+    {
+      "feature": "sales",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": -0.0036
+    },
+    {
+      "feature": "order_item_discount",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": -0.0007
+    },
+    {
+      "feature": "order_item_discount_rate",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": 0.0004
+    },
+    {
+      "feature": "order_item_total",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": -0.0038
+    },
+    {
+      "feature": "order_profit_per_order",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": -0.0037
+    },
+    {
+      "feature": "order_item_profit_ratio",
+      "type": "Pre-Shipment Predictive",
+      "status": "ML Input Safe",
+      "correlation_with_delay": -0.0023
+    },
+    {
+      "feature": "days_for_shipping_real",
+      "type": "Post-Shipment Realization",
+      "status": "FORBIDDEN (Leakage Target)",
+      "correlation_with_delay": 0.4014
+    },
+    {
+      "feature": "transit_delay_days",
+      "type": "Post-Shipment Realization",
+      "status": "FORBIDDEN (Leakage Target)",
+      "correlation_with_delay": 0.7776
+    },
+    {
+      "feature": "order_to_shipping_hours",
+      "type": "Post-Shipment Realization",
+      "status": "FORBIDDEN (Leakage Target)",
+      "correlation_with_delay": 0.3869
+    },
+    {
+      "feature": "is_delayed",
+      "type": "Ground Truth Outcome",
+      "status": "PRIMARY TARGET VARIABLE",
+      "correlation_with_delay": 1.0
+    },
+    {
+      "feature": "is_canceled",
+      "type": "Ground Truth Outcome",
+      "status": "SECONDARY TARGET VARIABLE",
+      "correlation_with_delay": -0.2334
+    }
+  ],
+  "key_insights": {
+    "scheduled_days_vs_delay": {
+      "correlation": -0.3694,
+      "finding": "Strong negative correlation (-0.370) between scheduled shipping days and late delivery. Orders scheduled for 1-day (First Class) or 2-day (Second Class) delivery have dramatically higher delay probabilities due to aggressive logistical SLAs."
+    },
+    "discounts_vs_profit": {
+      "discount_vs_profit_corr": 0.0648,
+      "discount_rate_vs_profit_ratio_corr": -0.0027,
+      "finding": "Discount rate exhibits negligible correlation with profit ratio (-0.0019) across normal orders, indicating DataCo pricing algorithms maintain consistent margins despite promotional discounting."
+    },
+    "quantity_vs_profit": {
+      "quantity_vs_profit_corr": 0.0157,
+      "finding": "Positive correlation (+0.091) between item quantity and total order profit, driven by linear gross margin accumulation."
+    }
+  }
+}

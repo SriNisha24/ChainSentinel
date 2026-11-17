@@ -1,0 +1,5 @@
+payment_type,total_orders,total_sales,total_profit,delayed_orders,delay_rate_pct,canceled_orders,cancel_rate_pct
+"DEBIT",69295,12639509.43,1530648.79,39649,57.22,0,0.0
+"TRANSFER",49883,9165574.3,1091034.06,24215,48.54,7754,15.54
+"PAYMENT",41725,7631851.8,887239.03,24004,57.53,0,0.0
+"CASH",19616,3617466.85,457981.09,11109,56.63,0,0.0

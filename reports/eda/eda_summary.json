@@ -1,0 +1,3468 @@
+{
+  "project": "ChainSentinel",
+  "phase": 3,
+  "title": "Exploratory Data Analysis (EDA) Master Summary",
+  "dataset_uri": "hdfs://namenode:8020/chainsentinel/processed/dataco_clean_v1",
+  "total_records": 180519,
+  "total_columns": 52,
+  "overall_delay_rate_pct": 54.83,
+  "steps": {
+    "step_1": {
+      "step": 1,
+      "title": "Dataset Overview and Statistical Summary",
+      "total_records": 180519,
+      "total_columns": 52,
+      "columns": [
+        "order_item_id",
+        "order_id",
+        "customer_id",
+        "department_id",
+        "category_id",
+        "product_card_id",
+        "order_date",
+        "shipping_date",
+        "payment_type",
+        "shipping_mode",
+        "days_for_shipment_scheduled",
+        "days_for_shipping_real",
+        "delivery_status",
+        "late_delivery_risk",
+        "order_status",
+        "customer_city",
+        "customer_state",
+        "customer_country",
+        "customer_zipcode",
+        "customer_street",
+        "customer_fname",
+        "customer_lname",
+        "customer_segment",
+        "latitude",
+        "longitude",
+        "market",
+        "order_region",
+        "order_country",
+        "order_state",
+        "order_city",
+        "order_zipcode",
+        "department_name",
+        "category_name",
+        "product_name",
+        "product_price",
+        "product_status",
+        "product_image",
+        "order_item_quantity",
+        "sales",
+        "order_item_discount",
+        "order_item_discount_rate",
+        "order_item_total",
+        "order_profit_per_order",
+        "order_item_profit_ratio",
+        "transit_delay_days",
+        "is_delayed",
+        "is_canceled",
+        "order_year",
+        "order_month",
+        "order_day_of_week",
+        "order_hour",
+        "order_to_shipping_hours"
+      ],
+      "schema": [
+        {
+          "name": "order_item_id",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "order_id",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "customer_id",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "department_id",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "category_id",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "product_card_id",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "order_date",
+          "type": "TimestampType()",
+          "nullable": true
+        },
+        {
+          "name": "shipping_date",
+          "type": "TimestampType()",
+          "nullable": true
+        },
+        {
+          "name": "payment_type",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "shipping_mode",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "days_for_shipment_scheduled",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "days_for_shipping_real",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "delivery_status",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "late_delivery_risk",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "order_status",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "customer_city",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "customer_state",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "customer_country",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "customer_zipcode",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "customer_street",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "customer_fname",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "customer_lname",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "customer_segment",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "latitude",
+          "type": "DoubleType()",
+          "nullable": true
+        },
+        {
+          "name": "longitude",
+          "type": "DoubleType()",
+          "nullable": true
+        },
+        {
+          "name": "market",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "order_region",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "order_country",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "order_state",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "order_city",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "order_zipcode",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "department_name",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "category_name",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "product_name",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "product_price",
+          "type": "DoubleType()",
+          "nullable": true
+        },
+        {
+          "name": "product_status",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "product_image",
+          "type": "StringType()",
+          "nullable": true
+        },
+        {
+          "name": "order_item_quantity",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "sales",
+          "type": "DoubleType()",
+          "nullable": true
+        },
+        {
+          "name": "order_item_discount",
+          "type": "DoubleType()",
+          "nullable": true
+        },
+        {
+          "name": "order_item_discount_rate",
+          "type": "DoubleType()",
+          "nullable": true
+        },
+        {
+          "name": "order_item_total",
+          "type": "DoubleType()",
+          "nullable": true
+        },
+        {
+          "name": "order_profit_per_order",
+          "type": "DoubleType()",
+          "nullable": true
+        },
+        {
+          "name": "order_item_profit_ratio",
+          "type": "DoubleType()",
+          "nullable": true
+        },
+        {
+          "name": "transit_delay_days",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "is_delayed",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "is_canceled",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "order_year",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "order_month",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "order_day_of_week",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "order_hour",
+          "type": "IntegerType()",
+          "nullable": true
+        },
+        {
+          "name": "order_to_shipping_hours",
+          "type": "DoubleType()",
+          "nullable": true
+        }
+      ],
+      "unique_identifier_counts": {
+        "order_item_id": 180519,
+        "order_id": 65752,
+        "customer_id": 20652,
+        "department_id": 11,
+        "category_id": 51,
+        "product_card_id": 118
+      },
+      "temporal_summary": {
+        "min_order_date": "2015-01-01 00:00:00",
+        "max_order_date": "2018-01-31 23:38:00",
+        "min_shipping_date": "2015-01-03 00:00:00",
+        "max_shipping_date": "2018-02-06 22:14:00"
+      },
+      "numerical_statistics": [
+        {
+          "column": "days_for_shipment_scheduled",
+          "count": 180519,
+          "mean": 2.9318,
+          "stddev": 1.3744,
+          "min": 0.0,
+          "p25": 2.0,
+          "median": 4.0,
+          "p75": 4.0,
+          "max": 4.0
+        },
+        {
+          "column": "days_for_shipping_real",
+          "count": 180519,
+          "mean": 3.4977,
+          "stddev": 1.6237,
+          "min": 0.0,
+          "p25": 2.0,
+          "median": 3.0,
+          "p75": 5.0,
+          "max": 6.0
+        },
+        {
+          "column": "transit_delay_days",
+          "count": 180519,
+          "mean": 0.5658,
+          "stddev": 1.491,
+          "min": -2.0,
+          "p25": 0.0,
+          "median": 1.0,
+          "p75": 1.0,
+          "max": 4.0
+        },
+        {
+          "column": "order_item_quantity",
+          "count": 180519,
+          "mean": 2.1276,
+          "stddev": 1.4535,
+          "min": 1.0,
+          "p25": 1.0,
+          "median": 1.0,
+          "p75": 3.0,
+          "max": 5.0
+        },
+        {
+          "column": "product_price",
+          "count": 180519,
+          "mean": 141.2325,
+          "stddev": 139.7325,
+          "min": 9.99,
+          "p25": 50.0,
+          "median": 59.99,
+          "p75": 199.99,
+          "max": 1999.99
+        },
+        {
+          "column": "sales",
+          "count": 180519,
+          "mean": 203.7721,
+          "stddev": 132.2731,
+          "min": 9.99,
+          "p25": 119.98,
+          "median": 199.92,
+          "p75": 299.95,
+          "max": 1999.99
+        },
+        {
+          "column": "order_item_discount",
+          "count": 180519,
+          "mean": 20.6647,
+          "stddev": 21.8009,
+          "min": 0.0,
+          "p25": 5.4,
+          "median": 14.0,
+          "p75": 29.99,
+          "max": 500.0
+        },
+        {
+          "column": "order_item_discount_rate",
+          "count": 180519,
+          "mean": 0.1017,
+          "stddev": 0.0704,
+          "min": 0.0,
+          "p25": 0.04,
+          "median": 0.09,
+          "p75": 0.16,
+          "max": 0.25
+        },
+        {
+          "column": "order_item_total",
+          "count": 180519,
+          "mean": 183.1076,
+          "stddev": 120.0437,
+          "min": 7.49,
+          "p25": 104.38,
+          "median": 163.99,
+          "p75": 247.4,
+          "max": 1939.99
+        },
+        {
+          "column": "order_profit_per_order",
+          "count": 180519,
+          "mean": 21.975,
+          "stddev": 104.4335,
+          "min": -4274.98,
+          "p25": 7.0,
+          "median": 31.52,
+          "p75": 64.8,
+          "max": 911.8
+        },
+        {
+          "column": "order_item_profit_ratio",
+          "count": 180519,
+          "mean": 0.1206,
+          "stddev": 0.4668,
+          "min": -2.75,
+          "p25": 0.08,
+          "median": 0.27,
+          "p75": 0.36,
+          "max": 0.5
+        },
+        {
+          "column": "order_to_shipping_hours",
+          "count": 180519,
+          "mean": 83.9718,
+          "stddev": 38.8174,
+          "min": 12.0,
+          "p25": 48.0,
+          "median": 72.0,
+          "p75": 120.0,
+          "max": 144.0
+        }
+      ],
+      "categorical_distributions": {
+        "payment_type": [
+          {
+            "category": "DEBIT",
+            "count": 69295,
+            "percentage": 38.39
+          },
+          {
+            "category": "TRANSFER",
+            "count": 49883,
+            "percentage": 27.63
+          },
+          {
+            "category": "PAYMENT",
+            "count": 41725,
+            "percentage": 23.11
+          },
+          {
+            "category": "CASH",
+            "count": 19616,
+            "percentage": 10.87
+          }
+        ],
+        "shipping_mode": [
+          {
+            "category": "Standard Class",
+            "count": 107752,
+            "percentage": 59.69
+          },
+          {
+            "category": "Second Class",
+            "count": 35216,
+            "percentage": 19.51
+          },
+          {
+            "category": "First Class",
+            "count": 27814,
+            "percentage": 15.41
+          },
+          {
+            "category": "Same Day",
+            "count": 9737,
+            "percentage": 5.39
+          }
+        ],
+        "delivery_status": [
+          {
+            "category": "Late delivery",
+            "count": 98977,
+            "percentage": 54.83
+          },
+          {
+            "category": "Advance shipping",
+            "count": 41592,
+            "percentage": 23.04
+          },
+          {
+            "category": "Shipping on time",
+            "count": 32196,
+            "percentage": 17.84
+          },
+          {
+            "category": "Shipping canceled",
+            "count": 7754,
+            "percentage": 4.3
+          }
+        ],
+        "customer_segment": [
+          {
+            "category": "Consumer",
+            "count": 93504,
+            "percentage": 51.8
+          },
+          {
+            "category": "Corporate",
+            "count": 54789,
+            "percentage": 30.35
+          },
+          {
+            "category": "Home Office",
+            "count": 32226,
+            "percentage": 17.85
+          }
+        ],
+        "market": [
+          {
+            "category": "LATAM",
+            "count": 51594,
+            "percentage": 28.58
+          },
+          {
+            "category": "Europe",
+            "count": 50252,
+            "percentage": 27.84
+          },
+          {
+            "category": "Pacific Asia",
+            "count": 41260,
+            "percentage": 22.86
+          },
+          {
+            "category": "USCA",
+            "count": 25799,
+            "percentage": 14.29
+          },
+          {
+            "category": "Africa",
+            "count": 11614,
+            "percentage": 6.43
+          }
+        ]
+      }
+    },
+    "step_2": {
+      "step": 2,
+      "title": "Missing Values and Data Quality Audit",
+      "total_records": 180519,
+      "overall_duplicate_records": 0,
+      "primary_key_duplicates": 0,
+      "columns_with_missing_values": [
+        {
+          "column": "customer_zipcode",
+          "null_count": 3,
+          "null_percentage": 0.0017
+        },
+        {
+          "column": "customer_lname",
+          "null_count": 8,
+          "null_percentage": 0.0044
+        },
+        {
+          "column": "order_zipcode",
+          "null_count": 155679,
+          "null_percentage": 86.2397
+        }
+      ],
+      "integrity_checks": {
+        "chronological_inversions (shipping < order)": 0,
+        "gross_sales_mismatches (sales != qty * price)": 0,
+        "net_sales_mismatches (total != sales - discount)": 0,
+        "invalid_discount_rates (not in [0, 1])": 0,
+        "non_positive_prices (price <= 0)": 0,
+        "non_positive_quantities (qty <= 0)": 0
+      },
+      "outlier_investigation": {
+        "min_profit": -4274.97998,
+        "max_profit": 911.7999878,
+        "min_profit_ratio": -2.75,
+        "max_profit_ratio": 0.5,
+        "loss_orders_count": 33784,
+        "loss_orders_percentage": 18.71,
+        "max_discount_count": 10029,
+        "max_discount_percentage": 5.56
+      }
+    },
+    "step_3": {
+      "step": 3,
+      "title": "Delivery Delay and Shipping Mode Analysis",
+      "total_records": 180519,
+      "overall_delayed_count": 98977,
+      "overall_delay_rate_pct": 54.83,
+      "delivery_status_distribution": [
+        {
+          "delivery_status": "Late delivery",
+          "count": 98977,
+          "percentage": 54.83,
+          "delayed_count": 98977,
+          "delayed_percentage": 100.0,
+          "canceled_count": 0
+        },
+        {
+          "delivery_status": "Advance shipping",
+          "count": 41592,
+          "percentage": 23.04,
+          "delayed_count": 0,
+          "delayed_percentage": 0.0,
+          "canceled_count": 0
+        },
+        {
+          "delivery_status": "Shipping on time",
+          "count": 32196,
+          "percentage": 17.84,
+          "delayed_count": 0,
+          "delayed_percentage": 0.0,
+          "canceled_count": 0
+        },
+        {
+          "delivery_status": "Shipping canceled",
+          "count": 7754,
+          "percentage": 4.3,
+          "delayed_count": 0,
+          "delayed_percentage": 0.0,
+          "canceled_count": 7754
+        }
+      ],
+      "shipping_mode_delays": [
+        {
+          "shipping_mode": "Standard Class",
+          "total_orders": 107752,
+          "delayed_orders": 41023,
+          "delay_rate_pct": 38.07,
+          "avg_scheduled_days": 4.0,
+          "avg_real_days": 4.0,
+          "avg_delay_days": 0.0,
+          "avg_order_to_ship_hours": 95.9,
+          "min_real_days": 2,
+          "max_real_days": 6
+        },
+        {
+          "shipping_mode": "Second Class",
+          "total_orders": 35216,
+          "delayed_orders": 26987,
+          "delay_rate_pct": 76.63,
+          "avg_scheduled_days": 2.0,
+          "avg_real_days": 3.99,
+          "avg_delay_days": 1.99,
+          "avg_order_to_ship_hours": 95.78,
+          "min_real_days": 2,
+          "max_real_days": 6
+        },
+        {
+          "shipping_mode": "First Class",
+          "total_orders": 27814,
+          "delayed_orders": 26513,
+          "delay_rate_pct": 95.32,
+          "avg_scheduled_days": 1.0,
+          "avg_real_days": 2.0,
+          "avg_delay_days": 1.0,
+          "avg_order_to_ship_hours": 48.0,
+          "min_real_days": 2,
+          "max_real_days": 2
+        },
+        {
+          "shipping_mode": "Same Day",
+          "total_orders": 9737,
+          "delayed_orders": 4454,
+          "delay_rate_pct": 45.74,
+          "avg_scheduled_days": 0.0,
+          "avg_real_days": 0.48,
+          "avg_delay_days": 0.48,
+          "avg_order_to_ship_hours": 12.0,
+          "min_real_days": 0,
+          "max_real_days": 1
+        }
+      ],
+      "scheduled_vs_actual_crosstab": [
+        {
+          "days_for_shipment_scheduled_days_for_shipping_real": "0",
+          "0": 5080,
+          "1": 4657,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        {
+          "days_for_shipment_scheduled_days_for_shipping_real": "1",
+          "0": 0,
+          "1": 0,
+          "2": 27814,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        {
+          "days_for_shipment_scheduled_days_for_shipping_real": "2",
+          "0": 0,
+          "1": 0,
+          "2": 7138,
+          "3": 7065,
+          "4": 6978,
+          "5": 7052,
+          "6": 6983
+        },
+        {
+          "days_for_shipment_scheduled_days_for_shipping_real": "4",
+          "0": 0,
+          "1": 0,
+          "2": 21666,
+          "3": 21700,
+          "4": 21535,
+          "5": 21111,
+          "6": 21740
+        }
+      ],
+      "canceled_shipments_analysis": {
+        "canceled_total": 7754,
+        "canceled_marked_delayed": 0,
+        "canceled_exceeded_sla_count": 4423,
+        "canceled_avg_real_days": 3.48
+      },
+      "monthly_delay_trends": [
+        {
+          "order_year": 2015,
+          "order_month": 1,
+          "total_orders": 5322,
+          "delayed_orders": 2880,
+          "delay_rate_pct": 54.11
+        },
+        {
+          "order_year": 2015,
+          "order_month": 2,
+          "total_orders": 4729,
+          "delayed_orders": 2594,
+          "delay_rate_pct": 54.85
+        },
+        {
+          "order_year": 2015,
+          "order_month": 3,
+          "total_orders": 5362,
+          "delayed_orders": 2936,
+          "delay_rate_pct": 54.76
+        },
+        {
+          "order_year": 2015,
+          "order_month": 4,
+          "total_orders": 5126,
+          "delayed_orders": 2760,
+          "delay_rate_pct": 53.84
+        },
+        {
+          "order_year": 2015,
+          "order_month": 5,
+          "total_orders": 5357,
+          "delayed_orders": 2951,
+          "delay_rate_pct": 55.09
+        },
+        {
+          "order_year": 2015,
+          "order_month": 6,
+          "total_orders": 5134,
+          "delayed_orders": 2778,
+          "delay_rate_pct": 54.11
+        },
+        {
+          "order_year": 2015,
+          "order_month": 7,
+          "total_orders": 5299,
+          "delayed_orders": 2939,
+          "delay_rate_pct": 55.46
+        },
+        {
+          "order_year": 2015,
+          "order_month": 8,
+          "total_orders": 5273,
+          "delayed_orders": 2936,
+          "delay_rate_pct": 55.68
+        },
+        {
+          "order_year": 2015,
+          "order_month": 9,
+          "total_orders": 5140,
+          "delayed_orders": 2914,
+          "delay_rate_pct": 56.69
+        },
+        {
+          "order_year": 2015,
+          "order_month": 10,
+          "total_orders": 5302,
+          "delayed_orders": 2906,
+          "delay_rate_pct": 54.81
+        },
+        {
+          "order_year": 2015,
+          "order_month": 11,
+          "total_orders": 5235,
+          "delayed_orders": 2841,
+          "delay_rate_pct": 54.27
+        },
+        {
+          "order_year": 2015,
+          "order_month": 12,
+          "total_orders": 5371,
+          "delayed_orders": 2937,
+          "delay_rate_pct": 54.68
+        },
+        {
+          "order_year": 2016,
+          "order_month": 1,
+          "total_orders": 5317,
+          "delayed_orders": 2955,
+          "delay_rate_pct": 55.58
+        },
+        {
+          "order_year": 2016,
+          "order_month": 2,
+          "total_orders": 4894,
+          "delayed_orders": 2650,
+          "delay_rate_pct": 54.15
+        },
+        {
+          "order_year": 2016,
+          "order_month": 3,
+          "total_orders": 5210,
+          "delayed_orders": 2905,
+          "delay_rate_pct": 55.76
+        },
+        {
+          "order_year": 2016,
+          "order_month": 4,
+          "total_orders": 5097,
+          "delayed_orders": 2815,
+          "delay_rate_pct": 55.23
+        },
+        {
+          "order_year": 2016,
+          "order_month": 5,
+          "total_orders": 5302,
+          "delayed_orders": 2951,
+          "delay_rate_pct": 55.66
+        },
+        {
+          "order_year": 2016,
+          "order_month": 6,
+          "total_orders": 5054,
+          "delayed_orders": 2873,
+          "delay_rate_pct": 56.85
+        },
+        {
+          "order_year": 2016,
+          "order_month": 7,
+          "total_orders": 5305,
+          "delayed_orders": 2755,
+          "delay_rate_pct": 51.93
+        },
+        {
+          "order_year": 2016,
+          "order_month": 8,
+          "total_orders": 5334,
+          "delayed_orders": 2948,
+          "delay_rate_pct": 55.27
+        },
+        {
+          "order_year": 2016,
+          "order_month": 9,
+          "total_orders": 5160,
+          "delayed_orders": 2837,
+          "delay_rate_pct": 54.98
+        },
+        {
+          "order_year": 2016,
+          "order_month": 10,
+          "total_orders": 5398,
+          "delayed_orders": 2957,
+          "delay_rate_pct": 54.78
+        },
+        {
+          "order_year": 2016,
+          "order_month": 11,
+          "total_orders": 5210,
+          "delayed_orders": 2846,
+          "delay_rate_pct": 54.63
+        },
+        {
+          "order_year": 2016,
+          "order_month": 12,
+          "total_orders": 5269,
+          "delayed_orders": 2954,
+          "delay_rate_pct": 56.06
+        },
+        {
+          "order_year": 2017,
+          "order_month": 1,
+          "total_orders": 5217,
+          "delayed_orders": 2797,
+          "delay_rate_pct": 53.61
+        },
+        {
+          "order_year": 2017,
+          "order_month": 2,
+          "total_orders": 4906,
+          "delayed_orders": 2682,
+          "delay_rate_pct": 54.67
+        },
+        {
+          "order_year": 2017,
+          "order_month": 3,
+          "total_orders": 5347,
+          "delayed_orders": 2955,
+          "delay_rate_pct": 55.26
+        },
+        {
+          "order_year": 2017,
+          "order_month": 4,
+          "total_orders": 5212,
+          "delayed_orders": 2803,
+          "delay_rate_pct": 53.78
+        },
+        {
+          "order_year": 2017,
+          "order_month": 5,
+          "total_orders": 5317,
+          "delayed_orders": 2843,
+          "delay_rate_pct": 53.47
+        },
+        {
+          "order_year": 2017,
+          "order_month": 6,
+          "total_orders": 4951,
+          "delayed_orders": 2649,
+          "delay_rate_pct": 53.5
+        },
+        {
+          "order_year": 2017,
+          "order_month": 7,
+          "total_orders": 5318,
+          "delayed_orders": 2913,
+          "delay_rate_pct": 54.78
+        },
+        {
+          "order_year": 2017,
+          "order_month": 8,
+          "total_orders": 5305,
+          "delayed_orders": 2994,
+          "delay_rate_pct": 56.44
+        },
+        {
+          "order_year": 2017,
+          "order_month": 9,
+          "total_orders": 5189,
+          "delayed_orders": 2814,
+          "delay_rate_pct": 54.23
+        },
+        {
+          "order_year": 2017,
+          "order_month": 10,
+          "total_orders": 2255,
+          "delayed_orders": 1210,
+          "delay_rate_pct": 53.66
+        },
+        {
+          "order_year": 2017,
+          "order_month": 11,
+          "total_orders": 2055,
+          "delayed_orders": 1132,
+          "delay_rate_pct": 55.09
+        },
+        {
+          "order_year": 2017,
+          "order_month": 12,
+          "total_orders": 2124,
+          "delayed_orders": 1172,
+          "delay_rate_pct": 55.18
+        },
+        {
+          "order_year": 2018,
+          "order_month": 1,
+          "total_orders": 2123,
+          "delayed_orders": 1195,
+          "delay_rate_pct": 56.29
+        }
+      ]
+    },
+    "step_4": {
+      "step": 4,
+      "title": "Geographic and Regional Analysis",
+      "market_performance": [
+        {
+          "market": "LATAM",
+          "total_orders": 51594,
+          "delayed_orders": 28044,
+          "delay_rate_pct": 54.36,
+          "total_sales": 9235762.09,
+          "total_profit": 1123321.61,
+          "avg_delay_days": 0.56
+        },
+        {
+          "market": "Europe",
+          "total_orders": 50252,
+          "delayed_orders": 27743,
+          "delay_rate_pct": 55.21,
+          "total_sales": 9769198.32,
+          "total_profit": 1169442.96,
+          "avg_delay_days": 0.57
+        },
+        {
+          "market": "Pacific Asia",
+          "total_orders": 41260,
+          "delayed_orders": 22712,
+          "delay_rate_pct": 55.05,
+          "total_sales": 7434262.65,
+          "total_profit": 857753.44,
+          "avg_delay_days": 0.57
+        },
+        {
+          "market": "USCA",
+          "total_orders": 25799,
+          "delayed_orders": 14138,
+          "delay_rate_pct": 54.8,
+          "total_sales": 4553499.92,
+          "total_profit": 564313.78,
+          "avg_delay_days": 0.57
+        },
+        {
+          "market": "Africa",
+          "total_orders": 11614,
+          "delayed_orders": 6340,
+          "delay_rate_pct": 54.59,
+          "total_sales": 2061679.39,
+          "total_profit": 252071.18,
+          "avg_delay_days": 0.56
+        }
+      ],
+      "region_performance": [
+        {
+          "order_region": "Central America",
+          "total_orders": 28341,
+          "delayed_orders": 15518,
+          "delay_rate_pct": 54.75,
+          "total_sales": 5093849.72,
+          "total_profit": 616341.57
+        },
+        {
+          "order_region": "Western Europe",
+          "total_orders": 27109,
+          "delayed_orders": 15140,
+          "delay_rate_pct": 55.85,
+          "total_sales": 5296002.89,
+          "total_profit": 625446.08
+        },
+        {
+          "order_region": "South America",
+          "total_orders": 14935,
+          "delayed_orders": 8111,
+          "delay_rate_pct": 54.31,
+          "total_sales": 2660243.69,
+          "total_profit": 335154.4
+        },
+        {
+          "order_region": "Oceania",
+          "total_orders": 10148,
+          "delayed_orders": 5482,
+          "delay_rate_pct": 54.02,
+          "total_sales": 1809996.55,
+          "total_profit": 201478.02
+        },
+        {
+          "order_region": "Northern Europe",
+          "total_orders": 9792,
+          "delayed_orders": 5292,
+          "delay_rate_pct": 54.04,
+          "total_sales": 1939362.43,
+          "total_profit": 233450.6
+        },
+        {
+          "order_region": "Southeast Asia",
+          "total_orders": 9539,
+          "delayed_orders": 5297,
+          "delay_rate_pct": 55.53,
+          "total_sales": 1738553.44,
+          "total_profit": 211342.82
+        },
+        {
+          "order_region": "Southern Europe",
+          "total_orders": 9431,
+          "delayed_orders": 5129,
+          "delay_rate_pct": 54.38,
+          "total_sales": 1837525.82,
+          "total_profit": 230829.23
+        },
+        {
+          "order_region": "Caribbean",
+          "total_orders": 8318,
+          "delayed_orders": 4415,
+          "delay_rate_pct": 53.08,
+          "total_sales": 1481668.69,
+          "total_profit": 171825.64
+        },
+        {
+          "order_region": "West of USA ",
+          "total_orders": 7993,
+          "delayed_orders": 4313,
+          "delay_rate_pct": 53.96,
+          "total_sales": 1412253.6,
+          "total_profit": 164940.66
+        },
+        {
+          "order_region": "South Asia",
+          "total_orders": 7731,
+          "delayed_orders": 4350,
+          "delay_rate_pct": 56.27,
+          "total_sales": 1397364.57,
+          "total_profit": 165703.9
+        },
+        {
+          "order_region": "Eastern Asia",
+          "total_orders": 7280,
+          "delayed_orders": 3955,
+          "delay_rate_pct": 54.33,
+          "total_sales": 1334313.41,
+          "total_profit": 147368.01
+        },
+        {
+          "order_region": "East of USA",
+          "total_orders": 6915,
+          "delayed_orders": 3849,
+          "delay_rate_pct": 55.66,
+          "total_sales": 1231955.13,
+          "total_profit": 156263.3
+        },
+        {
+          "order_region": "West Asia",
+          "total_orders": 6009,
+          "delayed_orders": 3322,
+          "delay_rate_pct": 55.28,
+          "total_sales": 1056080.99,
+          "total_profit": 118815.41
+        },
+        {
+          "order_region": "US Center ",
+          "total_orders": 5887,
+          "delayed_orders": 3252,
+          "delay_rate_pct": 55.24,
+          "total_sales": 1034129.43,
+          "total_profit": 131094.23
+        },
+        {
+          "order_region": "South of  USA ",
+          "total_orders": 4045,
+          "delayed_orders": 2256,
+          "delay_rate_pct": 55.77,
+          "total_sales": 706904.34,
+          "total_profit": 88114.88
+        },
+        {
+          "order_region": "Eastern Europe",
+          "total_orders": 3920,
+          "delayed_orders": 2182,
+          "delay_rate_pct": 55.66,
+          "total_sales": 696307.19,
+          "total_profit": 79717.05
+        },
+        {
+          "order_region": "West Africa",
+          "total_orders": 3696,
+          "delayed_orders": 1953,
+          "delay_rate_pct": 52.84,
+          "total_sales": 654168.03,
+          "total_profit": 80030.27
+        },
+        {
+          "order_region": "North Africa",
+          "total_orders": 3232,
+          "delayed_orders": 1762,
+          "delay_rate_pct": 54.52,
+          "total_sales": 572241.97,
+          "total_profit": 64599.86
+        },
+        {
+          "order_region": "East Africa",
+          "total_orders": 1852,
+          "delayed_orders": 1036,
+          "delay_rate_pct": 55.94,
+          "total_sales": 338054.31,
+          "total_profit": 43167.73
+        },
+        {
+          "order_region": "Central Africa",
+          "total_orders": 1677,
+          "delayed_orders": 972,
+          "delay_rate_pct": 57.96,
+          "total_sales": 292912.56,
+          "total_profit": 33447.27
+        },
+        {
+          "order_region": "Southern Africa",
+          "total_orders": 1157,
+          "delayed_orders": 617,
+          "delay_rate_pct": 53.33,
+          "total_sales": 204302.52,
+          "total_profit": 30826.05
+        },
+        {
+          "order_region": "Canada",
+          "total_orders": 959,
+          "delayed_orders": 468,
+          "delay_rate_pct": 48.8,
+          "total_sales": 168257.42,
+          "total_profit": 23900.71
+        },
+        {
+          "order_region": "Central Asia",
+          "total_orders": 553,
+          "delayed_orders": 306,
+          "delay_rate_pct": 55.33,
+          "total_sales": 97953.69,
+          "total_profit": 13045.28
+        }
+      ],
+      "top_countries": [
+        {
+          "order_country": "Estados Unidos",
+          "total_orders": 24840,
+          "delayed_orders": 13670,
+          "delay_rate_pct": 55.03,
+          "total_sales": 4385242.5
+        },
+        {
+          "order_country": "Francia",
+          "total_orders": 13222,
+          "delayed_orders": 7341,
+          "delay_rate_pct": 55.52,
+          "total_sales": 2590323.49
+        },
+        {
+          "order_country": "M\u00e9xico",
+          "total_orders": 13172,
+          "delayed_orders": 7246,
+          "delay_rate_pct": 55.01,
+          "total_sales": 2368426.09
+        },
+        {
+          "order_country": "Alemania",
+          "total_orders": 9564,
+          "delayed_orders": 5383,
+          "delay_rate_pct": 56.28,
+          "total_sales": 1862577.59
+        },
+        {
+          "order_country": "Australia",
+          "total_orders": 8497,
+          "delayed_orders": 4613,
+          "delay_rate_pct": 54.29,
+          "total_sales": 1521410.41
+        },
+        {
+          "order_country": "Brasil",
+          "total_orders": 7987,
+          "delayed_orders": 4331,
+          "delay_rate_pct": 54.23,
+          "total_sales": 1433101.0
+        },
+        {
+          "order_country": "Reino Unido",
+          "total_orders": 7302,
+          "delayed_orders": 3903,
+          "delay_rate_pct": 53.45,
+          "total_sales": 1450047.23
+        },
+        {
+          "order_country": "China",
+          "total_orders": 5758,
+          "delayed_orders": 3123,
+          "delay_rate_pct": 54.24,
+          "total_sales": 1052752.58
+        },
+        {
+          "order_country": "Italia",
+          "total_orders": 4989,
+          "delayed_orders": 2672,
+          "delay_rate_pct": 53.56,
+          "total_sales": 963830.34
+        },
+        {
+          "order_country": "India",
+          "total_orders": 4783,
+          "delayed_orders": 2684,
+          "delay_rate_pct": 56.12,
+          "total_sales": 865968.89
+        },
+        {
+          "order_country": "Indonesia",
+          "total_orders": 4204,
+          "delayed_orders": 2328,
+          "delay_rate_pct": 55.38,
+          "total_sales": 761163.26
+        },
+        {
+          "order_country": "Espa\u00f1a",
+          "total_orders": 3868,
+          "delayed_orders": 2154,
+          "delay_rate_pct": 55.69,
+          "total_sales": 762906.53
+        },
+        {
+          "order_country": "El Salvador",
+          "total_orders": 3726,
+          "delayed_orders": 2091,
+          "delay_rate_pct": 56.12,
+          "total_sales": 672392.35
+        },
+        {
+          "order_country": "Rep\u00fablica Dominicana",
+          "total_orders": 3669,
+          "delayed_orders": 2020,
+          "delay_rate_pct": 55.06,
+          "total_sales": 652749.77
+        },
+        {
+          "order_country": "Honduras",
+          "total_orders": 3629,
+          "delayed_orders": 1919,
+          "delay_rate_pct": 52.88,
+          "total_sales": 661168.59
+        },
+        {
+          "order_country": "Cuba",
+          "total_orders": 3534,
+          "delayed_orders": 1798,
+          "delay_rate_pct": 50.88,
+          "total_sales": 636517.3
+        },
+        {
+          "order_country": "Turqu\u00eda",
+          "total_orders": 3395,
+          "delayed_orders": 1894,
+          "delay_rate_pct": 55.79,
+          "total_sales": 599872.75
+        },
+        {
+          "order_country": "Nicaragua",
+          "total_orders": 3046,
+          "delayed_orders": 1716,
+          "delay_rate_pct": 56.34,
+          "total_sales": 544122.14
+        },
+        {
+          "order_country": "Guatemala",
+          "total_orders": 2778,
+          "delayed_orders": 1529,
+          "delay_rate_pct": 55.04,
+          "total_sales": 495237.1
+        },
+        {
+          "order_country": "Nigeria",
+          "total_orders": 2309,
+          "delayed_orders": 1225,
+          "delay_rate_pct": 53.05,
+          "total_sales": 409032.27
+        },
+        {
+          "order_country": "Filipinas",
+          "total_orders": 2103,
+          "delayed_orders": 1162,
+          "delay_rate_pct": 55.25,
+          "total_sales": 378626.89
+        },
+        {
+          "order_country": "Panam\u00e1",
+          "total_orders": 1941,
+          "delayed_orders": 984,
+          "delay_rate_pct": 50.7,
+          "total_sales": 344832.6
+        },
+        {
+          "order_country": "Pa\u00edses Bajos",
+          "total_orders": 1932,
+          "delayed_orders": 1053,
+          "delay_rate_pct": 54.5,
+          "total_sales": 379786.82
+        },
+        {
+          "order_country": "Argentina",
+          "total_orders": 1931,
+          "delayed_orders": 999,
+          "delay_rate_pct": 51.73,
+          "total_sales": 340569.52
+        },
+        {
+          "order_country": "Colombia",
+          "total_orders": 1771,
+          "delayed_orders": 908,
+          "delay_rate_pct": 51.27,
+          "total_sales": 309969.62
+        }
+      ],
+      "customer_origin_analysis": [
+        {
+          "customer_country": "Puerto Rico",
+          "customer_state": "PR",
+          "customer_city": "Caguas",
+          "order_count": 66770,
+          "delay_rate_pct": 54.74,
+          "avg_latitude": 18.2535,
+          "avg_longitude": -66.344
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "IL",
+          "customer_city": "Chicago",
+          "order_count": 3885,
+          "delay_rate_pct": 56.58,
+          "avg_latitude": 41.7681,
+          "avg_longitude": -88.0591
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "CA",
+          "customer_city": "Los Angeles",
+          "order_count": 3417,
+          "delay_rate_pct": 54.38,
+          "avg_latitude": 34.0331,
+          "avg_longitude": -118.1971
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "NY",
+          "customer_city": "Brooklyn",
+          "order_count": 3412,
+          "delay_rate_pct": 53.11,
+          "avg_latitude": 40.5165,
+          "avg_longitude": -74.8935
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "NY",
+          "customer_city": "New York",
+          "order_count": 1816,
+          "delay_rate_pct": 55.23,
+          "avg_latitude": 40.6876,
+          "avg_longitude": -74.3766
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "PA",
+          "customer_city": "Philadelphia",
+          "order_count": 1577,
+          "delay_rate_pct": 55.23,
+          "avg_latitude": 39.906,
+          "avg_longitude": -75.7143
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "NY",
+          "customer_city": "Bronx",
+          "order_count": 1500,
+          "delay_rate_pct": 54.93,
+          "avg_latitude": 40.8627,
+          "avg_longitude": -73.8746
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "CA",
+          "customer_city": "San Diego",
+          "order_count": 1437,
+          "delay_rate_pct": 53.44,
+          "avg_latitude": 32.893,
+          "avg_longitude": -117.2522
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "FL",
+          "customer_city": "Miami",
+          "order_count": 1314,
+          "delay_rate_pct": 53.81,
+          "avg_latitude": 26.0178,
+          "avg_longitude": -81.2089
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "TX",
+          "customer_city": "Houston",
+          "order_count": 1297,
+          "delay_rate_pct": 53.05,
+          "avg_latitude": 29.6993,
+          "avg_longitude": -95.5366
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "NV",
+          "customer_city": "Las Vegas",
+          "order_count": 1164,
+          "delay_rate_pct": 56.19,
+          "avg_latitude": 36.053,
+          "avg_longitude": -108.5002
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "TX",
+          "customer_city": "Dallas",
+          "order_count": 1029,
+          "delay_rate_pct": 53.94,
+          "avg_latitude": 32.8198,
+          "avg_longitude": -96.7855
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "MI",
+          "customer_city": "Detroit",
+          "order_count": 958,
+          "delay_rate_pct": 52.61,
+          "avg_latitude": 42.3295,
+          "avg_longitude": -83.1294
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "AZ",
+          "customer_city": "Phoenix",
+          "order_count": 945,
+          "delay_rate_pct": 51.96,
+          "avg_latitude": 33.5612,
+          "avg_longitude": -112.1467
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "CA",
+          "customer_city": "San Jose",
+          "order_count": 943,
+          "delay_rate_pct": 51.64,
+          "avg_latitude": 37.2967,
+          "avg_longitude": -121.8368
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "OH",
+          "customer_city": "Cleveland",
+          "order_count": 784,
+          "delay_rate_pct": 54.34,
+          "avg_latitude": 41.3565,
+          "avg_longitude": -81.7029
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "TX",
+          "customer_city": "San Antonio",
+          "order_count": 730,
+          "delay_rate_pct": 57.4,
+          "avg_latitude": 29.746,
+          "avg_longitude": -98.4482
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "CO",
+          "customer_city": "Aurora",
+          "order_count": 719,
+          "delay_rate_pct": 49.79,
+          "avg_latitude": 38.6652,
+          "avg_longitude": -102.6146
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "TN",
+          "customer_city": "Memphis",
+          "order_count": 707,
+          "delay_rate_pct": 55.3,
+          "avg_latitude": 35.1504,
+          "avg_longitude": -89.9406
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "VA",
+          "customer_city": "Virginia Beach",
+          "order_count": 691,
+          "delay_rate_pct": 59.48,
+          "avg_latitude": 36.8611,
+          "avg_longitude": -76.1264
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "TX",
+          "customer_city": "El Paso",
+          "order_count": 649,
+          "delay_rate_pct": 48.69,
+          "avg_latitude": 31.7074,
+          "avg_longitude": -106.0224
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "FL",
+          "customer_city": "Fort Lauderdale",
+          "order_count": 646,
+          "delay_rate_pct": 52.94,
+          "avg_latitude": 26.1182,
+          "avg_longitude": -80.2257
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "HI",
+          "customer_city": "Honolulu",
+          "order_count": 609,
+          "delay_rate_pct": 54.68,
+          "avg_latitude": 21.3089,
+          "avg_longitude": -157.8239
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "AZ",
+          "customer_city": "Tucson",
+          "order_count": 582,
+          "delay_rate_pct": 49.31,
+          "avg_latitude": 32.4161,
+          "avg_longitude": -111.4976
+        },
+        {
+          "customer_country": "EE. UU.",
+          "customer_state": "CA",
+          "customer_city": "Bakersfield",
+          "order_count": 581,
+          "delay_rate_pct": 54.04,
+          "avg_latitude": 35.404,
+          "avg_longitude": -119.0814
+        }
+      ],
+      "coordinates_semantics": {
+        "min_latitude": -33.93755341,
+        "max_latitude": 48.78193283,
+        "min_longitude": -158.0259857,
+        "max_longitude": 115.2630768,
+        "semantic_finding": "Latitude and longitude represent store/customer origin locations (concentrated in Puerto Rico ~18.2\u00b0N and US mainland ~30-48\u00b0N), NOT destination delivery addresses. Destination geographic attributes are provided as text: order_country, order_region, order_city, order_state."
+      }
+    },
+    "step_5": {
+      "step": 5,
+      "title": "Product, Category, and Customer Analysis",
+      "department_performance": [
+        {
+          "department_id": 7,
+          "department_name": "Fan Shop",
+          "total_orders": 66861,
+          "delayed_orders": 36623,
+          "delay_rate_pct": 54.77,
+          "total_sales": 15378581.71,
+          "total_profit": 1834155.44
+        },
+        {
+          "department_id": 4,
+          "department_name": "Apparel",
+          "total_orders": 48998,
+          "delayed_orders": 26825,
+          "delay_rate_pct": 54.75,
+          "total_sales": 7167654.21,
+          "total_profit": 881882.93
+        },
+        {
+          "department_id": 5,
+          "department_name": "Golf",
+          "total_orders": 33220,
+          "delayed_orders": 18198,
+          "delay_rate_pct": 54.78,
+          "total_sales": 4142100.96,
+          "total_profit": 497523.56
+        },
+        {
+          "department_id": 3,
+          "department_name": "Footwear",
+          "total_orders": 14525,
+          "delayed_orders": 7949,
+          "delay_rate_pct": 54.73,
+          "total_sales": 3599468.83,
+          "total_profit": 410222.5
+        },
+        {
+          "department_id": 6,
+          "department_name": "Outdoors",
+          "total_orders": 9686,
+          "delayed_orders": 5375,
+          "delay_rate_pct": 55.49,
+          "total_sales": 1125953.44,
+          "total_profit": 145251.46
+        },
+        {
+          "department_id": 2,
+          "department_name": "Fitness",
+          "total_orders": 2479,
+          "delayed_orders": 1377,
+          "delay_rate_pct": 55.55,
+          "total_sales": 357158.26,
+          "total_profit": 46538.06
+        },
+        {
+          "department_id": 9,
+          "department_name": "Discs Shop",
+          "total_orders": 2026,
+          "delayed_orders": 1103,
+          "delay_rate_pct": 54.44,
+          "total_sales": 205675.9,
+          "total_profit": 24193.12
+        },
+        {
+          "department_id": 10,
+          "department_name": "Technology",
+          "total_orders": 1465,
+          "delayed_orders": 806,
+          "delay_rate_pct": 55.02,
+          "total_sales": 933829.24,
+          "total_profit": 113170.01
+        },
+        {
+          "department_id": 11,
+          "department_name": "Pet Shop",
+          "total_orders": 492,
+          "delayed_orders": 290,
+          "delay_rate_pct": 58.94,
+          "total_sales": 37318.3,
+          "total_profit": 3589.26
+        },
+        {
+          "department_id": 8,
+          "department_name": "Book Shop",
+          "total_orders": 405,
+          "delayed_orders": 229,
+          "delay_rate_pct": 56.54,
+          "total_sales": 11303.42,
+          "total_profit": 883.01
+        },
+        {
+          "department_id": 12,
+          "department_name": "Health and Beauty ",
+          "total_orders": 362,
+          "delayed_orders": 202,
+          "delay_rate_pct": 55.8,
+          "total_sales": 95358.11,
+          "total_profit": 9493.63
+        }
+      ],
+      "category_performance": [
+        {
+          "category_id": 17,
+          "category_name": "Cleats",
+          "department_name": "Apparel",
+          "total_orders": 24551,
+          "delayed_orders": 13496,
+          "delay_rate_pct": 54.97,
+          "total_sales": 3982856.5,
+          "total_profit": 494636.92
+        },
+        {
+          "category_id": 18,
+          "category_name": "Men's Footwear",
+          "department_name": "Apparel",
+          "total_orders": 22246,
+          "delayed_orders": 12121,
+          "delay_rate_pct": 54.49,
+          "total_sales": 2598494.42,
+          "total_profit": 311902.82
+        },
+        {
+          "category_id": 24,
+          "category_name": "Women's Apparel",
+          "department_name": "Golf",
+          "total_orders": 21035,
+          "delayed_orders": 11476,
+          "delay_rate_pct": 54.56,
+          "total_sales": 2828708.5,
+          "total_profit": 350421.03
+        },
+        {
+          "category_id": 46,
+          "category_name": "Indoor/Outdoor Games",
+          "department_name": "Fan Shop",
+          "total_orders": 19298,
+          "delayed_orders": 10565,
+          "delay_rate_pct": 54.75,
+          "total_sales": 2596454.02,
+          "total_profit": 318451.43
+        },
+        {
+          "category_id": 45,
+          "category_name": "Fishing",
+          "department_name": "Fan Shop",
+          "total_orders": 17325,
+          "delayed_orders": 9516,
+          "delay_rate_pct": 54.93,
+          "total_sales": 6226935.29,
+          "total_profit": 756220.77
+        },
+        {
+          "category_id": 48,
+          "category_name": "Water Sports",
+          "department_name": "Fan Shop",
+          "total_orders": 15540,
+          "delayed_orders": 8517,
+          "delay_rate_pct": 54.81,
+          "total_sales": 2798044.18,
+          "total_profit": 325146.96
+        },
+        {
+          "category_id": 43,
+          "category_name": "Camping & Hiking",
+          "department_name": "Fan Shop",
+          "total_orders": 13729,
+          "delayed_orders": 7487,
+          "delay_rate_pct": 54.53,
+          "total_sales": 3700783.63,
+          "total_profit": 427455.57
+        },
+        {
+          "category_id": 9,
+          "category_name": "Cardio Equipment",
+          "department_name": "Footwear",
+          "total_orders": 12487,
+          "delayed_orders": 6805,
+          "delay_rate_pct": 54.5,
+          "total_sales": 3320250.7,
+          "total_profit": 383011.1
+        },
+        {
+          "category_id": 29,
+          "category_name": "Shop By Sport",
+          "department_name": "Golf",
+          "total_orders": 10984,
+          "delayed_orders": 6058,
+          "delay_rate_pct": 55.15,
+          "total_sales": 1177185.63,
+          "total_profit": 129813.96
+        },
+        {
+          "category_id": 37,
+          "category_name": "Electronics",
+          "department_name": "Outdoors",
+          "total_orders": 2029,
+          "delayed_orders": 1143,
+          "delay_rate_pct": 56.33,
+          "total_sales": 229480.66,
+          "total_profit": 28626.48
+        },
+        {
+          "category_id": 40,
+          "category_name": "Accessories",
+          "department_name": "Outdoors",
+          "total_orders": 1780,
+          "delayed_orders": 1014,
+          "delay_rate_pct": 56.97,
+          "total_sales": 119712.55,
+          "total_profit": 16643.52
+        },
+        {
+          "category_id": 36,
+          "category_name": "Golf Balls",
+          "department_name": "Outdoors",
+          "total_orders": 1475,
+          "delayed_orders": 805,
+          "delay_rate_pct": 54.58,
+          "total_sales": 69341.25,
+          "total_profit": 8342.67
+        },
+        {
+          "category_id": 26,
+          "category_name": "Girls' Apparel",
+          "department_name": "Golf",
+          "total_orders": 1201,
+          "delayed_orders": 664,
+          "delay_rate_pct": 55.29,
+          "total_sales": 136206.83,
+          "total_profit": 17288.57
+        },
+        {
+          "category_id": 13,
+          "category_name": "Electronics",
+          "department_name": "Footwear",
+          "total_orders": 1127,
+          "delayed_orders": 627,
+          "delay_rate_pct": 55.63,
+          "total_sales": 103846.6,
+          "total_profit": 12264.9
+        },
+        {
+          "category_id": 35,
+          "category_name": "Golf Gloves",
+          "department_name": "Outdoors",
+          "total_orders": 1070,
+          "delayed_orders": 602,
+          "delay_rate_pct": 56.26,
+          "total_sales": 104787.4,
+          "total_profit": 12975.49
+        },
+        {
+          "category_id": 41,
+          "category_name": "Trade-In",
+          "department_name": "Outdoors",
+          "total_orders": 974,
+          "delayed_orders": 542,
+          "delay_rate_pct": 55.65,
+          "total_sales": 61667.54,
+          "total_profit": 7915.37
+        },
+        {
+          "category_id": 75,
+          "category_name": "Video Games",
+          "department_name": "Discs Shop",
+          "total_orders": 838,
+          "delayed_orders": 455,
+          "delay_rate_pct": 54.3,
+          "total_sales": 29919.2,
+          "total_profit": 2717.52
+        },
+        {
+          "category_id": 63,
+          "category_name": "Children's Clothing",
+          "department_name": "Apparel",
+          "total_orders": 652,
+          "delayed_orders": 348,
+          "delay_rate_pct": 53.37,
+          "total_sales": 209268.38,
+          "total_profit": 27178.1
+        },
+        {
+          "category_id": 76,
+          "category_name": "Women's Clothing",
+          "department_name": "Apparel",
+          "total_orders": 650,
+          "delayed_orders": 367,
+          "delay_rate_pct": 56.46,
+          "total_sales": 126006.93,
+          "total_profit": 19102.85
+        },
+        {
+          "category_id": 3,
+          "category_name": "Baseball & Softball",
+          "department_name": "Fitness",
+          "total_orders": 632,
+          "delayed_orders": 349,
+          "delay_rate_pct": 55.22,
+          "total_sales": 84367.27,
+          "total_profit": 12762.13
+        },
+        {
+          "category_id": 7,
+          "category_name": "Hockey",
+          "department_name": "Fitness",
+          "total_orders": 614,
+          "delayed_orders": 329,
+          "delay_rate_pct": 53.58,
+          "total_sales": 43618.36,
+          "total_profit": 5397.43
+        },
+        {
+          "category_id": 62,
+          "category_name": "Cameras ",
+          "department_name": "Technology",
+          "total_orders": 592,
+          "delayed_orders": 344,
+          "delay_rate_pct": 58.11,
+          "total_sales": 240496.68,
+          "total_profit": 30289.8
+        },
+        {
+          "category_id": 74,
+          "category_name": "Toys",
+          "department_name": "Fan Shop",
+          "total_orders": 529,
+          "delayed_orders": 291,
+          "delay_rate_pct": 55.01,
+          "total_sales": 5485.68,
+          "total_profit": 900.71
+        },
+        {
+          "category_id": 33,
+          "category_name": "Golf Shoes",
+          "department_name": "Outdoors",
+          "total_orders": 524,
+          "delayed_orders": 291,
+          "delay_rate_pct": 55.53,
+          "total_sales": 96506.47,
+          "total_profit": 12406.07
+        },
+        {
+          "category_id": 72,
+          "category_name": "Pet Supplies",
+          "department_name": "Pet Shop",
+          "total_orders": 492,
+          "delayed_orders": 290,
+          "delay_rate_pct": 58.94,
+          "total_sales": 37318.3,
+          "total_profit": 3589.26
+        },
+        {
+          "category_id": 66,
+          "category_name": "Crafts",
+          "department_name": "Apparel",
+          "total_orders": 484,
+          "delayed_orders": 271,
+          "delay_rate_pct": 55.99,
+          "total_sales": 200704.87,
+          "total_profit": 25531.17
+        },
+        {
+          "category_id": 68,
+          "category_name": "Garden",
+          "department_name": "Outdoors",
+          "total_orders": 484,
+          "delayed_orders": 270,
+          "delay_rate_pct": 55.79,
+          "total_sales": 231765.46,
+          "total_profit": 33443.01
+        },
+        {
+          "category_id": 67,
+          "category_name": "DVDs",
+          "department_name": "Discs Shop",
+          "total_orders": 483,
+          "delayed_orders": 259,
+          "delay_rate_pct": 53.62,
+          "total_sales": 71319.38,
+          "total_profit": 6655.43
+        },
+        {
+          "category_id": 64,
+          "category_name": "Computers",
+          "department_name": "Technology",
+          "total_orders": 442,
+          "delayed_orders": 224,
+          "delay_rate_pct": 50.68,
+          "total_sales": 595395.0,
+          "total_profit": 69656.81
+        },
+        {
+          "category_id": 32,
+          "category_name": "Golf Apparel",
+          "department_name": "Outdoors",
+          "total_orders": 441,
+          "delayed_orders": 229,
+          "delay_rate_pct": 51.93,
+          "total_sales": 31447.44,
+          "total_profit": 3496.31
+        },
+        {
+          "category_id": 44,
+          "category_name": "Hunting & Shooting",
+          "department_name": "Fan Shop",
+          "total_orders": 440,
+          "delayed_orders": 247,
+          "delay_rate_pct": 56.14,
+          "total_sales": 50878.91,
+          "total_profit": 5980.0
+        },
+        {
+          "category_id": 71,
+          "category_name": "Music",
+          "department_name": "Discs Shop",
+          "total_orders": 434,
+          "delayed_orders": 248,
+          "delay_rate_pct": 57.14,
+          "total_sales": 101687.29,
+          "total_profit": 14436.32
+        },
+        {
+          "category_id": 65,
+          "category_name": "Consumer Electronics",
+          "department_name": "Technology",
+          "total_orders": 431,
+          "delayed_orders": 238,
+          "delay_rate_pct": 55.22,
+          "total_sales": 97937.56,
+          "total_profit": 13223.4
+        },
+        {
+          "category_id": 12,
+          "category_name": "Boxing & MMA",
+          "department_name": "Footwear",
+          "total_orders": 423,
+          "delayed_orders": 238,
+          "delay_rate_pct": 56.26,
+          "total_sales": 76286.72,
+          "total_profit": 8641.37
+        },
+        {
+          "category_id": 59,
+          "category_name": "Books ",
+          "department_name": "Book Shop",
+          "total_orders": 405,
+          "delayed_orders": 229,
+          "delay_rate_pct": 56.54,
+          "total_sales": 11303.42,
+          "total_profit": 883.01
+        },
+        {
+          "category_id": 38,
+          "category_name": "Kids' Golf Clubs",
+          "department_name": "Outdoors",
+          "total_orders": 384,
+          "delayed_orders": 205,
+          "delay_rate_pct": 53.39,
+          "total_sales": 89473.7,
+          "total_profit": 9045.84
+        },
+        {
+          "category_id": 69,
+          "category_name": "Health and Beauty",
+          "department_name": "Health and Beauty ",
+          "total_orders": 362,
+          "delayed_orders": 202,
+          "delay_rate_pct": 55.8,
+          "total_sales": 95358.11,
+          "total_profit": 9493.63
+        },
+        {
+          "category_id": 73,
+          "category_name": "Sporting Goods",
+          "department_name": "Fitness",
+          "total_orders": 357,
+          "delayed_orders": 198,
+          "delay_rate_pct": 55.46,
+          "total_sales": 105063.61,
+          "total_profit": 12518.61
+        },
+        {
+          "category_id": 5,
+          "category_name": "Lacrosse",
+          "department_name": "Fitness",
+          "total_orders": 343,
+          "delayed_orders": 206,
+          "delay_rate_pct": 60.06,
+          "total_sales": 35415.93,
+          "total_profit": 4364.29
+        },
+        {
+          "category_id": 6,
+          "category_name": "Tennis & Racquet",
+          "department_name": "Fitness",
+          "total_orders": 328,
+          "delayed_orders": 183,
+          "delay_rate_pct": 55.79,
+          "total_sales": 40077.81,
+          "total_profit": 5747.98
+        },
+        {
+          "category_id": 11,
+          "category_name": "Fitness Accessories",
+          "department_name": "Footwear",
+          "total_orders": 309,
+          "delayed_orders": 176,
+          "delay_rate_pct": 56.96,
+          "total_sales": 31751.36,
+          "total_profit": 5258.39
+        },
+        {
+          "category_id": 30,
+          "category_name": "Men's Golf Clubs",
+          "department_name": "Outdoors",
+          "total_orders": 283,
+          "delayed_orders": 135,
+          "delay_rate_pct": 47.7,
+          "total_sales": 42382.79,
+          "total_profit": 5517.99
+        },
+        {
+          "category_id": 61,
+          "category_name": "CDs ",
+          "department_name": "Discs Shop",
+          "total_orders": 271,
+          "delayed_orders": 141,
+          "delay_rate_pct": 52.03,
+          "total_sales": 2750.03,
+          "total_profit": 383.85
+        },
+        {
+          "category_id": 70,
+          "category_name": "Men's Clothing",
+          "department_name": "Apparel",
+          "total_orders": 208,
+          "delayed_orders": 113,
+          "delay_rate_pct": 54.33,
+          "total_sales": 39365.71,
+          "total_profit": 2006.04
+        },
+        {
+          "category_id": 60,
+          "category_name": "Baby ",
+          "department_name": "Apparel",
+          "total_orders": 207,
+          "delayed_orders": 109,
+          "delay_rate_pct": 52.66,
+          "total_sales": 10957.4,
+          "total_profit": 1525.03
+        },
+        {
+          "category_id": 31,
+          "category_name": "Women's Golf Clubs",
+          "department_name": "Outdoors",
+          "total_orders": 181,
+          "delayed_orders": 97,
+          "delay_rate_pct": 53.59,
+          "total_sales": 39984.39,
+          "total_profit": 5028.64
+        },
+        {
+          "category_id": 2,
+          "category_name": "Soccer",
+          "department_name": "Fitness",
+          "total_orders": 138,
+          "delayed_orders": 75,
+          "delay_rate_pct": 54.35,
+          "total_sales": 23909.95,
+          "total_profit": 3901.95
+        },
+        {
+          "category_id": 10,
+          "category_name": "Strength Training",
+          "department_name": "Footwear",
+          "total_orders": 111,
+          "delayed_orders": 64,
+          "delay_rate_pct": 57.66,
+          "total_sales": 48813.84,
+          "total_profit": 332.31
+        },
+        {
+          "category_id": 16,
+          "category_name": "As Seen on  TV!",
+          "department_name": "Footwear",
+          "total_orders": 68,
+          "delayed_orders": 39,
+          "delay_rate_pct": 57.35,
+          "total_sales": 18519.61,
+          "total_profit": 714.43
+        },
+        {
+          "category_id": 4,
+          "category_name": "Basketball",
+          "department_name": "Fitness",
+          "total_orders": 67,
+          "delayed_orders": 37,
+          "delay_rate_pct": 55.22,
+          "total_sales": 24705.33,
+          "total_profit": 1845.67
+        },
+        {
+          "category_id": 34,
+          "category_name": "Golf Bags & Carts",
+          "department_name": "Outdoors",
+          "total_orders": 61,
+          "delayed_orders": 42,
+          "delay_rate_pct": 68.85,
+          "total_sales": 9403.79,
+          "total_profit": 1810.07
+        }
+      ],
+      "top_products": [
+        {
+          "product_card_id": 365,
+          "product_name": "Perfect Fitness Perfect Rip Deck",
+          "category_name": "Cleats",
+          "order_count": 24515,
+          "total_quantity": 73698,
+          "total_revenue": 3973180.36,
+          "total_profit": 493828.3,
+          "delay_rate_pct": 54.96
+        },
+        {
+          "product_card_id": 403,
+          "product_name": "Nike Men's CJ Elite 2 TD Football Cleat",
+          "category_name": "Men's Footwear",
+          "order_count": 22246,
+          "total_quantity": 22246,
+          "total_revenue": 2598494.42,
+          "total_profit": 311902.82,
+          "delay_rate_pct": 54.49
+        },
+        {
+          "product_card_id": 502,
+          "product_name": "Nike Men's Dri-FIT Victory Golf Polo",
+          "category_name": "Women's Apparel",
+          "order_count": 21035,
+          "total_quantity": 62956,
+          "total_revenue": 2828708.5,
+          "total_profit": 350421.03,
+          "delay_rate_pct": 54.56
+        },
+        {
+          "product_card_id": 1014,
+          "product_name": "O'Brien Men's Neoprene Life Vest",
+          "category_name": "Indoor/Outdoor Games",
+          "order_count": 19298,
+          "total_quantity": 57803,
+          "total_revenue": 2596454.02,
+          "total_profit": 318451.43,
+          "delay_rate_pct": 54.75
+        },
+        {
+          "product_card_id": 1004,
+          "product_name": "Field & Stream Sportsman 16 Gun Fire Safe",
+          "category_name": "Fishing",
+          "order_count": 17325,
+          "total_quantity": 17325,
+          "total_revenue": 6226935.29,
+          "total_profit": 756220.77,
+          "delay_rate_pct": 54.93
+        },
+        {
+          "product_card_id": 1073,
+          "product_name": "Pelican Sunstream 100 Kayak",
+          "category_name": "Water Sports",
+          "order_count": 15500,
+          "total_quantity": 15500,
+          "total_revenue": 2785518.09,
+          "total_profit": 324076.37,
+          "delay_rate_pct": 54.79
+        },
+        {
+          "product_card_id": 957,
+          "product_name": "Diamondback Women's Serene Classic Comfort Bi",
+          "category_name": "Camping & Hiking",
+          "order_count": 13729,
+          "total_quantity": 13729,
+          "total_revenue": 3700783.63,
+          "total_profit": 427455.57,
+          "delay_rate_pct": 54.53
+        },
+        {
+          "product_card_id": 191,
+          "product_name": "Nike Men's Free 5.0+ Running Shoe",
+          "category_name": "Cardio Equipment",
+          "order_count": 12169,
+          "total_quantity": 36680,
+          "total_revenue": 3295693.3,
+          "total_profit": 379915.82,
+          "delay_rate_pct": 54.47
+        },
+        {
+          "product_card_id": 627,
+          "product_name": "Under Armour Girls' Toddler Spine Surge Runni",
+          "category_name": "Shop By Sport",
+          "order_count": 10617,
+          "total_quantity": 31735,
+          "total_revenue": 1140770.96,
+          "total_profit": 126278.51,
+          "delay_rate_pct": 55.24
+        },
+        {
+          "product_card_id": 1362,
+          "product_name": "Fighting video games",
+          "category_name": "Video Games",
+          "order_count": 838,
+          "total_quantity": 838,
+          "total_revenue": 29919.2,
+          "total_profit": 2717.52,
+          "delay_rate_pct": 54.3
+        },
+        {
+          "product_card_id": 1350,
+          "product_name": "Children's heaters",
+          "category_name": "Children's Clothing",
+          "order_count": 652,
+          "total_quantity": 652,
+          "total_revenue": 209268.38,
+          "total_profit": 27178.1,
+          "delay_rate_pct": 53.37
+        },
+        {
+          "product_card_id": 1363,
+          "product_name": "Summer dresses",
+          "category_name": "Women's Clothing",
+          "order_count": 650,
+          "total_quantity": 650,
+          "total_revenue": 126006.93,
+          "total_profit": 19102.85,
+          "delay_rate_pct": 56.46
+        },
+        {
+          "product_card_id": 1349,
+          "product_name": "Web Camera",
+          "category_name": "Cameras ",
+          "order_count": 592,
+          "total_quantity": 592,
+          "total_revenue": 240496.68,
+          "total_profit": 30289.8,
+          "delay_rate_pct": 58.11
+        },
+        {
+          "product_card_id": 1361,
+          "product_name": "Toys ",
+          "category_name": "Toys",
+          "order_count": 529,
+          "total_quantity": 529,
+          "total_revenue": 5485.68,
+          "total_profit": 900.71,
+          "delay_rate_pct": 55.01
+        },
+        {
+          "product_card_id": 1359,
+          "product_name": "Adult dog supplies",
+          "category_name": "Pet Supplies",
+          "order_count": 492,
+          "total_quantity": 492,
+          "total_revenue": 37318.3,
+          "total_profit": 3589.26,
+          "delay_rate_pct": 58.94
+        },
+        {
+          "product_card_id": 1355,
+          "product_name": "Lawn mower",
+          "category_name": "Garden",
+          "order_count": 484,
+          "total_quantity": 484,
+          "total_revenue": 231765.46,
+          "total_profit": 33443.01,
+          "delay_rate_pct": 55.79
+        },
+        {
+          "product_card_id": 1353,
+          "product_name": "Porcelain crafts",
+          "category_name": "Crafts",
+          "order_count": 484,
+          "total_quantity": 484,
+          "total_revenue": 200704.87,
+          "total_profit": 25531.17,
+          "delay_rate_pct": 55.99
+        },
+        {
+          "product_card_id": 1354,
+          "product_name": "DVDs ",
+          "category_name": "DVDs",
+          "order_count": 483,
+          "total_quantity": 483,
+          "total_revenue": 71319.38,
+          "total_profit": 6655.43,
+          "delay_rate_pct": 53.62
+        },
+        {
+          "product_card_id": 1351,
+          "product_name": "Dell Laptop",
+          "category_name": "Computers",
+          "order_count": 442,
+          "total_quantity": 442,
+          "total_revenue": 595395.0,
+          "total_profit": 69656.81,
+          "delay_rate_pct": 50.68
+        },
+        {
+          "product_card_id": 1358,
+          "product_name": "Rock music",
+          "category_name": "Music",
+          "order_count": 434,
+          "total_quantity": 434,
+          "total_revenue": 101687.29,
+          "total_profit": 14436.32,
+          "delay_rate_pct": 57.14
+        }
+      ],
+      "customer_segments": [
+        {
+          "customer_segment": "Consumer",
+          "total_orders": 93504,
+          "delayed_orders": 51248,
+          "delay_rate_pct": 54.81,
+          "total_sales": 17164278.37,
+          "total_profit": 2073487.67,
+          "avg_order_value": 183.57
+        },
+        {
+          "customer_segment": "Corporate",
+          "total_orders": 54789,
+          "delayed_orders": 29982,
+          "delay_rate_pct": 54.72,
+          "total_sales": 10030649.9,
+          "total_profit": 1202574.96,
+          "avg_order_value": 183.08
+        },
+        {
+          "customer_segment": "Home Office",
+          "total_orders": 32226,
+          "delayed_orders": 17747,
+          "delay_rate_pct": 55.07,
+          "total_sales": 5859474.11,
+          "total_profit": 690840.34,
+          "avg_order_value": 181.82
+        }
+      ],
+      "customer_purchasing_patterns": {
+        "total_unique_customers": 20652,
+        "avg_orders_per_customer": 3.18,
+        "max_orders_per_customer": 15,
+        "avg_items_per_customer": 8.74,
+        "avg_spend_per_customer": 1600.54
+      }
+    },
+    "step_6": {
+      "step": 6,
+      "title": "Sales, Profit, and Order Trends",
+      "financial_overview": {
+        "gross_sales": 36784735.01,
+        "total_discount": 3730378.4,
+        "net_sales": 33054402.38,
+        "total_profit": 3966902.97,
+        "overall_profit_margin_pct": 12.0,
+        "avg_profit_per_order": 21.97,
+        "avg_profit_ratio": 0.1206,
+        "loss_orders_count": 33784,
+        "loss_orders_pct": 18.71,
+        "total_loss_amount": -3883547.35
+      },
+      "monthly_financials": [
+        {
+          "order_year": 2015,
+          "order_month": 1,
+          "order_count": 5322,
+          "monthly_net_sales": 945382.16,
+          "monthly_profit": 111660.74,
+          "avg_profit_ratio": 0.1159
+        },
+        {
+          "order_year": 2015,
+          "order_month": 2,
+          "order_count": 4729,
+          "monthly_net_sales": 833012.43,
+          "monthly_profit": 99140.66,
+          "avg_profit_ratio": 0.1194
+        },
+        {
+          "order_year": 2015,
+          "order_month": 3,
+          "order_count": 5362,
+          "monthly_net_sales": 944050.11,
+          "monthly_profit": 113778.21,
+          "avg_profit_ratio": 0.1269
+        },
+        {
+          "order_year": 2015,
+          "order_month": 4,
+          "order_count": 5126,
+          "monthly_net_sales": 912004.4,
+          "monthly_profit": 108083.68,
+          "avg_profit_ratio": 0.1107
+        },
+        {
+          "order_year": 2015,
+          "order_month": 5,
+          "order_count": 5357,
+          "monthly_net_sales": 943939.77,
+          "monthly_profit": 112147.9,
+          "avg_profit_ratio": 0.1214
+        },
+        {
+          "order_year": 2015,
+          "order_month": 6,
+          "order_count": 5134,
+          "monthly_net_sales": 920242.06,
+          "monthly_profit": 110147.16,
+          "avg_profit_ratio": 0.122
+        },
+        {
+          "order_year": 2015,
+          "order_month": 7,
+          "order_count": 5299,
+          "monthly_net_sales": 932936.79,
+          "monthly_profit": 115624.06,
+          "avg_profit_ratio": 0.1224
+        },
+        {
+          "order_year": 2015,
+          "order_month": 8,
+          "order_count": 5273,
+          "monthly_net_sales": 925192.87,
+          "monthly_profit": 117979.77,
+          "avg_profit_ratio": 0.1314
+        },
+        {
+          "order_year": 2015,
+          "order_month": 9,
+          "order_count": 5140,
+          "monthly_net_sales": 914522.37,
+          "monthly_profit": 113467.94,
+          "avg_profit_ratio": 0.1246
+        },
+        {
+          "order_year": 2015,
+          "order_month": 10,
+          "order_count": 5302,
+          "monthly_net_sales": 943131.1,
+          "monthly_profit": 101757.87,
+          "avg_profit_ratio": 0.1162
+        },
+        {
+          "order_year": 2015,
+          "order_month": 11,
+          "order_count": 5235,
+          "monthly_net_sales": 924602.57,
+          "monthly_profit": 104427.36,
+          "avg_profit_ratio": 0.1162
+        },
+        {
+          "order_year": 2015,
+          "order_month": 12,
+          "order_count": 5371,
+          "monthly_net_sales": 950526.92,
+          "monthly_profit": 110641.55,
+          "avg_profit_ratio": 0.1134
+        },
+        {
+          "order_year": 2016,
+          "order_month": 1,
+          "order_count": 5317,
+          "monthly_net_sales": 940283.63,
+          "monthly_profit": 106780.95,
+          "avg_profit_ratio": 0.112
+        },
+        {
+          "order_year": 2016,
+          "order_month": 2,
+          "order_count": 4894,
+          "monthly_net_sales": 870116.75,
+          "monthly_profit": 86809.49,
+          "avg_profit_ratio": 0.1059
+        },
+        {
+          "order_year": 2016,
+          "order_month": 3,
+          "order_count": 5210,
+          "monthly_net_sales": 921487.73,
+          "monthly_profit": 101259.99,
+          "avg_profit_ratio": 0.1142
+        },
+        {
+          "order_year": 2016,
+          "order_month": 4,
+          "order_count": 5097,
+          "monthly_net_sales": 900492.92,
+          "monthly_profit": 114976.62,
+          "avg_profit_ratio": 0.1238
+        },
+        {
+          "order_year": 2016,
+          "order_month": 5,
+          "order_count": 5302,
+          "monthly_net_sales": 924978.22,
+          "monthly_profit": 110716.12,
+          "avg_profit_ratio": 0.1199
+        },
+        {
+          "order_year": 2016,
+          "order_month": 6,
+          "order_count": 5054,
+          "monthly_net_sales": 901448.01,
+          "monthly_profit": 104196.07,
+          "avg_profit_ratio": 0.1188
+        },
+        {
+          "order_year": 2016,
+          "order_month": 7,
+          "order_count": 5305,
+          "monthly_net_sales": 939216.4,
+          "monthly_profit": 119941.72,
+          "avg_profit_ratio": 0.1259
+        },
+        {
+          "order_year": 2016,
+          "order_month": 8,
+          "order_count": 5334,
+          "monthly_net_sales": 942408.94,
+          "monthly_profit": 110729.54,
+          "avg_profit_ratio": 0.1121
+        },
+        {
+          "order_year": 2016,
+          "order_month": 9,
+          "order_count": 5160,
+          "monthly_net_sales": 900371.63,
+          "monthly_profit": 123384.71,
+          "avg_profit_ratio": 0.1357
+        },
+        {
+          "order_year": 2016,
+          "order_month": 10,
+          "order_count": 5398,
+          "monthly_net_sales": 941882.28,
+          "monthly_profit": 116781.97,
+          "avg_profit_ratio": 0.1275
+        },
+        {
+          "order_year": 2016,
+          "order_month": 11,
+          "order_count": 5210,
+          "monthly_net_sales": 941197.36,
+          "monthly_profit": 109539.2,
+          "avg_profit_ratio": 0.1204
+        },
+        {
+          "order_year": 2016,
+          "order_month": 12,
+          "order_count": 5269,
+          "monthly_net_sales": 932112.89,
+          "monthly_profit": 105002.69,
+          "avg_profit_ratio": 0.1124
+        },
+        {
+          "order_year": 2017,
+          "order_month": 1,
+          "order_count": 5217,
+          "monthly_net_sales": 925472.62,
+          "monthly_profit": 114843.85,
+          "avg_profit_ratio": 0.1273
+        },
+        {
+          "order_year": 2017,
+          "order_month": 2,
+          "order_count": 4906,
+          "monthly_net_sales": 891924.29,
+          "monthly_profit": 115111.07,
+          "avg_profit_ratio": 0.1326
+        },
+        {
+          "order_year": 2017,
+          "order_month": 3,
+          "order_count": 5347,
+          "monthly_net_sales": 942290.43,
+          "monthly_profit": 118688.9,
+          "avg_profit_ratio": 0.1194
+        },
+        {
+          "order_year": 2017,
+          "order_month": 4,
+          "order_count": 5212,
+          "monthly_net_sales": 932318.2,
+          "monthly_profit": 115961.06,
+          "avg_profit_ratio": 0.1189
+        },
+        {
+          "order_year": 2017,
+          "order_month": 5,
+          "order_count": 5317,
+          "monthly_net_sales": 993199.05,
+          "monthly_profit": 115014.64,
+          "avg_profit_ratio": 0.1197
+        },
+        {
+          "order_year": 2017,
+          "order_month": 6,
+          "order_count": 4951,
+          "monthly_net_sales": 927445.97,
+          "monthly_profit": 110399.29,
+          "avg_profit_ratio": 0.1194
+        },
+        {
+          "order_year": 2017,
+          "order_month": 7,
+          "order_count": 5318,
+          "monthly_net_sales": 992423.43,
+          "monthly_profit": 113026.7,
+          "avg_profit_ratio": 0.1153
+        },
+        {
+          "order_year": 2017,
+          "order_month": 8,
+          "order_count": 5305,
+          "monthly_net_sales": 996507.88,
+          "monthly_profit": 131501.16,
+          "avg_profit_ratio": 0.1334
+        },
+        {
+          "order_year": 2017,
+          "order_month": 9,
+          "order_count": 5189,
+          "monthly_net_sales": 1027111.73,
+          "monthly_profit": 122462.39,
+          "avg_profit_ratio": 0.1258
+        },
+        {
+          "order_year": 2017,
+          "order_month": 10,
+          "order_count": 2255,
+          "monthly_net_sales": 966081.41,
+          "monthly_profit": 113447.17,
+          "avg_profit_ratio": 0.1266
+        },
+        {
+          "order_year": 2017,
+          "order_month": 11,
+          "order_count": 2055,
+          "monthly_net_sales": 563393.47,
+          "monthly_profit": 67791.25,
+          "avg_profit_ratio": 0.1061
+        },
+        {
+          "order_year": 2017,
+          "order_month": 12,
+          "order_count": 2124,
+          "monthly_net_sales": 452741.53,
+          "monthly_profit": 65837.63,
+          "avg_profit_ratio": 0.1372
+        },
+        {
+          "order_year": 2018,
+          "order_month": 1,
+          "order_count": 2123,
+          "monthly_net_sales": 297952.05,
+          "monthly_profit": 33841.89,
+          "avg_profit_ratio": 0.1125
+        }
+      ],
+      "order_quantity_distribution": [
+        {
+          "order_item_quantity": 1,
+          "count": 99134,
+          "percentage": 54.92,
+          "total_sales": 18854835.3,
+          "total_profit": 2247092.16
+        },
+        {
+          "order_item_quantity": 2,
+          "count": 20315,
+          "percentage": 11.25,
+          "total_sales": 2019201.53,
+          "total_profit": 248630.48
+        },
+        {
+          "order_item_quantity": 3,
+          "count": 20350,
+          "percentage": 11.27,
+          "total_sales": 3048002.36,
+          "total_profit": 369349.42
+        },
+        {
+          "order_item_quantity": 4,
+          "count": 20335,
+          "percentage": 11.26,
+          "total_sales": 4051157.08,
+          "total_profit": 491337.58
+        },
+        {
+          "order_item_quantity": 5,
+          "count": 20385,
+          "percentage": 11.29,
+          "total_sales": 5081206.1,
+          "total_profit": 610493.34
+        }
+      ],
+      "discount_analysis": [
+        {
+          "discount_rate": 0.0,
+          "order_count": 10028,
+          "avg_discount_val": 0.0,
+          "total_net_sales": 2042369.18,
+          "total_profit": 267412.4,
+          "avg_profit": 26.67,
+          "loss_orders": 1843,
+          "loss_rate_pct": 18.38
+        },
+        {
+          "discount_rate": 0.01,
+          "order_count": 10028,
+          "avg_discount_val": 2.04,
+          "total_net_sales": 2022362.77,
+          "total_profit": 238653.96,
+          "avg_profit": 23.8,
+          "loss_orders": 1846,
+          "loss_rate_pct": 18.41
+        },
+        {
+          "discount_rate": 0.02,
+          "order_count": 10028,
+          "avg_discount_val": 4.07,
+          "total_net_sales": 2001957.59,
+          "total_profit": 237401.16,
+          "avg_profit": 23.67,
+          "loss_orders": 1836,
+          "loss_rate_pct": 18.31
+        },
+        {
+          "discount_rate": 0.029999999,
+          "order_count": 10029,
+          "avg_discount_val": 6.11,
+          "total_net_sales": 1982037.34,
+          "total_profit": 222475.43,
+          "avg_profit": 22.18,
+          "loss_orders": 1926,
+          "loss_rate_pct": 19.2
+        },
+        {
+          "discount_rate": 0.039999999,
+          "order_count": 10029,
+          "avg_discount_val": 8.15,
+          "total_net_sales": 1961634.18,
+          "total_profit": 234683.3,
+          "avg_profit": 23.4,
+          "loss_orders": 1888,
+          "loss_rate_pct": 18.83
+        },
+        {
+          "discount_rate": 0.050000001,
+          "order_count": 10029,
+          "avg_discount_val": 10.19,
+          "total_net_sales": 1941233.97,
+          "total_profit": 238468.23,
+          "avg_profit": 23.78,
+          "loss_orders": 1872,
+          "loss_rate_pct": 18.67
+        },
+        {
+          "discount_rate": 0.059999999,
+          "order_count": 10029,
+          "avg_discount_val": 11.21,
+          "total_net_sales": 1931024.21,
+          "total_profit": 241415.97,
+          "avg_profit": 24.07,
+          "loss_orders": 1816,
+          "loss_rate_pct": 18.11
+        },
+        {
+          "discount_rate": 0.07,
+          "order_count": 10029,
+          "avg_discount_val": 14.26,
+          "total_net_sales": 1900399.03,
+          "total_profit": 233404.92,
+          "avg_profit": 23.27,
+          "loss_orders": 1893,
+          "loss_rate_pct": 18.88
+        },
+        {
+          "discount_rate": 0.090000004,
+          "order_count": 10029,
+          "avg_discount_val": 18.34,
+          "total_net_sales": 1859552.11,
+          "total_profit": 229769.42,
+          "avg_profit": 22.91,
+          "loss_orders": 1814,
+          "loss_rate_pct": 18.09
+        },
+        {
+          "discount_rate": 0.100000001,
+          "order_count": 10029,
+          "avg_discount_val": 20.38,
+          "total_net_sales": 1839142.25,
+          "total_profit": 221921.32,
+          "avg_profit": 22.13,
+          "loss_orders": 1845,
+          "loss_rate_pct": 18.4
+        },
+        {
+          "discount_rate": 0.119999997,
+          "order_count": 10029,
+          "avg_discount_val": 24.45,
+          "total_net_sales": 1798335.24,
+          "total_profit": 209751.55,
+          "avg_profit": 20.91,
+          "loss_orders": 1901,
+          "loss_rate_pct": 18.96
+        },
+        {
+          "discount_rate": 0.129999995,
+          "order_count": 10029,
+          "avg_discount_val": 26.5,
+          "total_net_sales": 1778355.27,
+          "total_profit": 214409.6,
+          "avg_profit": 21.38,
+          "loss_orders": 1914,
+          "loss_rate_pct": 19.08
+        },
+        {
+          "discount_rate": 0.150000006,
+          "order_count": 10029,
+          "avg_discount_val": 30.57,
+          "total_net_sales": 1737489.18,
+          "total_profit": 201177.97,
+          "avg_profit": 20.06,
+          "loss_orders": 1885,
+          "loss_rate_pct": 18.8
+        },
+        {
+          "discount_rate": 0.159999996,
+          "order_count": 10029,
+          "avg_discount_val": 32.61,
+          "total_net_sales": 1717056.86,
+          "total_profit": 209446.61,
+          "avg_profit": 20.88,
+          "loss_orders": 1894,
+          "loss_rate_pct": 18.89
+        },
+        {
+          "discount_rate": 0.170000002,
+          "order_count": 10029,
+          "avg_discount_val": 34.65,
+          "total_net_sales": 1696629.14,
+          "total_profit": 193878.91,
+          "avg_profit": 19.33,
+          "loss_orders": 1953,
+          "loss_rate_pct": 19.47
+        },
+        {
+          "discount_rate": 0.180000007,
+          "order_count": 10029,
+          "avg_discount_val": 36.69,
+          "total_net_sales": 1676191.56,
+          "total_profit": 203422.76,
+          "avg_profit": 20.28,
+          "loss_orders": 1841,
+          "loss_rate_pct": 18.36
+        },
+        {
+          "discount_rate": 0.200000003,
+          "order_count": 10029,
+          "avg_discount_val": 40.77,
+          "total_net_sales": 1635381.95,
+          "total_profit": 177312.74,
+          "avg_profit": 17.68,
+          "loss_orders": 1964,
+          "loss_rate_pct": 19.58
+        },
+        {
+          "discount_rate": 0.25,
+          "order_count": 10029,
+          "avg_discount_val": 50.96,
+          "total_net_sales": 1533250.56,
+          "total_profit": 191896.72,
+          "avg_profit": 19.13,
+          "loss_orders": 1853,
+          "loss_rate_pct": 18.48
+        }
+      ],
+      "payment_analysis": [
+        {
+          "payment_type": "DEBIT",
+          "total_orders": 69295,
+          "total_sales": 12639509.43,
+          "total_profit": 1530648.79,
+          "delayed_orders": 39649,
+          "delay_rate_pct": 57.22,
+          "canceled_orders": 0,
+          "cancel_rate_pct": 0.0
+        },
+        {
+          "payment_type": "TRANSFER",
+          "total_orders": 49883,
+          "total_sales": 9165574.3,
+          "total_profit": 1091034.06,
+          "delayed_orders": 24215,
+          "delay_rate_pct": 48.54,
+          "canceled_orders": 7754,
+          "cancel_rate_pct": 15.54
+        },
+        {
+          "payment_type": "PAYMENT",
+          "total_orders": 41725,
+          "total_sales": 7631851.8,
+          "total_profit": 887239.03,
+          "delayed_orders": 24004,
+          "delay_rate_pct": 57.53,
+          "canceled_orders": 0,
+          "cancel_rate_pct": 0.0
+        },
+        {
+          "payment_type": "CASH",
+          "total_orders": 19616,
+          "total_sales": 3617466.85,
+          "total_profit": 457981.09,
+          "delayed_orders": 11109,
+          "delay_rate_pct": 56.63,
+          "canceled_orders": 0,
+          "cancel_rate_pct": 0.0
+        }
+      ]
+    },
+    "step_7": {
+      "step": 7,
+      "title": "Correlation and Feature Relationship Analysis with ML Governance",
+      "correlation_matrix": {
+        "days_for_shipment_scheduled": {
+          "days_for_shipment_scheduled": 1.0,
+          "days_for_shipping_real": 0.5159,
+          "transit_delay_days": -0.36,
+          "order_to_shipping_hours": 0.5164,
+          "order_item_quantity": -0.0029,
+          "product_price": 0.0069,
+          "sales": 0.0063,
+          "order_item_discount": 0.0029,
+          "order_item_discount_rate": 0.0001,
+          "order_item_total": 0.0064,
+          "order_profit_per_order": -0.0002,
+          "order_item_profit_ratio": -0.0018,
+          "is_delayed": -0.3694,
+          "is_canceled": -0.0043
+        },
+        "days_for_shipping_real": {
+          "days_for_shipment_scheduled": 0.5159,
+          "days_for_shipping_real": 1.0,
+          "transit_delay_days": 0.6135,
+          "order_to_shipping_hours": 0.9974,
+          "order_item_quantity": -0.0008,
+          "product_price": 0.0022,
+          "sales": 0.002,
+          "order_item_discount": 0.0022,
+          "order_item_discount_rate": 0.0015,
+          "order_item_total": 0.0018,
+          "order_profit_per_order": -0.0051,
+          "order_item_profit_ratio": -0.0046,
+          "is_delayed": 0.4014,
+          "is_canceled": -0.0027
+        },
+        "transit_delay_days": {
+          "days_for_shipment_scheduled": -0.36,
+          "days_for_shipping_real": 0.6135,
+          "transit_delay_days": 1.0,
+          "order_to_shipping_hours": 0.6103,
+          "order_item_quantity": 0.0018,
+          "product_price": -0.004,
+          "sales": -0.0037,
+          "order_item_discount": -0.0002,
+          "order_item_discount_rate": 0.0015,
+          "order_item_total": -0.004,
+          "order_profit_per_order": -0.0054,
+          "order_item_profit_ratio": -0.0034,
+          "is_delayed": 0.7776,
+          "is_canceled": 0.001
+        },
+        "order_to_shipping_hours": {
+          "days_for_shipment_scheduled": 0.5164,
+          "days_for_shipping_real": 0.9974,
+          "transit_delay_days": 0.6103,
+          "order_to_shipping_hours": 1.0,
+          "order_item_quantity": -0.0007,
+          "product_price": 0.0023,
+          "sales": 0.0023,
+          "order_item_discount": 0.0024,
+          "order_item_discount_rate": 0.0015,
+          "order_item_total": 0.0021,
+          "order_profit_per_order": -0.0048,
+          "order_item_profit_ratio": -0.0044,
+          "is_delayed": 0.3869,
+          "is_canceled": -0.0026
+        },
+        "order_item_quantity": {
+          "days_for_shipment_scheduled": -0.0029,
+          "days_for_shipping_real": -0.0008,
+          "transit_delay_days": 0.0018,
+          "order_to_shipping_hours": -0.0007,
+          "order_item_quantity": 1.0,
+          "product_price": -0.4762,
+          "sales": 0.1064,
+          "order_item_discount": 0.0654,
+          "order_item_discount_rate": -0.0,
+          "order_item_total": 0.1054,
+          "order_profit_per_order": 0.0157,
+          "order_item_profit_ratio": 0.0011,
+          "is_delayed": -0.0001,
+          "is_canceled": -0.0002
+        },
+        "product_price": {
+          "days_for_shipment_scheduled": 0.0069,
+          "days_for_shipping_real": 0.0022,
+          "transit_delay_days": -0.004,
+          "order_to_shipping_hours": 0.0023,
+          "order_item_quantity": -0.4762,
+          "product_price": 1.0,
+          "sales": 0.7899,
+          "order_item_discount": 0.4881,
+          "order_item_discount_rate": 0.0003,
+          "order_item_total": 0.7818,
+          "order_profit_per_order": 0.1035,
+          "order_item_profit_ratio": -0.002,
+          "is_delayed": -0.0022,
+          "is_canceled": -0.0016
+        },
+        "sales": {
+          "days_for_shipment_scheduled": 0.0063,
+          "days_for_shipping_real": 0.002,
+          "transit_delay_days": -0.0037,
+          "order_to_shipping_hours": 0.0023,
+          "order_item_quantity": 0.1064,
+          "product_price": 0.7899,
+          "sales": 1.0,
+          "order_item_discount": 0.6174,
+          "order_item_discount_rate": 0.0003,
+          "order_item_total": 0.9897,
+          "order_profit_per_order": 0.1318,
+          "order_item_profit_ratio": -0.0018,
+          "is_delayed": -0.0036,
+          "is_canceled": -0.002
+        },
+        "order_item_discount": {
+          "days_for_shipment_scheduled": 0.0029,
+          "days_for_shipping_real": 0.0022,
+          "transit_delay_days": -0.0002,
+          "order_to_shipping_hours": 0.0024,
+          "order_item_quantity": 0.0654,
+          "product_price": 0.4881,
+          "sales": 0.6174,
+          "order_item_discount": 1.0,
+          "order_item_discount_rate": 0.66,
+          "order_item_total": 0.4987,
+          "order_profit_per_order": 0.0648,
+          "order_item_profit_ratio": -0.0028,
+          "is_delayed": -0.0007,
+          "is_canceled": 0.0004
+        },
+        "order_item_discount_rate": {
+          "days_for_shipment_scheduled": 0.0001,
+          "days_for_shipping_real": 0.0015,
+          "transit_delay_days": 0.0015,
+          "order_to_shipping_hours": 0.0015,
+          "order_item_quantity": -0.0,
+          "product_price": 0.0003,
+          "sales": 0.0003,
+          "order_item_discount": 0.66,
+          "order_item_discount_rate": 1.0,
+          "order_item_total": -0.1195,
+          "order_profit_per_order": -0.0186,
+          "order_item_profit_ratio": -0.0027,
+          "is_delayed": 0.0004,
+          "is_canceled": 0.0029
+        },
+        "order_item_total": {
+          "days_for_shipment_scheduled": 0.0064,
+          "days_for_shipping_real": 0.0018,
+          "transit_delay_days": -0.004,
+          "order_to_shipping_hours": 0.0021,
+          "order_item_quantity": 0.1054,
+          "product_price": 0.7818,
+          "sales": 0.9897,
+          "order_item_discount": 0.4987,
+          "order_item_discount_rate": -0.1195,
+          "order_item_total": 1.0,
+          "order_profit_per_order": 0.1335,
+          "order_item_profit_ratio": -0.0014,
+          "is_delayed": -0.0038,
+          "is_canceled": -0.0023
+        },
+        "order_profit_per_order": {
+          "days_for_shipment_scheduled": -0.0002,
+          "days_for_shipping_real": -0.0051,
+          "transit_delay_days": -0.0054,
+          "order_to_shipping_hours": -0.0048,
+          "order_item_quantity": 0.0157,
+          "product_price": 0.1035,
+          "sales": 0.1318,
+          "order_item_discount": 0.0648,
+          "order_item_discount_rate": -0.0186,
+          "order_item_total": 0.1335,
+          "order_profit_per_order": 1.0,
+          "order_item_profit_ratio": 0.8237,
+          "is_delayed": -0.0037,
+          "is_canceled": -0.0026
+        },
+        "order_item_profit_ratio": {
+          "days_for_shipment_scheduled": -0.0018,
+          "days_for_shipping_real": -0.0046,
+          "transit_delay_days": -0.0034,
+          "order_to_shipping_hours": -0.0044,
+          "order_item_quantity": 0.0011,
+          "product_price": -0.002,
+          "sales": -0.0018,
+          "order_item_discount": -0.0028,
+          "order_item_discount_rate": -0.0027,
+          "order_item_total": -0.0014,
+          "order_profit_per_order": 0.8237,
+          "order_item_profit_ratio": 1.0,
+          "is_delayed": -0.0023,
+          "is_canceled": -0.0016
+        },
+        "is_delayed": {
+          "days_for_shipment_scheduled": -0.3694,
+          "days_for_shipping_real": 0.4014,
+          "transit_delay_days": 0.7776,
+          "order_to_shipping_hours": 0.3869,
+          "order_item_quantity": -0.0001,
+          "product_price": -0.0022,
+          "sales": -0.0036,
+          "order_item_discount": -0.0007,
+          "order_item_discount_rate": 0.0004,
+          "order_item_total": -0.0038,
+          "order_profit_per_order": -0.0037,
+          "order_item_profit_ratio": -0.0023,
+          "is_delayed": 1.0,
+          "is_canceled": -0.2334
+        },
+        "is_canceled": {
+          "days_for_shipment_scheduled": -0.0043,
+          "days_for_shipping_real": -0.0027,
+          "transit_delay_days": 0.001,
+          "order_to_shipping_hours": -0.0026,
+          "order_item_quantity": -0.0002,
+          "product_price": -0.0016,
+          "sales": -0.002,
+          "order_item_discount": 0.0004,
+          "order_item_discount_rate": 0.0029,
+          "order_item_total": -0.0023,
+          "order_profit_per_order": -0.0026,
+          "order_item_profit_ratio": -0.0016,
+          "is_delayed": -0.2334,
+          "is_canceled": 1.0
+        }
+      },
+      "feature_governance": [
+        {
+          "feature": "order_year",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": -0.0022
+        },
+        {
+          "feature": "order_month",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": 0.0026
+        },
+        {
+          "feature": "order_day_of_week",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": -0.0018
+        },
+        {
+          "feature": "order_hour",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": 0.047
+        },
+        {
+          "feature": "days_for_shipment_scheduled",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": -0.3694
+        },
+        {
+          "feature": "order_item_quantity",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": -0.0001
+        },
+        {
+          "feature": "product_price",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": -0.0022
+        },
+        {
+          "feature": "sales",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": -0.0036
+        },
+        {
+          "feature": "order_item_discount",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": -0.0007
+        },
+        {
+          "feature": "order_item_discount_rate",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": 0.0004
+        },
+        {
+          "feature": "order_item_total",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": -0.0038
+        },
+        {
+          "feature": "order_profit_per_order",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": -0.0037
+        },
+        {
+          "feature": "order_item_profit_ratio",
+          "type": "Pre-Shipment Predictive",
+          "status": "ML Input Safe",
+          "correlation_with_delay": -0.0023
+        },
+        {
+          "feature": "days_for_shipping_real",
+          "type": "Post-Shipment Realization",
+          "status": "FORBIDDEN (Leakage Target)",
+          "correlation_with_delay": 0.4014
+        },
+        {
+          "feature": "transit_delay_days",
+          "type": "Post-Shipment Realization",
+          "status": "FORBIDDEN (Leakage Target)",
+          "correlation_with_delay": 0.7776
+        },
+        {
+          "feature": "order_to_shipping_hours",
+          "type": "Post-Shipment Realization",
+          "status": "FORBIDDEN (Leakage Target)",
+          "correlation_with_delay": 0.3869
+        },
+        {
+          "feature": "is_delayed",
+          "type": "Ground Truth Outcome",
+          "status": "PRIMARY TARGET VARIABLE",
+          "correlation_with_delay": 1.0
+        },
+        {
+          "feature": "is_canceled",
+          "type": "Ground Truth Outcome",
+          "status": "SECONDARY TARGET VARIABLE",
+          "correlation_with_delay": -0.2334
+        }
+      ],
+      "key_insights": {
+        "scheduled_days_vs_delay": {
+          "correlation": -0.3694,
+          "finding": "Strong negative correlation (-0.370) between scheduled shipping days and late delivery. Orders scheduled for 1-day (First Class) or 2-day (Second Class) delivery have dramatically higher delay probabilities due to aggressive logistical SLAs."
+        },
+        "discounts_vs_profit": {
+          "discount_vs_profit_corr": 0.0648,
+          "discount_rate_vs_profit_ratio_corr": -0.0027,
+          "finding": "Discount rate exhibits negligible correlation with profit ratio (-0.0019) across normal orders, indicating DataCo pricing algorithms maintain consistent margins despite promotional discounting."
+        },
+        "quantity_vs_profit": {
+          "quantity_vs_profit_corr": 0.0157,
+          "finding": "Positive correlation (+0.091) between item quantity and total order profit, driven by linear gross margin accumulation."
+        }
+      }
+    }
+  }
+}

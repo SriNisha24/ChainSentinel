@@ -1,0 +1,17 @@
+scale,dataset_rows,partitions,operation,cold_run_sec,warm_avg_sec,warm_stddev_sec,throughput_rows_sec
+"1x",180519,4,"Full Table Scan & Count",0.4037,0.3793,0.0298,475893.93
+"1x",180519,4,"Single-Key Aggregation (Shipping Mode)",2.1672,0.5675,0.0417,318069.56
+"1x",180519,4,"Multi-Key Regional Sort",1.6138,0.7703,0.0163,234361.22
+"1x",180519,4,"High-Cardinality GroupBy (Country x Category)",0.8923,0.4556,0.0308,396223.92
+"2x",361038,4,"Full Table Scan & Count",0.2298,0.2253,0.0129,1602449.46
+"2x",361038,4,"Single-Key Aggregation (Shipping Mode)",0.537,0.4127,0.0429,874867.25
+"2x",361038,4,"Multi-Key Regional Sort",0.5589,0.9387,0.1527,384599.82
+"2x",361038,4,"High-Cardinality GroupBy (Country x Category)",0.68,0.4429,0.0398,815107.62
+"5x",902595,4,"Full Table Scan & Count",0.2802,0.2597,0.0104,3475891.27
+"5x",902595,4,"Single-Key Aggregation (Shipping Mode)",0.5329,0.4951,0.0348,1822937.6
+"5x",902595,4,"Multi-Key Regional Sort",0.6735,0.6321,0.0313,1427897.65
+"5x",902595,4,"High-Cardinality GroupBy (Country x Category)",0.555,0.4981,0.0096,1812250.2
+"10x",1805190,4,"Full Table Scan & Count",0.4599,0.3312,0.0976,5450582.66
+"10x",1805190,4,"Single-Key Aggregation (Shipping Mode)",0.5576,0.5774,0.0152,3126540.69
+"10x",1805190,4,"Multi-Key Regional Sort",0.8794,0.8377,0.0476,2155008.64
+"10x",1805190,4,"High-Cardinality GroupBy (Country x Category)",0.7866,0.6534,0.0292,2762815.74

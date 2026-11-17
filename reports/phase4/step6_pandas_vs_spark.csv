@@ -1,0 +1,6 @@
+operation_id,operation_name,pandas_cold_sec,pandas_warm_avg_sec,pandas_throughput_rows_sec,spark_cold_sec,spark_warm_avg_sec,spark_throughput_rows_sec,spark_to_pandas_latency_ratio,faster_engine_warm
+"OP_01_SCAN_COUNT","Dataset Scan & Row Count",0.0,0.0,138860748127.72,3.5372,0.3782,477280.34,290923.033,"Pandas"
+"OP_02_SHIPPING_AGG","Single-Key Aggregation (Shipping Mode)",0.0462,0.0446,4044020.3,2.4127,0.5709,316225.95,12.789,"Pandas"
+"OP_03_REGIONAL_FINANCIALS","Multi-Key Regional Aggregation & Sort",0.0911,0.1089,1657011.22,1.7179,0.7465,241819.39,6.852,"Pandas"
+"OP_04_HIGH_CARDINALITY_AGG","High-Cardinality GroupBy (Country x Category)",0.061,0.0627,2877706.37,1.3662,0.6484,278416.01,10.336,"Pandas"
+"OP_05_FILTER_SEGMENT_AGG","Filtered Projection & Segment Aggregation",0.1771,0.1606,1124339.01,1.0409,0.4632,389758.53,2.885,"Pandas"

@@ -1,0 +1,575 @@
+{
+  "step": 6,
+  "title": "Sales, Profit, and Order Trends",
+  "financial_overview": {
+    "gross_sales": 36784735.01,
+    "total_discount": 3730378.4,
+    "net_sales": 33054402.38,
+    "total_profit": 3966902.97,
+    "overall_profit_margin_pct": 12.0,
+    "avg_profit_per_order": 21.97,
+    "avg_profit_ratio": 0.1206,
+    "loss_orders_count": 33784,
+    "loss_orders_pct": 18.71,
+    "total_loss_amount": -3883547.35
+  },
+  "monthly_financials": [
+    {
+      "order_year": 2015,
+      "order_month": 1,
+      "order_count": 5322,
+      "monthly_net_sales": 945382.16,
+      "monthly_profit": 111660.74,
+      "avg_profit_ratio": 0.1159
+    },
+    {
+      "order_year": 2015,
+      "order_month": 2,
+      "order_count": 4729,
+      "monthly_net_sales": 833012.43,
+      "monthly_profit": 99140.66,
+      "avg_profit_ratio": 0.1194
+    },
+    {
+      "order_year": 2015,
+      "order_month": 3,
+      "order_count": 5362,
+      "monthly_net_sales": 944050.11,
+      "monthly_profit": 113778.21,
+      "avg_profit_ratio": 0.1269
+    },
+    {
+      "order_year": 2015,
+      "order_month": 4,
+      "order_count": 5126,
+      "monthly_net_sales": 912004.4,
+      "monthly_profit": 108083.68,
+      "avg_profit_ratio": 0.1107
+    },
+    {
+      "order_year": 2015,
+      "order_month": 5,
+      "order_count": 5357,
+      "monthly_net_sales": 943939.77,
+      "monthly_profit": 112147.9,
+      "avg_profit_ratio": 0.1214
+    },
+    {
+      "order_year": 2015,
+      "order_month": 6,
+      "order_count": 5134,
+      "monthly_net_sales": 920242.06,
+      "monthly_profit": 110147.16,
+      "avg_profit_ratio": 0.122
+    },
+    {
+      "order_year": 2015,
+      "order_month": 7,
+      "order_count": 5299,
+      "monthly_net_sales": 932936.79,
+      "monthly_profit": 115624.06,
+      "avg_profit_ratio": 0.1224
+    },
+    {
+      "order_year": 2015,
+      "order_month": 8,
+      "order_count": 5273,
+      "monthly_net_sales": 925192.87,
+      "monthly_profit": 117979.77,
+      "avg_profit_ratio": 0.1314
+    },
+    {
+      "order_year": 2015,
+      "order_month": 9,
+      "order_count": 5140,
+      "monthly_net_sales": 914522.37,
+      "monthly_profit": 113467.94,
+      "avg_profit_ratio": 0.1246
+    },
+    {
+      "order_year": 2015,
+      "order_month": 10,
+      "order_count": 5302,
+      "monthly_net_sales": 943131.1,
+      "monthly_profit": 101757.87,
+      "avg_profit_ratio": 0.1162
+    },
+    {
+      "order_year": 2015,
+      "order_month": 11,
+      "order_count": 5235,
+      "monthly_net_sales": 924602.57,
+      "monthly_profit": 104427.36,
+      "avg_profit_ratio": 0.1162
+    },
+    {
+      "order_year": 2015,
+      "order_month": 12,
+      "order_count": 5371,
+      "monthly_net_sales": 950526.92,
+      "monthly_profit": 110641.55,
+      "avg_profit_ratio": 0.1134
+    },
+    {
+      "order_year": 2016,
+      "order_month": 1,
+      "order_count": 5317,
+      "monthly_net_sales": 940283.63,
+      "monthly_profit": 106780.95,
+      "avg_profit_ratio": 0.112
+    },
+    {
+      "order_year": 2016,
+      "order_month": 2,
+      "order_count": 4894,
+      "monthly_net_sales": 870116.75,
+      "monthly_profit": 86809.49,
+      "avg_profit_ratio": 0.1059
+    },
+    {
+      "order_year": 2016,
+      "order_month": 3,
+      "order_count": 5210,
+      "monthly_net_sales": 921487.73,
+      "monthly_profit": 101259.99,
+      "avg_profit_ratio": 0.1142
+    },
+    {
+      "order_year": 2016,
+      "order_month": 4,
+      "order_count": 5097,
+      "monthly_net_sales": 900492.92,
+      "monthly_profit": 114976.62,
+      "avg_profit_ratio": 0.1238
+    },
+    {
+      "order_year": 2016,
+      "order_month": 5,
+      "order_count": 5302,
+      "monthly_net_sales": 924978.22,
+      "monthly_profit": 110716.12,
+      "avg_profit_ratio": 0.1199
+    },
+    {
+      "order_year": 2016,
+      "order_month": 6,
+      "order_count": 5054,
+      "monthly_net_sales": 901448.01,
+      "monthly_profit": 104196.07,
+      "avg_profit_ratio": 0.1188
+    },
+    {
+      "order_year": 2016,
+      "order_month": 7,
+      "order_count": 5305,
+      "monthly_net_sales": 939216.4,
+      "monthly_profit": 119941.72,
+      "avg_profit_ratio": 0.1259
+    },
+    {
+      "order_year": 2016,
+      "order_month": 8,
+      "order_count": 5334,
+      "monthly_net_sales": 942408.94,
+      "monthly_profit": 110729.54,
+      "avg_profit_ratio": 0.1121
+    },
+    {
+      "order_year": 2016,
+      "order_month": 9,
+      "order_count": 5160,
+      "monthly_net_sales": 900371.63,
+      "monthly_profit": 123384.71,
+      "avg_profit_ratio": 0.1357
+    },
+    {
+      "order_year": 2016,
+      "order_month": 10,
+      "order_count": 5398,
+      "monthly_net_sales": 941882.28,
+      "monthly_profit": 116781.97,
+      "avg_profit_ratio": 0.1275
+    },
+    {
+      "order_year": 2016,
+      "order_month": 11,
+      "order_count": 5210,
+      "monthly_net_sales": 941197.36,
+      "monthly_profit": 109539.2,
+      "avg_profit_ratio": 0.1204
+    },
+    {
+      "order_year": 2016,
+      "order_month": 12,
+      "order_count": 5269,
+      "monthly_net_sales": 932112.89,
+      "monthly_profit": 105002.69,
+      "avg_profit_ratio": 0.1124
+    },
+    {
+      "order_year": 2017,
+      "order_month": 1,
+      "order_count": 5217,
+      "monthly_net_sales": 925472.62,
+      "monthly_profit": 114843.85,
+      "avg_profit_ratio": 0.1273
+    },
+    {
+      "order_year": 2017,
+      "order_month": 2,
+      "order_count": 4906,
+      "monthly_net_sales": 891924.29,
+      "monthly_profit": 115111.07,
+      "avg_profit_ratio": 0.1326
+    },
+    {
+      "order_year": 2017,
+      "order_month": 3,
+      "order_count": 5347,
+      "monthly_net_sales": 942290.43,
+      "monthly_profit": 118688.9,
+      "avg_profit_ratio": 0.1194
+    },
+    {
+      "order_year": 2017,
+      "order_month": 4,
+      "order_count": 5212,
+      "monthly_net_sales": 932318.2,
+      "monthly_profit": 115961.06,
+      "avg_profit_ratio": 0.1189
+    },
+    {
+      "order_year": 2017,
+      "order_month": 5,
+      "order_count": 5317,
+      "monthly_net_sales": 993199.05,
+      "monthly_profit": 115014.64,
+      "avg_profit_ratio": 0.1197
+    },
+    {
+      "order_year": 2017,
+      "order_month": 6,
+      "order_count": 4951,
+      "monthly_net_sales": 927445.97,
+      "monthly_profit": 110399.29,
+      "avg_profit_ratio": 0.1194
+    },
+    {
+      "order_year": 2017,
+      "order_month": 7,
+      "order_count": 5318,
+      "monthly_net_sales": 992423.43,
+      "monthly_profit": 113026.7,
+      "avg_profit_ratio": 0.1153
+    },
+    {
+      "order_year": 2017,
+      "order_month": 8,
+      "order_count": 5305,
+      "monthly_net_sales": 996507.88,
+      "monthly_profit": 131501.16,
+      "avg_profit_ratio": 0.1334
+    },
+    {
+      "order_year": 2017,
+      "order_month": 9,
+      "order_count": 5189,
+      "monthly_net_sales": 1027111.73,
+      "monthly_profit": 122462.39,
+      "avg_profit_ratio": 0.1258
+    },
+    {
+      "order_year": 2017,
+      "order_month": 10,
+      "order_count": 2255,
+      "monthly_net_sales": 966081.41,
+      "monthly_profit": 113447.17,
+      "avg_profit_ratio": 0.1266
+    },
+    {
+      "order_year": 2017,
+      "order_month": 11,
+      "order_count": 2055,
+      "monthly_net_sales": 563393.47,
+      "monthly_profit": 67791.25,
+      "avg_profit_ratio": 0.1061
+    },
+    {
+      "order_year": 2017,
+      "order_month": 12,
+      "order_count": 2124,
+      "monthly_net_sales": 452741.53,
+      "monthly_profit": 65837.63,
+      "avg_profit_ratio": 0.1372
+    },
+    {
+      "order_year": 2018,
+      "order_month": 1,
+      "order_count": 2123,
+      "monthly_net_sales": 297952.05,
+      "monthly_profit": 33841.89,
+      "avg_profit_ratio": 0.1125
+    }
+  ],
+  "order_quantity_distribution": [
+    {
+      "order_item_quantity": 1,
+      "count": 99134,
+      "percentage": 54.92,
+      "total_sales": 18854835.3,
+      "total_profit": 2247092.16
+    },
+    {
+      "order_item_quantity": 2,
+      "count": 20315,
+      "percentage": 11.25,
+      "total_sales": 2019201.53,
+      "total_profit": 248630.48
+    },
+    {
+      "order_item_quantity": 3,
+      "count": 20350,
+      "percentage": 11.27,
+      "total_sales": 3048002.36,
+      "total_profit": 369349.42
+    },
+    {
+      "order_item_quantity": 4,
+      "count": 20335,
+      "percentage": 11.26,
+      "total_sales": 4051157.08,
+      "total_profit": 491337.58
+    },
+    {
+      "order_item_quantity": 5,
+      "count": 20385,
+      "percentage": 11.29,
+      "total_sales": 5081206.1,
+      "total_profit": 610493.34
+    }
+  ],
+  "discount_analysis": [
+    {
+      "discount_rate": 0.0,
+      "order_count": 10028,
+      "avg_discount_val": 0.0,
+      "total_net_sales": 2042369.18,
+      "total_profit": 267412.4,
+      "avg_profit": 26.67,
+      "loss_orders": 1843,
+      "loss_rate_pct": 18.38
+    },
+    {
+      "discount_rate": 0.01,
+      "order_count": 10028,
+      "avg_discount_val": 2.04,
+      "total_net_sales": 2022362.77,
+      "total_profit": 238653.96,
+      "avg_profit": 23.8,
+      "loss_orders": 1846,
+      "loss_rate_pct": 18.41
+    },
+    {
+      "discount_rate": 0.02,
+      "order_count": 10028,
+      "avg_discount_val": 4.07,
+      "total_net_sales": 2001957.59,
+      "total_profit": 237401.16,
+      "avg_profit": 23.67,
+      "loss_orders": 1836,
+      "loss_rate_pct": 18.31
+    },
+    {
+      "discount_rate": 0.029999999,
+      "order_count": 10029,
+      "avg_discount_val": 6.11,
+      "total_net_sales": 1982037.34,
+      "total_profit": 222475.43,
+      "avg_profit": 22.18,
+      "loss_orders": 1926,
+      "loss_rate_pct": 19.2
+    },
+    {
+      "discount_rate": 0.039999999,
+      "order_count": 10029,
+      "avg_discount_val": 8.15,
+      "total_net_sales": 1961634.18,
+      "total_profit": 234683.3,
+      "avg_profit": 23.4,
+      "loss_orders": 1888,
+      "loss_rate_pct": 18.83
+    },
+    {
+      "discount_rate": 0.050000001,
+      "order_count": 10029,
+      "avg_discount_val": 10.19,
+      "total_net_sales": 1941233.97,
+      "total_profit": 238468.23,
+      "avg_profit": 23.78,
+      "loss_orders": 1872,
+      "loss_rate_pct": 18.67
+    },
+    {
+      "discount_rate": 0.059999999,
+      "order_count": 10029,
+      "avg_discount_val": 11.21,
+      "total_net_sales": 1931024.21,
+      "total_profit": 241415.97,
+      "avg_profit": 24.07,
+      "loss_orders": 1816,
+      "loss_rate_pct": 18.11
+    },
+    {
+      "discount_rate": 0.07,
+      "order_count": 10029,
+      "avg_discount_val": 14.26,
+      "total_net_sales": 1900399.03,
+      "total_profit": 233404.92,
+      "avg_profit": 23.27,
+      "loss_orders": 1893,
+      "loss_rate_pct": 18.88
+    },
+    {
+      "discount_rate": 0.090000004,
+      "order_count": 10029,
+      "avg_discount_val": 18.34,
+      "total_net_sales": 1859552.11,
+      "total_profit": 229769.42,
+      "avg_profit": 22.91,
+      "loss_orders": 1814,
+      "loss_rate_pct": 18.09
+    },
+    {
+      "discount_rate": 0.100000001,
+      "order_count": 10029,
+      "avg_discount_val": 20.38,
+      "total_net_sales": 1839142.25,
+      "total_profit": 221921.32,
+      "avg_profit": 22.13,
+      "loss_orders": 1845,
+      "loss_rate_pct": 18.4
+    },
+    {
+      "discount_rate": 0.119999997,
+      "order_count": 10029,
+      "avg_discount_val": 24.45,
+      "total_net_sales": 1798335.24,
+      "total_profit": 209751.55,
+      "avg_profit": 20.91,
+      "loss_orders": 1901,
+      "loss_rate_pct": 18.96
+    },
+    {
+      "discount_rate": 0.129999995,
+      "order_count": 10029,
+      "avg_discount_val": 26.5,
+      "total_net_sales": 1778355.27,
+      "total_profit": 214409.6,
+      "avg_profit": 21.38,
+      "loss_orders": 1914,
+      "loss_rate_pct": 19.08
+    },
+    {
+      "discount_rate": 0.150000006,
+      "order_count": 10029,
+      "avg_discount_val": 30.57,
+      "total_net_sales": 1737489.18,
+      "total_profit": 201177.97,
+      "avg_profit": 20.06,
+      "loss_orders": 1885,
+      "loss_rate_pct": 18.8
+    },
+    {
+      "discount_rate": 0.159999996,
+      "order_count": 10029,
+      "avg_discount_val": 32.61,
+      "total_net_sales": 1717056.86,
+      "total_profit": 209446.61,
+      "avg_profit": 20.88,
+      "loss_orders": 1894,
+      "loss_rate_pct": 18.89
+    },
+    {
+      "discount_rate": 0.170000002,
+      "order_count": 10029,
+      "avg_discount_val": 34.65,
+      "total_net_sales": 1696629.14,
+      "total_profit": 193878.91,
+      "avg_profit": 19.33,
+      "loss_orders": 1953,
+      "loss_rate_pct": 19.47
+    },
+    {
+      "discount_rate": 0.180000007,
+      "order_count": 10029,
+      "avg_discount_val": 36.69,
+      "total_net_sales": 1676191.56,
+      "total_profit": 203422.76,
+      "avg_profit": 20.28,
+      "loss_orders": 1841,
+      "loss_rate_pct": 18.36
+    },
+    {
+      "discount_rate": 0.200000003,
+      "order_count": 10029,
+      "avg_discount_val": 40.77,
+      "total_net_sales": 1635381.95,
+      "total_profit": 177312.74,
+      "avg_profit": 17.68,
+      "loss_orders": 1964,
+      "loss_rate_pct": 19.58
+    },
+    {
+      "discount_rate": 0.25,
+      "order_count": 10029,
+      "avg_discount_val": 50.96,
+      "total_net_sales": 1533250.56,
+      "total_profit": 191896.72,
+      "avg_profit": 19.13,
+      "loss_orders": 1853,
+      "loss_rate_pct": 18.48
+    }
+  ],
+  "payment_analysis": [
+    {
+      "payment_type": "DEBIT",
+      "total_orders": 69295,
+      "total_sales": 12639509.43,
+      "total_profit": 1530648.79,
+      "delayed_orders": 39649,
+      "delay_rate_pct": 57.22,
+      "canceled_orders": 0,
+      "cancel_rate_pct": 0.0
+    },
+    {
+      "payment_type": "TRANSFER",
+      "total_orders": 49883,
+      "total_sales": 9165574.3,
+      "total_profit": 1091034.06,
+      "delayed_orders": 24215,
+      "delay_rate_pct": 48.54,
+      "canceled_orders": 7754,
+      "cancel_rate_pct": 15.54
+    },
+    {
+      "payment_type": "PAYMENT",
+      "total_orders": 41725,
+      "total_sales": 7631851.8,
+      "total_profit": 887239.03,
+      "delayed_orders": 24004,
+      "delay_rate_pct": 57.53,
+      "canceled_orders": 0,
+      "cancel_rate_pct": 0.0
+    },
+    {
+      "payment_type": "CASH",
+      "total_orders": 19616,
+      "total_sales": 3617466.85,
+      "total_profit": 457981.09,
+      "delayed_orders": 11109,
+      "delay_rate_pct": 56.63,
+      "canceled_orders": 0,
+      "cancel_rate_pct": 0.0
+    }
+  ]
+}

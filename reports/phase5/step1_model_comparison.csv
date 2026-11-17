@@ -1,0 +1,4 @@
+model_name,accuracy,f1_score,precision,recall,roc_auc,pr_auc,val_roc_auc,training_time_sec
+"Logistic Regression",0.7223,0.7196,0.776,0.7223,0.7512,0.8406,0.7405,20.3
+"Random Forest",0.7273,0.7248,0.7801,0.7273,0.775,0.8524,0.7677,25.32
+"Gradient-Boosted Trees (GBT)",0.7238,0.7222,0.7688,0.7238,0.7778,0.8578,0.7701,31.67

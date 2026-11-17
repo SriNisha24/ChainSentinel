@@ -1,0 +1,8 @@
+anomaly_category,count,pct
+"Normal Transaction",171412,94.96
+"Operational Margin Loss",4748,2.63
+"Compound Multi-Vector Anomaly",2152,1.19
+"Severe Profit Bleed",1160,0.64
+"Excessive Discount Inversion",644,0.36
+"Multivariate Distribution Outlier",251,0.14
+"High-Value Transaction Outlier",152,0.08

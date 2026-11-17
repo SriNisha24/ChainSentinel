@@ -1,0 +1,855 @@
+{
+  "step": 5,
+  "title": "Product, Category, and Customer Analysis",
+  "department_performance": [
+    {
+      "department_id": 7,
+      "department_name": "Fan Shop",
+      "total_orders": 66861,
+      "delayed_orders": 36623,
+      "delay_rate_pct": 54.77,
+      "total_sales": 15378581.71,
+      "total_profit": 1834155.44
+    },
+    {
+      "department_id": 4,
+      "department_name": "Apparel",
+      "total_orders": 48998,
+      "delayed_orders": 26825,
+      "delay_rate_pct": 54.75,
+      "total_sales": 7167654.21,
+      "total_profit": 881882.93
+    },
+    {
+      "department_id": 5,
+      "department_name": "Golf",
+      "total_orders": 33220,
+      "delayed_orders": 18198,
+      "delay_rate_pct": 54.78,
+      "total_sales": 4142100.96,
+      "total_profit": 497523.56
+    },
+    {
+      "department_id": 3,
+      "department_name": "Footwear",
+      "total_orders": 14525,
+      "delayed_orders": 7949,
+      "delay_rate_pct": 54.73,
+      "total_sales": 3599468.83,
+      "total_profit": 410222.5
+    },
+    {
+      "department_id": 6,
+      "department_name": "Outdoors",
+      "total_orders": 9686,
+      "delayed_orders": 5375,
+      "delay_rate_pct": 55.49,
+      "total_sales": 1125953.44,
+      "total_profit": 145251.46
+    },
+    {
+      "department_id": 2,
+      "department_name": "Fitness",
+      "total_orders": 2479,
+      "delayed_orders": 1377,
+      "delay_rate_pct": 55.55,
+      "total_sales": 357158.26,
+      "total_profit": 46538.06
+    },
+    {
+      "department_id": 9,
+      "department_name": "Discs Shop",
+      "total_orders": 2026,
+      "delayed_orders": 1103,
+      "delay_rate_pct": 54.44,
+      "total_sales": 205675.9,
+      "total_profit": 24193.12
+    },
+    {
+      "department_id": 10,
+      "department_name": "Technology",
+      "total_orders": 1465,
+      "delayed_orders": 806,
+      "delay_rate_pct": 55.02,
+      "total_sales": 933829.24,
+      "total_profit": 113170.01
+    },
+    {
+      "department_id": 11,
+      "department_name": "Pet Shop",
+      "total_orders": 492,
+      "delayed_orders": 290,
+      "delay_rate_pct": 58.94,
+      "total_sales": 37318.3,
+      "total_profit": 3589.26
+    },
+    {
+      "department_id": 8,
+      "department_name": "Book Shop",
+      "total_orders": 405,
+      "delayed_orders": 229,
+      "delay_rate_pct": 56.54,
+      "total_sales": 11303.42,
+      "total_profit": 883.01
+    },
+    {
+      "department_id": 12,
+      "department_name": "Health and Beauty ",
+      "total_orders": 362,
+      "delayed_orders": 202,
+      "delay_rate_pct": 55.8,
+      "total_sales": 95358.11,
+      "total_profit": 9493.63
+    }
+  ],
+  "category_performance": [
+    {
+      "category_id": 17,
+      "category_name": "Cleats",
+      "department_name": "Apparel",
+      "total_orders": 24551,
+      "delayed_orders": 13496,
+      "delay_rate_pct": 54.97,
+      "total_sales": 3982856.5,
+      "total_profit": 494636.92
+    },
+    {
+      "category_id": 18,
+      "category_name": "Men's Footwear",
+      "department_name": "Apparel",
+      "total_orders": 22246,
+      "delayed_orders": 12121,
+      "delay_rate_pct": 54.49,
+      "total_sales": 2598494.42,
+      "total_profit": 311902.82
+    },
+    {
+      "category_id": 24,
+      "category_name": "Women's Apparel",
+      "department_name": "Golf",
+      "total_orders": 21035,
+      "delayed_orders": 11476,
+      "delay_rate_pct": 54.56,
+      "total_sales": 2828708.5,
+      "total_profit": 350421.03
+    },
+    {
+      "category_id": 46,
+      "category_name": "Indoor/Outdoor Games",
+      "department_name": "Fan Shop",
+      "total_orders": 19298,
+      "delayed_orders": 10565,
+      "delay_rate_pct": 54.75,
+      "total_sales": 2596454.02,
+      "total_profit": 318451.43
+    },
+    {
+      "category_id": 45,
+      "category_name": "Fishing",
+      "department_name": "Fan Shop",
+      "total_orders": 17325,
+      "delayed_orders": 9516,
+      "delay_rate_pct": 54.93,
+      "total_sales": 6226935.29,
+      "total_profit": 756220.77
+    },
+    {
+      "category_id": 48,
+      "category_name": "Water Sports",
+      "department_name": "Fan Shop",
+      "total_orders": 15540,
+      "delayed_orders": 8517,
+      "delay_rate_pct": 54.81,
+      "total_sales": 2798044.18,
+      "total_profit": 325146.96
+    },
+    {
+      "category_id": 43,
+      "category_name": "Camping & Hiking",
+      "department_name": "Fan Shop",
+      "total_orders": 13729,
+      "delayed_orders": 7487,
+      "delay_rate_pct": 54.53,
+      "total_sales": 3700783.63,
+      "total_profit": 427455.57
+    },
+    {
+      "category_id": 9,
+      "category_name": "Cardio Equipment",
+      "department_name": "Footwear",
+      "total_orders": 12487,
+      "delayed_orders": 6805,
+      "delay_rate_pct": 54.5,
+      "total_sales": 3320250.7,
+      "total_profit": 383011.1
+    },
+    {
+      "category_id": 29,
+      "category_name": "Shop By Sport",
+      "department_name": "Golf",
+      "total_orders": 10984,
+      "delayed_orders": 6058,
+      "delay_rate_pct": 55.15,
+      "total_sales": 1177185.63,
+      "total_profit": 129813.96
+    },
+    {
+      "category_id": 37,
+      "category_name": "Electronics",
+      "department_name": "Outdoors",
+      "total_orders": 2029,
+      "delayed_orders": 1143,
+      "delay_rate_pct": 56.33,
+      "total_sales": 229480.66,
+      "total_profit": 28626.48
+    },
+    {
+      "category_id": 40,
+      "category_name": "Accessories",
+      "department_name": "Outdoors",
+      "total_orders": 1780,
+      "delayed_orders": 1014,
+      "delay_rate_pct": 56.97,
+      "total_sales": 119712.55,
+      "total_profit": 16643.52
+    },
+    {
+      "category_id": 36,
+      "category_name": "Golf Balls",
+      "department_name": "Outdoors",
+      "total_orders": 1475,
+      "delayed_orders": 805,
+      "delay_rate_pct": 54.58,
+      "total_sales": 69341.25,
+      "total_profit": 8342.67
+    },
+    {
+      "category_id": 26,
+      "category_name": "Girls' Apparel",
+      "department_name": "Golf",
+      "total_orders": 1201,
+      "delayed_orders": 664,
+      "delay_rate_pct": 55.29,
+      "total_sales": 136206.83,
+      "total_profit": 17288.57
+    },
+    {
+      "category_id": 13,
+      "category_name": "Electronics",
+      "department_name": "Footwear",
+      "total_orders": 1127,
+      "delayed_orders": 627,
+      "delay_rate_pct": 55.63,
+      "total_sales": 103846.6,
+      "total_profit": 12264.9
+    },
+    {
+      "category_id": 35,
+      "category_name": "Golf Gloves",
+      "department_name": "Outdoors",
+      "total_orders": 1070,
+      "delayed_orders": 602,
+      "delay_rate_pct": 56.26,
+      "total_sales": 104787.4,
+      "total_profit": 12975.49
+    },
+    {
+      "category_id": 41,
+      "category_name": "Trade-In",
+      "department_name": "Outdoors",
+      "total_orders": 974,
+      "delayed_orders": 542,
+      "delay_rate_pct": 55.65,
+      "total_sales": 61667.54,
+      "total_profit": 7915.37
+    },
+    {
+      "category_id": 75,
+      "category_name": "Video Games",
+      "department_name": "Discs Shop",
+      "total_orders": 838,
+      "delayed_orders": 455,
+      "delay_rate_pct": 54.3,
+      "total_sales": 29919.2,
+      "total_profit": 2717.52
+    },
+    {
+      "category_id": 63,
+      "category_name": "Children's Clothing",
+      "department_name": "Apparel",
+      "total_orders": 652,
+      "delayed_orders": 348,
+      "delay_rate_pct": 53.37,
+      "total_sales": 209268.38,
+      "total_profit": 27178.1
+    },
+    {
+      "category_id": 76,
+      "category_name": "Women's Clothing",
+      "department_name": "Apparel",
+      "total_orders": 650,
+      "delayed_orders": 367,
+      "delay_rate_pct": 56.46,
+      "total_sales": 126006.93,
+      "total_profit": 19102.85
+    },
+    {
+      "category_id": 3,
+      "category_name": "Baseball & Softball",
+      "department_name": "Fitness",
+      "total_orders": 632,
+      "delayed_orders": 349,
+      "delay_rate_pct": 55.22,
+      "total_sales": 84367.27,
+      "total_profit": 12762.13
+    },
+    {
+      "category_id": 7,
+      "category_name": "Hockey",
+      "department_name": "Fitness",
+      "total_orders": 614,
+      "delayed_orders": 329,
+      "delay_rate_pct": 53.58,
+      "total_sales": 43618.36,
+      "total_profit": 5397.43
+    },
+    {
+      "category_id": 62,
+      "category_name": "Cameras ",
+      "department_name": "Technology",
+      "total_orders": 592,
+      "delayed_orders": 344,
+      "delay_rate_pct": 58.11,
+      "total_sales": 240496.68,
+      "total_profit": 30289.8
+    },
+    {
+      "category_id": 74,
+      "category_name": "Toys",
+      "department_name": "Fan Shop",
+      "total_orders": 529,
+      "delayed_orders": 291,
+      "delay_rate_pct": 55.01,
+      "total_sales": 5485.68,
+      "total_profit": 900.71
+    },
+    {
+      "category_id": 33,
+      "category_name": "Golf Shoes",
+      "department_name": "Outdoors",
+      "total_orders": 524,
+      "delayed_orders": 291,
+      "delay_rate_pct": 55.53,
+      "total_sales": 96506.47,
+      "total_profit": 12406.07
+    },
+    {
+      "category_id": 72,
+      "category_name": "Pet Supplies",
+      "department_name": "Pet Shop",
+      "total_orders": 492,
+      "delayed_orders": 290,
+      "delay_rate_pct": 58.94,
+      "total_sales": 37318.3,
+      "total_profit": 3589.26
+    },
+    {
+      "category_id": 66,
+      "category_name": "Crafts",
+      "department_name": "Apparel",
+      "total_orders": 484,
+      "delayed_orders": 271,
+      "delay_rate_pct": 55.99,
+      "total_sales": 200704.87,
+      "total_profit": 25531.17
+    },
+    {
+      "category_id": 68,
+      "category_name": "Garden",
+      "department_name": "Outdoors",
+      "total_orders": 484,
+      "delayed_orders": 270,
+      "delay_rate_pct": 55.79,
+      "total_sales": 231765.46,
+      "total_profit": 33443.01
+    },
+    {
+      "category_id": 67,
+      "category_name": "DVDs",
+      "department_name": "Discs Shop",
+      "total_orders": 483,
+      "delayed_orders": 259,
+      "delay_rate_pct": 53.62,
+      "total_sales": 71319.38,
+      "total_profit": 6655.43
+    },
+    {
+      "category_id": 64,
+      "category_name": "Computers",
+      "department_name": "Technology",
+      "total_orders": 442,
+      "delayed_orders": 224,
+      "delay_rate_pct": 50.68,
+      "total_sales": 595395.0,
+      "total_profit": 69656.81
+    },
+    {
+      "category_id": 32,
+      "category_name": "Golf Apparel",
+      "department_name": "Outdoors",
+      "total_orders": 441,
+      "delayed_orders": 229,
+      "delay_rate_pct": 51.93,
+      "total_sales": 31447.44,
+      "total_profit": 3496.31
+    },
+    {
+      "category_id": 44,
+      "category_name": "Hunting & Shooting",
+      "department_name": "Fan Shop",
+      "total_orders": 440,
+      "delayed_orders": 247,
+      "delay_rate_pct": 56.14,
+      "total_sales": 50878.91,
+      "total_profit": 5980.0
+    },
+    {
+      "category_id": 71,
+      "category_name": "Music",
+      "department_name": "Discs Shop",
+      "total_orders": 434,
+      "delayed_orders": 248,
+      "delay_rate_pct": 57.14,
+      "total_sales": 101687.29,
+      "total_profit": 14436.32
+    },
+    {
+      "category_id": 65,
+      "category_name": "Consumer Electronics",
+      "department_name": "Technology",
+      "total_orders": 431,
+      "delayed_orders": 238,
+      "delay_rate_pct": 55.22,
+      "total_sales": 97937.56,
+      "total_profit": 13223.4
+    },
+    {
+      "category_id": 12,
+      "category_name": "Boxing & MMA",
+      "department_name": "Footwear",
+      "total_orders": 423,
+      "delayed_orders": 238,
+      "delay_rate_pct": 56.26,
+      "total_sales": 76286.72,
+      "total_profit": 8641.37
+    },
+    {
+      "category_id": 59,
+      "category_name": "Books ",
+      "department_name": "Book Shop",
+      "total_orders": 405,
+      "delayed_orders": 229,
+      "delay_rate_pct": 56.54,
+      "total_sales": 11303.42,
+      "total_profit": 883.01
+    },
+    {
+      "category_id": 38,
+      "category_name": "Kids' Golf Clubs",
+      "department_name": "Outdoors",
+      "total_orders": 384,
+      "delayed_orders": 205,
+      "delay_rate_pct": 53.39,
+      "total_sales": 89473.7,
+      "total_profit": 9045.84
+    },
+    {
+      "category_id": 69,
+      "category_name": "Health and Beauty",
+      "department_name": "Health and Beauty ",
+      "total_orders": 362,
+      "delayed_orders": 202,
+      "delay_rate_pct": 55.8,
+      "total_sales": 95358.11,
+      "total_profit": 9493.63
+    },
+    {
+      "category_id": 73,
+      "category_name": "Sporting Goods",
+      "department_name": "Fitness",
+      "total_orders": 357,
+      "delayed_orders": 198,
+      "delay_rate_pct": 55.46,
+      "total_sales": 105063.61,
+      "total_profit": 12518.61
+    },
+    {
+      "category_id": 5,
+      "category_name": "Lacrosse",
+      "department_name": "Fitness",
+      "total_orders": 343,
+      "delayed_orders": 206,
+      "delay_rate_pct": 60.06,
+      "total_sales": 35415.93,
+      "total_profit": 4364.29
+    },
+    {
+      "category_id": 6,
+      "category_name": "Tennis & Racquet",
+      "department_name": "Fitness",
+      "total_orders": 328,
+      "delayed_orders": 183,
+      "delay_rate_pct": 55.79,
+      "total_sales": 40077.81,
+      "total_profit": 5747.98
+    },
+    {
+      "category_id": 11,
+      "category_name": "Fitness Accessories",
+      "department_name": "Footwear",
+      "total_orders": 309,
+      "delayed_orders": 176,
+      "delay_rate_pct": 56.96,
+      "total_sales": 31751.36,
+      "total_profit": 5258.39
+    },
+    {
+      "category_id": 30,
+      "category_name": "Men's Golf Clubs",
+      "department_name": "Outdoors",
+      "total_orders": 283,
+      "delayed_orders": 135,
+      "delay_rate_pct": 47.7,
+      "total_sales": 42382.79,
+      "total_profit": 5517.99
+    },
+    {
+      "category_id": 61,
+      "category_name": "CDs ",
+      "department_name": "Discs Shop",
+      "total_orders": 271,
+      "delayed_orders": 141,
+      "delay_rate_pct": 52.03,
+      "total_sales": 2750.03,
+      "total_profit": 383.85
+    },
+    {
+      "category_id": 70,
+      "category_name": "Men's Clothing",
+      "department_name": "Apparel",
+      "total_orders": 208,
+      "delayed_orders": 113,
+      "delay_rate_pct": 54.33,
+      "total_sales": 39365.71,
+      "total_profit": 2006.04
+    },
+    {
+      "category_id": 60,
+      "category_name": "Baby ",
+      "department_name": "Apparel",
+      "total_orders": 207,
+      "delayed_orders": 109,
+      "delay_rate_pct": 52.66,
+      "total_sales": 10957.4,
+      "total_profit": 1525.03
+    },
+    {
+      "category_id": 31,
+      "category_name": "Women's Golf Clubs",
+      "department_name": "Outdoors",
+      "total_orders": 181,
+      "delayed_orders": 97,
+      "delay_rate_pct": 53.59,
+      "total_sales": 39984.39,
+      "total_profit": 5028.64
+    },
+    {
+      "category_id": 2,
+      "category_name": "Soccer",
+      "department_name": "Fitness",
+      "total_orders": 138,
+      "delayed_orders": 75,
+      "delay_rate_pct": 54.35,
+      "total_sales": 23909.95,
+      "total_profit": 3901.95
+    },
+    {
+      "category_id": 10,
+      "category_name": "Strength Training",
+      "department_name": "Footwear",
+      "total_orders": 111,
+      "delayed_orders": 64,
+      "delay_rate_pct": 57.66,
+      "total_sales": 48813.84,
+      "total_profit": 332.31
+    },
+    {
+      "category_id": 16,
+      "category_name": "As Seen on  TV!",
+      "department_name": "Footwear",
+      "total_orders": 68,
+      "delayed_orders": 39,
+      "delay_rate_pct": 57.35,
+      "total_sales": 18519.61,
+      "total_profit": 714.43
+    },
+    {
+      "category_id": 4,
+      "category_name": "Basketball",
+      "department_name": "Fitness",
+      "total_orders": 67,
+      "delayed_orders": 37,
+      "delay_rate_pct": 55.22,
+      "total_sales": 24705.33,
+      "total_profit": 1845.67
+    },
+    {
+      "category_id": 34,
+      "category_name": "Golf Bags & Carts",
+      "department_name": "Outdoors",
+      "total_orders": 61,
+      "delayed_orders": 42,
+      "delay_rate_pct": 68.85,
+      "total_sales": 9403.79,
+      "total_profit": 1810.07
+    }
+  ],
+  "top_products": [
+    {
+      "product_card_id": 365,
+      "product_name": "Perfect Fitness Perfect Rip Deck",
+      "category_name": "Cleats",
+      "order_count": 24515,
+      "total_quantity": 73698,
+      "total_revenue": 3973180.36,
+      "total_profit": 493828.3,
+      "delay_rate_pct": 54.96
+    },
+    {
+      "product_card_id": 403,
+      "product_name": "Nike Men's CJ Elite 2 TD Football Cleat",
+      "category_name": "Men's Footwear",
+      "order_count": 22246,
+      "total_quantity": 22246,
+      "total_revenue": 2598494.42,
+      "total_profit": 311902.82,
+      "delay_rate_pct": 54.49
+    },
+    {
+      "product_card_id": 502,
+      "product_name": "Nike Men's Dri-FIT Victory Golf Polo",
+      "category_name": "Women's Apparel",
+      "order_count": 21035,
+      "total_quantity": 62956,
+      "total_revenue": 2828708.5,
+      "total_profit": 350421.03,
+      "delay_rate_pct": 54.56
+    },
+    {
+      "product_card_id": 1014,
+      "product_name": "O'Brien Men's Neoprene Life Vest",
+      "category_name": "Indoor/Outdoor Games",
+      "order_count": 19298,
+      "total_quantity": 57803,
+      "total_revenue": 2596454.02,
+      "total_profit": 318451.43,
+      "delay_rate_pct": 54.75
+    },
+    {
+      "product_card_id": 1004,
+      "product_name": "Field & Stream Sportsman 16 Gun Fire Safe",
+      "category_name": "Fishing",
+      "order_count": 17325,
+      "total_quantity": 17325,
+      "total_revenue": 6226935.29,
+      "total_profit": 756220.77,
+      "delay_rate_pct": 54.93
+    },
+    {
+      "product_card_id": 1073,
+      "product_name": "Pelican Sunstream 100 Kayak",
+      "category_name": "Water Sports",
+      "order_count": 15500,
+      "total_quantity": 15500,
+      "total_revenue": 2785518.09,
+      "total_profit": 324076.37,
+      "delay_rate_pct": 54.79
+    },
+    {
+      "product_card_id": 957,
+      "product_name": "Diamondback Women's Serene Classic Comfort Bi",
+      "category_name": "Camping & Hiking",
+      "order_count": 13729,
+      "total_quantity": 13729,
+      "total_revenue": 3700783.63,
+      "total_profit": 427455.57,
+      "delay_rate_pct": 54.53
+    },
+    {
+      "product_card_id": 191,
+      "product_name": "Nike Men's Free 5.0+ Running Shoe",
+      "category_name": "Cardio Equipment",
+      "order_count": 12169,
+      "total_quantity": 36680,
+      "total_revenue": 3295693.3,
+      "total_profit": 379915.82,
+      "delay_rate_pct": 54.47
+    },
+    {
+      "product_card_id": 627,
+      "product_name": "Under Armour Girls' Toddler Spine Surge Runni",
+      "category_name": "Shop By Sport",
+      "order_count": 10617,
+      "total_quantity": 31735,
+      "total_revenue": 1140770.96,
+      "total_profit": 126278.51,
+      "delay_rate_pct": 55.24
+    },
+    {
+      "product_card_id": 1362,
+      "product_name": "Fighting video games",
+      "category_name": "Video Games",
+      "order_count": 838,
+      "total_quantity": 838,
+      "total_revenue": 29919.2,
+      "total_profit": 2717.52,
+      "delay_rate_pct": 54.3
+    },
+    {
+      "product_card_id": 1350,
+      "product_name": "Children's heaters",
+      "category_name": "Children's Clothing",
+      "order_count": 652,
+      "total_quantity": 652,
+      "total_revenue": 209268.38,
+      "total_profit": 27178.1,
+      "delay_rate_pct": 53.37
+    },
+    {
+      "product_card_id": 1363,
+      "product_name": "Summer dresses",
+      "category_name": "Women's Clothing",
+      "order_count": 650,
+      "total_quantity": 650,
+      "total_revenue": 126006.93,
+      "total_profit": 19102.85,
+      "delay_rate_pct": 56.46
+    },
+    {
+      "product_card_id": 1349,
+      "product_name": "Web Camera",
+      "category_name": "Cameras ",
+      "order_count": 592,
+      "total_quantity": 592,
+      "total_revenue": 240496.68,
+      "total_profit": 30289.8,
+      "delay_rate_pct": 58.11
+    },
+    {
+      "product_card_id": 1361,
+      "product_name": "Toys ",
+      "category_name": "Toys",
+      "order_count": 529,
+      "total_quantity": 529,
+      "total_revenue": 5485.68,
+      "total_profit": 900.71,
+      "delay_rate_pct": 55.01
+    },
+    {
+      "product_card_id": 1359,
+      "product_name": "Adult dog supplies",
+      "category_name": "Pet Supplies",
+      "order_count": 492,
+      "total_quantity": 492,
+      "total_revenue": 37318.3,
+      "total_profit": 3589.26,
+      "delay_rate_pct": 58.94
+    },
+    {
+      "product_card_id": 1355,
+      "product_name": "Lawn mower",
+      "category_name": "Garden",
+      "order_count": 484,
+      "total_quantity": 484,
+      "total_revenue": 231765.46,
+      "total_profit": 33443.01,
+      "delay_rate_pct": 55.79
+    },
+    {
+      "product_card_id": 1353,
+      "product_name": "Porcelain crafts",
+      "category_name": "Crafts",
+      "order_count": 484,
+      "total_quantity": 484,
+      "total_revenue": 200704.87,
+      "total_profit": 25531.17,
+      "delay_rate_pct": 55.99
+    },
+    {
+      "product_card_id": 1354,
+      "product_name": "DVDs ",
+      "category_name": "DVDs",
+      "order_count": 483,
+      "total_quantity": 483,
+      "total_revenue": 71319.38,
+      "total_profit": 6655.43,
+      "delay_rate_pct": 53.62
+    },
+    {
+      "product_card_id": 1351,
+      "product_name": "Dell Laptop",
+      "category_name": "Computers",
+      "order_count": 442,
+      "total_quantity": 442,
+      "total_revenue": 595395.0,
+      "total_profit": 69656.81,
+      "delay_rate_pct": 50.68
+    },
+    {
+      "product_card_id": 1358,
+      "product_name": "Rock music",
+      "category_name": "Music",
+      "order_count": 434,
+      "total_quantity": 434,
+      "total_revenue": 101687.29,
+      "total_profit": 14436.32,
+      "delay_rate_pct": 57.14
+    }
+  ],
+  "customer_segments": [
+    {
+      "customer_segment": "Consumer",
+      "total_orders": 93504,
+      "delayed_orders": 51248,
+      "delay_rate_pct": 54.81,
+      "total_sales": 17164278.37,
+      "total_profit": 2073487.67,
+      "avg_order_value": 183.57
+    },
+    {
+      "customer_segment": "Corporate",
+      "total_orders": 54789,
+      "delayed_orders": 29982,
+      "delay_rate_pct": 54.72,
+      "total_sales": 10030649.9,
+      "total_profit": 1202574.96,
+      "avg_order_value": 183.08
+    },
+    {
+      "customer_segment": "Home Office",
+      "total_orders": 32226,
+      "delayed_orders": 17747,
+      "delay_rate_pct": 55.07,
+      "total_sales": 5859474.11,
+      "total_profit": 690840.34,
+      "avg_order_value": 181.82
+    }
+  ],
+  "customer_purchasing_patterns": {
+    "total_unique_customers": 20652,
+    "avg_orders_per_customer": 3.18,
+    "max_orders_per_customer": 15,
+    "avg_items_per_customer": 8.74,
+    "avg_spend_per_customer": 1600.54
+  }
+}

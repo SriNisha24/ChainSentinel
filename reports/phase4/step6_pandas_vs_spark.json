@@ -1,0 +1,85 @@
+{
+  "step": 6,
+  "title": "Pandas vs. Spark Benchmarking Report",
+  "dataset_rows": 180519,
+  "dataset_columns": 52,
+  "pandas_in_memory_mb": 107.29,
+  "pandas_load_cold_sec": 0.2567,
+  "pandas_load_warm_avg_sec": 0.1513,
+  "comparisons": [
+    {
+      "operation_id": "OP_01_SCAN_COUNT",
+      "operation_name": "Dataset Scan & Row Count",
+      "pandas_cold_sec": 0.0,
+      "pandas_warm_avg_sec": 0.0,
+      "pandas_warm_stddev_sec": 0.0,
+      "pandas_throughput_rows_sec": 138860748127.72,
+      "spark_cold_sec": 3.5372,
+      "spark_warm_avg_sec": 0.3782,
+      "spark_warm_stddev_sec": 0.0517,
+      "spark_throughput_rows_sec": 477280.34,
+      "spark_to_pandas_latency_ratio": 290923.033,
+      "faster_engine_warm": "Pandas"
+    },
+    {
+      "operation_id": "OP_02_SHIPPING_AGG",
+      "operation_name": "Single-Key Aggregation (Shipping Mode)",
+      "pandas_cold_sec": 0.0462,
+      "pandas_warm_avg_sec": 0.0446,
+      "pandas_warm_stddev_sec": 0.0071,
+      "pandas_throughput_rows_sec": 4044020.3,
+      "spark_cold_sec": 2.4127,
+      "spark_warm_avg_sec": 0.5709,
+      "spark_warm_stddev_sec": 0.0868,
+      "spark_throughput_rows_sec": 316225.95,
+      "spark_to_pandas_latency_ratio": 12.789,
+      "faster_engine_warm": "Pandas"
+    },
+    {
+      "operation_id": "OP_03_REGIONAL_FINANCIALS",
+      "operation_name": "Multi-Key Regional Aggregation & Sort",
+      "pandas_cold_sec": 0.0911,
+      "pandas_warm_avg_sec": 0.1089,
+      "pandas_warm_stddev_sec": 0.0393,
+      "pandas_throughput_rows_sec": 1657011.22,
+      "spark_cold_sec": 1.7179,
+      "spark_warm_avg_sec": 0.7465,
+      "spark_warm_stddev_sec": 0.0959,
+      "spark_throughput_rows_sec": 241819.39,
+      "spark_to_pandas_latency_ratio": 6.852,
+      "faster_engine_warm": "Pandas"
+    },
+    {
+      "operation_id": "OP_04_HIGH_CARDINALITY_AGG",
+      "operation_name": "High-Cardinality GroupBy (Country x Category)",
+      "pandas_cold_sec": 0.061,
+      "pandas_warm_avg_sec": 0.0627,
+      "pandas_warm_stddev_sec": 0.0037,
+      "pandas_throughput_rows_sec": 2877706.37,
+      "spark_cold_sec": 1.3662,
+      "spark_warm_avg_sec": 0.6484,
+      "spark_warm_stddev_sec": 0.1863,
+      "spark_throughput_rows_sec": 278416.01,
+      "spark_to_pandas_latency_ratio": 10.336,
+      "faster_engine_warm": "Pandas"
+    },
+    {
+      "operation_id": "OP_05_FILTER_SEGMENT_AGG",
+      "operation_name": "Filtered Projection & Segment Aggregation",
+      "pandas_cold_sec": 0.1771,
+      "pandas_warm_avg_sec": 0.1606,
+      "pandas_warm_stddev_sec": 0.0099,
+      "pandas_throughput_rows_sec": 1124339.01,
+      "spark_cold_sec": 1.0409,
+      "spark_warm_avg_sec": 0.4632,
+      "spark_warm_stddev_sec": 0.0904,
+      "spark_throughput_rows_sec": 389758.53,
+      "spark_to_pandas_latency_ratio": 2.885,
+      "faster_engine_warm": "Pandas"
+    }
+  ],
+  "architectural_insights": {
+    "single_node_vs_distributed": "For moderately sized datasets (180K rows, 107 MB RAM) that fit entirely within local CPU cache and RAM, Pandas operates with lower fixed overhead because it does not incur distributed task scheduling, JVM-Python IPC serialization, or shuffle partition management.",
+    "scalability_boundary": "However, Pandas is bound to a single process memory limit (OOM above ~2-4 GB depending on RAM) and lacks fault tolerance, out-of-core spill-to-disk, and horizontal cluster scaling. As demonstrated in Step 5, Spark seamlessly processes 10x scale (1.8M rows) without degradation, whereas Pandas crashes when dataset sizes exceed single-machine physical memory."
+  }
+}

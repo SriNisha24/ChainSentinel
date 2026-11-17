@@ -1,0 +1,5 @@
+shipping_mode,total_orders,delayed_orders,delay_rate_pct,avg_scheduled_days,avg_real_days,avg_delay_days,avg_order_to_ship_hours,min_real_days,max_real_days
+Standard Class,107752,41023,38.07,4.0,4.0,0.0,95.9,2,6
+Second Class,35216,26987,76.63,2.0,3.99,1.99,95.78,2,6
+First Class,27814,26513,95.32,1.0,2.0,1.0,48.0,2,2
+Same Day,9737,4454,45.74,0.0,0.48,0.48,12.0,0,1
